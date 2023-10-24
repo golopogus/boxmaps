@@ -4,6 +4,7 @@ var camera_move = false
 var mouse_loc = Vector2()
 var mouse_check = Vector2()
 var highlighted_street = ''
+var boxes = []
 var list_of_streets = []
 var current_street = ''
 var selected_street = ''
@@ -12,16 +13,31 @@ var score = 0
 var add_score = 0
 var move = false
 
-func _on_button_pressed():
-	for streets in get_node("map/41000").get_children():
-		list_of_streets.append(streets.name)
-	randomize_street()
-	move = true
-	$CanvasLayer/Button.queue_free()
+#func _on_button_pressed():
+	#for streets in get_node("map/41008").get_children():
+	#	list_of_streets.append(streets.name)
+	#randomize_street()
+	#move = true
+	#$CanvasLayer/Button.queue_free()
 	
 func _ready():
-	pass
+	for box in $map.get_children():
+		for street in box.get_children():
+			for item in street.get_children():
+				if "sprite" in item.name:
+					item.visible = false
+	boxes = Globals.boxes_used
 	
+	for box in boxes:
+		for streets in get_node("map/" + str(box)).get_children():
+			if streets.name not in list_of_streets:
+				list_of_streets.append(streets.name)
+	
+	randomize_street()
+	move = true
+	#$CanvasLayer/Button.queue_free()
+			
+		
 func randomize_street():
 	rand_num = randi() % len(list_of_streets)-1
 	current_street = list_of_streets[rand_num]
@@ -33,8 +49,8 @@ func adjust_text(street):
 	$Timer.start()
 	#dd_score = 1000
 	
-func _process(delta):
-	pass
+#func _process(delta):
+	#pass
 
 
 	
@@ -269,6 +285,14 @@ func _on_mansfield_road_area_mouse_entered():
 func _on_mansfield_road_area_mouse_exited():
 	highlight_street('mansfield_road','41000',false)
 
+
+
+#############################################################
+#############################################################
+#############################################################
+
+#41008#
+
 ###Tyler Street###
 func _on_tyler_street_area_mouse_entered():
 	highlight_street('tyler_street','41008',true)
@@ -276,15 +300,167 @@ func _on_tyler_street_area_mouse_exited():
 	highlight_street('tyler_street','41008',false)
 
 
+func _on_argyle_drive_area_mouse_entered():
+	highlight_street('argyle_drive','41008',true)
+func _on_argyle_drive_area_mouse_exited():
+	highlight_street('argyle_drive','41008',false)
+
+func _on_aura_court_area_mouse_entered():
+	highlight_street('aura_court','41008',true)
+func _on_aura_court_area_mouse_exited():
+	highlight_street('aura_court','41008',false)
 
 
+func _on_bellview_drive_area_mouse_entered():
+	highlight_street('bellview_drive','41008',true)
+func _on_bellview_drive_area_mouse_exited():
+	highlight_street('bellview_drive','41008',false)
 
+func _on_boston_drive_area_mouse_entered():
+	highlight_street('boston_drive','41008',true)
+func _on_boston_drive_area_mouse_exited():
+	highlight_street('boston_drive','41008',false)
 
+func _on_brill_court_area_mouse_entered():
+	highlight_street('brill_court','41008',true)
+func _on_brill_court_area_mouse_exited():
+	highlight_street('brill_court','41008',false)
 
+func _on_carlyn_court_area_mouse_entered():
+	highlight_street('carlyn_court','41008',true)
+func _on_carlyn_court_area_mouse_exited():
+	highlight_street('carlyn_court','41008',false)
+
+func _on_charles_street_area_mouse_entered():
+	highlight_street('charles_street','41008',true)
+func _on_charles_street_area_mouse_exited():
+	highlight_street('charles_street','41008',false)
+
+func _on_chicamuxen_court_area_mouse_entered():
+	highlight_street('chicamuxen_court','41008',true)
+func _on_chicamuxen_court_area_mouse_exited():
+	highlight_street('chicamuxen_court','41008',false)
+
+func _on_church_street_area_mouse_entered():
+	highlight_street('church_street','41008',true)
+func _on_church_street_area_mouse_exited():
+	highlight_street('church_street','41008',false)
+
+func _on_courtland_drive_area_mouse_entered():
+	highlight_street('courtland_drive','41008',true)
+func _on_courtland_drive_area_mouse_exited():
+	highlight_street('courtland_drive','41008',false)
+
+func _on_culmore_court_area_mouse_entered():
+	highlight_street('culmore_court','41008',true)
+func _on_culmore_court_area_mouse_exited():
+	highlight_street('culmore_court','41008',false)
+
+func _on_durbin_place_area_mouse_entered():
+	highlight_street('durbin_place','41008',true)
+func _on_durbin_place_area_mouse_exited():
+	highlight_street('durbin_place','41008',false)
+
+func _on_freedom_place_area_mouse_entered():
+	highlight_street('freedom_place','41008',true)
+func _on_freedom_place_area_mouse_exited():
+	highlight_street('freedom_place','41008',false)
+
+func _on_garland_drive_area_mouse_entered():
+	highlight_street('garland_drive','41008',true)
+func _on_garland_drive_area_mouse_exited():
+	highlight_street('garland_drive','41008',false)
+
+func _on_glenmore_drive_area_mouse_entered():
+	highlight_street('glenmore_drive','41008',true)
+func _on_glenmore_drive_area_mouse_exited():
+	highlight_street('glenmore_drive','41008',false)
+
+func _on_glen_forest_drive_area_mouse_entered():
+	highlight_street('glen_forest_drive','41008',true)
+func _on_glen_forest_drive_area_mouse_exited():
+	highlight_street('glen_forest_drive','41008',false)
+
+func _on_haven_place_area_mouse_entered():
+	highlight_street('haven_place','41008',true)
+func _on_haven_place_area_mouse_exited():
+	highlight_street('haven_place','41008',false)
+
+func _on_kaywood_drive_area_mouse_entered():
+	highlight_street('kaywood_drive','41008',true)
+func _on_kaywood_drive_area_mouse_exited():
+	highlight_street('kaywood_drive','41008',false)
+
+func _on_kaywood_place_area_mouse_entered():
+	highlight_street('kaywood_place','41008',true)
+func _on_kaywood_place_area_mouse_exited():
+	highlight_street('kaywood_place','41008',false)
+
+func _on_knollwood_drive_area_mouse_entered():
+	highlight_street('knollwood_drive','41008',true)
+func _on_knollwood_drive_area_mouse_exited():
+	highlight_street('knollwood_drive','41008',false)
+
+func _on_longbranch_drive_area_mouse_entered():
+	highlight_street('longbranch_drive','41008',true)
+func _on_longbranch_drive_area_mouse_exited():
+	highlight_street('longbranch_drive','41008',false)
+
+func _on_longwood_drive_area_mouse_entered():
+	highlight_street('longwood_drive','41008',true)
+func _on_longwood_drive_area_mouse_exited():
+	highlight_street('longwood_drive','41008',false)
+
+func _on_lucky_court_area_mouse_entered():
+	highlight_street('lucky_court','41008',true)
+func _on_lucky_court_area_mouse_exited():
+	highlight_street('lucky_court','41008',false)
+
+func _on_magnolia_avenue_area_mouse_entered():
+	highlight_street('magnolia_avenue','41008',true)
+func _on_magnolia_avenue_area_mouse_exited():
+	highlight_street('magnolia_avenue','41008',false)
+
+func _on_maple_court_area_mouse_entered():
+	highlight_street('maple_court','41008',true)
+func _on_maple_court_area_mouse_exited():
+	highlight_street('maple_court','41008',false)
+
+func _on_payne_street_area_mouse_entered():
+	highlight_street('payne_street','41008',true)
+func _on_payne_street_area_mouse_exited():
+	highlight_street('payne_street','41008',false)
+
+func _on_peace_valley_lane_area_mouse_entered():
+	highlight_street('peace_valley_lane','41008',true)
+func _on_peace_valley_lane_area_mouse_exited():
+	highlight_street('peace_valley_lane','41008',false)
 	
+func _on_pensa_drive_area_mouse_entered():
+	highlight_street('pensa_drive','41008',true)
+func _on_pensa_drive_area_mouse_exited():
+	highlight_street('pensa_drive','41008',false)
+
+func _on_red_pine_street_area_mouse_entered():
+	highlight_street('red_pine_street','41008',true)
+func _on_red_pine_street_area_mouse_exited():
+	highlight_street('red_pine_street','41008',false)
+
+func _on_vista_drive_area_mouse_entered():
+	highlight_street('vista_drive','41008',true)
+func _on_vista_drive_area_mouse_exited():
+	highlight_street('vista_drive','41008',false)
+
+func _on_washington_drive_area_mouse_entered():
+	highlight_street('washington_drive','41008',true)
+func _on_washington_drive_area_mouse_exited():
+	highlight_street('washington_drive','41008',false)
+	
+func _on_wilkins_drive_area_mouse_entered():
+	highlight_street('wilkins_drive','41008',true)
+func _on_wilkins_drive_area_mouse_exited():
+	highlight_street('wilkins_drive','41008',false)
 
 
-
-
-
-
+func _on_exit_pressed():
+	get_tree().change_scene_to_file("res://menu.tscn")

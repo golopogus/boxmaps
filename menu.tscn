@@ -1,0 +1,107 @@
+[gd_scene load_steps=17 format=3 uid="uid://bvhte3ha4xng3"]
+
+[ext_resource type="Script" path="res://menu.gd" id="1_2f086"]
+[ext_resource type="FontFile" uid="uid://tfi382u2oie8" path="res://CherryBombOne-Regular.ttf" id="1_xkdm1"]
+
+[sub_resource type="Gradient" id="Gradient_fo2pj"]
+offsets = PackedFloat32Array(0, 0.00990099, 1)
+colors = PackedColorArray(0.478431, 0.392157, 0.462745, 1, 0.57956, 0.585578, 0.415327, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_bonp7"]
+gradient = SubResource("Gradient_fo2pj")
+width = 1024
+height = 600
+fill_from = Vector2(0.542683, 0)
+fill_to = Vector2(0.536585, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nmdo6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2bc40"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v2mib"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_au4yy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_oatv1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_otqhx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cdirl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v7vw3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_740vx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o3dn4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ckap7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_65c84"]
+
+[node name="menu" type="Node2D"]
+script = ExtResource("1_2f086")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1044.0
+offset_bottom = 620.0
+texture = SubResource("GradientTexture2D_bonp7")
+
+[node name="button_41000" type="CheckButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 219.0
+offset_top = 206.0
+offset_right = 422.0
+offset_bottom = 287.0
+theme_override_fonts/font = ExtResource("1_xkdm1")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nmdo6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_2bc40")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_v2mib")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_au4yy")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_oatv1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_otqhx")
+text = "41000"
+alignment = 2
+expand_icon = true
+
+[node name="button_41008" type="CheckButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 563.0
+offset_top = 207.0
+offset_right = 766.0
+offset_bottom = 288.0
+theme_override_fonts/font = ExtResource("1_xkdm1")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_cdirl")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_v7vw3")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_740vx")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_o3dn4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_ckap7")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_65c84")
+text = "41008"
+alignment = 2
+expand_icon = true
+
+[node name="Label" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 14.0
+offset_right = 981.0
+offset_bottom = 126.0
+theme_override_fonts/font = ExtResource("1_xkdm1")
+theme_override_font_sizes/font_size = 75
+text = "Choose which box to review"
+
+[node name="Button" type="Button" parent="TextureRect"]
+layout_mode = 0
+offset_left = 379.0
+offset_top = 444.0
+offset_right = 600.0
+offset_bottom = 525.0
+theme_override_fonts/font = ExtResource("1_xkdm1")
+theme_override_font_sizes/font_size = 50
+text = "START"
+
+[connection signal="pressed" from="TextureRect/button_41000" to="." method="_on_button_41000_pressed"]
+[connection signal="pressed" from="TextureRect/button_41008" to="." method="_on_button_41008_pressed"]
+[connection signal="pressed" from="TextureRect/Button" to="." method="_on_button_pressed"]
