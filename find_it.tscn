@@ -1,4 +1,4 @@
-[gd_scene load_steps=87 format=3 uid="uid://d14qctc77xo60"]
+[gd_scene load_steps=90 format=3 uid="uid://d14qctc77xo60"]
 
 [ext_resource type="Script" path="res://find_it.gd" id="1_p23o3"]
 [ext_resource type="Texture2D" uid="uid://ch7hqba3bm6gh" path="res://black.png" id="2_5tsnp"]
@@ -65,8 +65,11 @@
 [ext_resource type="Texture2D" uid="uid://bghvn5qs7w0iu" path="res://streets/41008/vista_drive.png" id="62_byv1r"]
 [ext_resource type="Texture2D" uid="uid://dw8gae8sxkuxy" path="res://streets/41008/washington_drive.png" id="63_pdfi5"]
 [ext_resource type="Texture2D" uid="uid://dda7jovyrsy47" path="res://streets/41008/wilkins_drive.png" id="64_nskvg"]
+[ext_resource type="Texture2D" uid="uid://xo8c5j0qwj4m" path="res://streets/41012/arcadia_road.png" id="65_v7gyh"]
 [ext_resource type="Texture2D" uid="uid://yslnieyhaksa" path="res://streets/41097/barnum_lane.png" id="65_wfwgp"]
 [ext_resource type="Texture2D" uid="uid://b5xxlbvlbu2re" path="res://streets/41097/deming_avenue.png" id="66_chv7p"]
+[ext_resource type="Texture2D" uid="uid://c77oyndubb1ov" path="res://streets/41012/ashwood_place.png" id="66_u57gg"]
+[ext_resource type="Texture2D" uid="uid://c1rojydbd4ikd" path="res://streets/41012/barcroft_mews_drive.png" id="67_p43nc"]
 [ext_resource type="Texture2D" uid="uid://cyklcroyghby1" path="res://streets/41097/gloucester_road.png" id="67_susig"]
 [ext_resource type="Texture2D" uid="uid://t6ibl3unevjv" path="res://streets/41097/joanne_drive.png" id="68_pgcps"]
 [ext_resource type="Texture2D" uid="uid://bjvjf5bqccik3" path="res://streets/41097/kling_drive.png" id="69_tsotc"]
@@ -1139,6 +1142,270 @@ position = Vector2(-224, -247)
 scale = Vector2(0.36, 0.36)
 texture = ExtResource("29_g4wsb")
 
+[node name="41012" type="Node2D" parent="map"]
+
+[node name="arcadia_road" type="Node2D" parent="map/41012"]
+
+[node name="arcadia_road_sprite" type="Sprite2D" parent="map/41012/arcadia_road"]
+position = Vector2(-555, 114)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("65_v7gyh")
+
+[node name="arcadia_road_area" type="Area2D" parent="map/41012/arcadia_road"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41012/arcadia_road/arcadia_road_area"]
+polygon = PackedVector2Array(-624, 153, -624, 157, -548, 165, -540, 165, -491, 125, -485, 110, -483, 102, -493, 85, -502, 76, -509, 70, -520, 67, -567, 63, -568, 69, -516, 74, -508, 78, -499, 89, -491, 103, -490, 110, -493, 117, -495, 122, -536, 157, -546, 160, -561, 159)
+
+[node name="ashwood_place" type="Node2D" parent="map/41012"]
+
+[node name="ashwood_place_sprite" type="Sprite2D" parent="map/41012/ashwood_place"]
+position = Vector2(-672, 97)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("66_u57gg")
+
+[node name="ashwood_place_area" type="Area2D" parent="map/41012/ashwood_place"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41012/ashwood_place/ashwood_place_area"]
+polygon = PackedVector2Array(-679, 91, -675, 89, -665, 102, -669, 105)
+
+[node name="barcroft_mews_drive" type="Node2D" parent="map/41012"]
+position = Vector2(-584, 79)
+scale = Vector2(0.36, 0.36)
+metadata/_edit_group_ = true
+
+[node name="barcroft_mews_drive_sprite" type="Sprite2D" parent="map/41012/barcroft_mews_drive"]
+position = Vector2(-161, 102)
+texture = ExtResource("67_p43nc")
+
+[node name="barcroft_mews_drive_area" type="Area2D" parent="map/41012/barcroft_mews_drive"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41012/barcroft_mews_drive/barcroft_mews_drive_area"]
+polygon = PackedVector2Array(-222, 108, -212, 119, -183, 96, -165, 109, -154, 122, -125, 168, -120, 174, -108, 168, -132, 126, -116, 114, -106, 104, -103, 94, -102, 71, -111, 29, -126, 31, -119, 66, -118, 90, -125, 105, -142, 112, -182, 78)
+
+[node name="Node2D4" type="Node2D" parent="map/41012"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41012/Node2D4"]
+
+[node name="Area2D" type="Area2D" parent="map/41012/Node2D4"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41012/Node2D4/Area2D"]
+
+[node name="Node2D5" type="Node2D" parent="map/41012"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41012/Node2D5"]
+
+[node name="Area2D" type="Area2D" parent="map/41012/Node2D5"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41012/Node2D5/Area2D"]
+
+[node name="Node2D6" type="Node2D" parent="map/41012"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41012/Node2D6"]
+
+[node name="Area2D" type="Area2D" parent="map/41012/Node2D6"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41012/Node2D6/Area2D"]
+
+[node name="Node2D7" type="Node2D" parent="map/41012"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41012/Node2D7"]
+
+[node name="Area2D" type="Area2D" parent="map/41012/Node2D7"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41012/Node2D7/Area2D"]
+
+[node name="Node2D8" type="Node2D" parent="map/41012"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41012/Node2D8"]
+
+[node name="Area2D" type="Area2D" parent="map/41012/Node2D8"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41012/Node2D8/Area2D"]
+
+[node name="Node2D9" type="Node2D" parent="map/41012"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41012/Node2D9"]
+
+[node name="Area2D" type="Area2D" parent="map/41012/Node2D9"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41012/Node2D9/Area2D"]
+
+[node name="Node2D10" type="Node2D" parent="map/41012"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41012/Node2D10"]
+
+[node name="Area2D" type="Area2D" parent="map/41012/Node2D10"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41012/Node2D10/Area2D"]
+
+[node name="Node2D11" type="Node2D" parent="map/41012"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41012/Node2D11"]
+
+[node name="Area2D" type="Area2D" parent="map/41012/Node2D11"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41012/Node2D11/Area2D"]
+
+[node name="Node2D12" type="Node2D" parent="map/41012"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41012/Node2D12"]
+
+[node name="Area2D" type="Area2D" parent="map/41012/Node2D12"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41012/Node2D12/Area2D"]
+
+[node name="Node2D13" type="Node2D" parent="map/41012"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41012/Node2D13"]
+
+[node name="Area2D" type="Area2D" parent="map/41012/Node2D13"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41012/Node2D13/Area2D"]
+
+[node name="Node2D14" type="Node2D" parent="map/41012"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41012/Node2D14"]
+
+[node name="Area2D" type="Area2D" parent="map/41012/Node2D14"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41012/Node2D14/Area2D"]
+
+[node name="Node2D15" type="Node2D" parent="map/41012"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41012/Node2D15"]
+
+[node name="Area2D" type="Area2D" parent="map/41012/Node2D15"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41012/Node2D15/Area2D"]
+
+[node name="Node2D16" type="Node2D" parent="map/41012"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41012/Node2D16"]
+
+[node name="Area2D" type="Area2D" parent="map/41012/Node2D16"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41012/Node2D16/Area2D"]
+
+[node name="Node2D17" type="Node2D" parent="map/41012"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41012/Node2D17"]
+
+[node name="Area2D" type="Area2D" parent="map/41012/Node2D17"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41012/Node2D17/Area2D"]
+
+[node name="Node2D18" type="Node2D" parent="map/41012"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41012/Node2D18"]
+
+[node name="Area2D" type="Area2D" parent="map/41012/Node2D18"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41012/Node2D18/Area2D"]
+
+[node name="Node2D19" type="Node2D" parent="map/41012"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41012/Node2D19"]
+
+[node name="Area2D" type="Area2D" parent="map/41012/Node2D19"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41012/Node2D19/Area2D"]
+
+[node name="Node2D20" type="Node2D" parent="map/41012"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41012/Node2D20"]
+
+[node name="Area2D" type="Area2D" parent="map/41012/Node2D20"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41012/Node2D20/Area2D"]
+
+[node name="Node2D21" type="Node2D" parent="map/41012"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41012/Node2D21"]
+
+[node name="Area2D" type="Area2D" parent="map/41012/Node2D21"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41012/Node2D21/Area2D"]
+
+[node name="Node2D22" type="Node2D" parent="map/41012"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41012/Node2D22"]
+
+[node name="Area2D" type="Area2D" parent="map/41012/Node2D22"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41012/Node2D22/Area2D"]
+
+[node name="Node2D23" type="Node2D" parent="map/41012"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41012/Node2D23"]
+
+[node name="Area2D" type="Area2D" parent="map/41012/Node2D23"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41012/Node2D23/Area2D"]
+
+[node name="Node2D24" type="Node2D" parent="map/41012"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41012/Node2D24"]
+
+[node name="Area2D" type="Area2D" parent="map/41012/Node2D24"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41012/Node2D24/Area2D"]
+
+[node name="Node2D25" type="Node2D" parent="map/41012"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41012/Node2D25"]
+
+[node name="Area2D" type="Area2D" parent="map/41012/Node2D25"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41012/Node2D25/Area2D"]
+
+[node name="Node2D26" type="Node2D" parent="map/41012"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41012/Node2D26"]
+
+[node name="Area2D" type="Area2D" parent="map/41012/Node2D26"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41012/Node2D26/Area2D"]
+
+[node name="Node2D27" type="Node2D" parent="map/41012"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41012/Node2D27"]
+
+[node name="Area2D" type="Area2D" parent="map/41012/Node2D27"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41012/Node2D27/Area2D"]
+
+[node name="Node2D28" type="Node2D" parent="map/41012"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41012/Node2D28"]
+
+[node name="Area2D" type="Area2D" parent="map/41012/Node2D28"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41012/Node2D28/Area2D"]
+
+[node name="Node2D29" type="Node2D" parent="map/41012"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41012/Node2D29"]
+
+[node name="Area2D" type="Area2D" parent="map/41012/Node2D29"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41012/Node2D29/Area2D"]
+
+[node name="Node2D30" type="Node2D" parent="map/41012"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41012/Node2D30"]
+
+[node name="Area2D" type="Area2D" parent="map/41012/Node2D30"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41012/Node2D30/Area2D"]
+
+[node name="Node2D31" type="Node2D" parent="map/41012"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41012/Node2D31"]
+
+[node name="Area2D" type="Area2D" parent="map/41012/Node2D31"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41012/Node2D31/Area2D"]
+
 [node name="41097" type="Node2D" parent="map"]
 
 [node name="barnum_lane" type="Node2D" parent="map/41097"]
@@ -1151,6 +1418,7 @@ texture = ExtResource("65_wfwgp")
 [node name="barnum_lane_area" type="Area2D" parent="map/41097/barnum_lane"]
 
 [node name="barnum_lane_shape" type="CollisionPolygon2D" parent="map/41097/barnum_lane/barnum_lane_area"]
+polygon = PackedVector2Array(-319, 613, -262, 554, -267, 549, -323, 610)
 
 [node name="deming_avenue" type="Node2D" parent="map/41097"]
 
@@ -1190,7 +1458,7 @@ polygon = PackedVector2Array(-377, 544, -373, 548, -362, 536, -367, 533)
 
 [node name="kling_drive" type="Node2D" parent="map/41097"]
 
-[node name="kling_drive_sprtie" type="Sprite2D" parent="map/41097/kling_drive"]
+[node name="kling_drive_sprite" type="Sprite2D" parent="map/41097/kling_drive"]
 position = Vector2(-352, 460)
 scale = Vector2(0.36, 0.36)
 texture = ExtResource("69_tsotc")
@@ -1210,6 +1478,7 @@ texture = ExtResource("70_n507e")
 [node name="lincolnia_road_area" type="Area2D" parent="map/41097/lincolnia_road"]
 
 [node name="lincolnia_road_shape" type="CollisionPolygon2D" parent="map/41097/lincolnia_road/lincolnia_road_area"]
+polygon = PackedVector2Array(-717, 162, -722, 153, -718, 150, -649, 229, -632, 242, -599, 267, -593, 276, -588, 276, -550, 309, -530, 327, -517, 340, -515, 346, -512, 346, -495, 367, -489, 375, -487, 378, -468, 397, -456, 406, -450, 414, -440, 434, -433, 448, -432, 455, -430, 456, -405, 505, -382, 552, -377, 563, -370, 571, -369, 575, -363, 575, -330, 608, -318, 622, -297, 643, -279, 661, -256, 681, -245, 694, -235, 697, -183, 669, -179, 674, -232, 704, -245, 703, -253, 694, -263, 683, -285, 664, -297, 652, -315, 633, -339, 608, -366, 584, -382, 567, -407, 513, -430, 466, -451, 424, -460, 410, -479, 396, -493, 378, -513, 351, -560, 308, -586, 287, -616, 263, -641, 245, -654, 234)
 
 [node name="meeting_house_way" type="Node2D" parent="map/41097"]
 
@@ -1221,6 +1490,7 @@ texture = ExtResource("71_oqty4")
 [node name="meeting_house_way_area" type="Area2D" parent="map/41097/meeting_house_way"]
 
 [node name="meeting_house_way_shape" type="CollisionPolygon2D" parent="map/41097/meeting_house_way/meeting_house_way_area"]
+polygon = PackedVector2Array(-391, 565, -383, 565, -386, 559, -410, 560, -413, 562, -413, 570, -383, 581, -383, 575, -407, 567, -407, 565)
 
 [node name="north_beauregard_street" type="Node2D" parent="map/41097"]
 
@@ -1232,6 +1502,7 @@ texture = ExtResource("72_58wlg")
 [node name="north_beauregard_street_area" type="Area2D" parent="map/41097/north_beauregard_street"]
 
 [node name="north_beauregard_street_shape" type="CollisionPolygon2D" parent="map/41097/north_beauregard_street/north_beauregard_street_area"]
+polygon = PackedVector2Array(-368, 630, -357, 625, -344, 622, -330, 627, -319, 637, -308, 642, -290, 643, -272, 638, -259, 625, -245, 614, -236, 610, -213, 596, -195, 583, -182, 568, -172, 548, -166, 535, -153, 520, -144, 510, 16, 399, 29, 383, 39, 365, 48, 339, 60, 307, 71, 283, 83, 268, 100, 251, 117, 242, 140, 234, 170, 229, 241, 209, 260, 194, 275, 175, 285, 159, 299, 132, 312, 118, 334, 100, 366, 81, 385, 65, 406, 38, 417, 21, 424, 7, 438, -3, 451, -8, 441, -19, 430, -13, 414, 2, 402, 18, 383, 39, 364, 59, 357, 65, 329, 84, 311, 94, 298, 109, 286, 126, 270, 155, 259, 174, 243, 189, 229, 198, 199, 210, 160, 216, 133, 222, 111, 229, 94, 238, 78, 250, 60, 273, 50, 290, 41, 315, 36, 333, 28, 356, 18, 373, -2.08165e-12, 393, -12, 401, -131, 483, -161, 507, -176, 522, -186, 539, -192, 554, -201, 569, -211, 579, -230, 586, -245, 594, -257, 603, -267, 612, -280, 625, -288, 630, -295, 631, -305, 629, -313, 624, -318, 618, -343, 608, -368, 615)
 
 [node name="north_chambliss_street" type="Node2D" parent="map/41097"]
 
@@ -1243,6 +1514,7 @@ texture = ExtResource("73_uchf8")
 [node name="north_chambliss_street_area" type="Area2D" parent="map/41097/north_chambliss_street"]
 
 [node name="north_chambliss_street_shape" type="CollisionPolygon2D" parent="map/41097/north_chambliss_street/north_chambliss_street_area"]
+polygon = PackedVector2Array(-385, 676, -376, 680, -369, 611, -367, 593, -366, 580, -363, 570, -357, 563, -347, 550, -342, 543, -336, 531, -330, 509, -323, 493, -317, 480, -306, 474, -293, 472, -282, 469, -269, 460, -251, 448, -244, 440, -209, 357, -202, 324, -208, 323, -211, 333, -214, 353, -251, 439, -260, 447, -269, 452, -279, 460, -290, 465, -302, 468, -311, 470, -319, 475, -326, 482, -331, 492, -346, 541, -369, 567, -371, 575, -375, 595)
 
 [node name="north_morgan_street" type="Node2D" parent="map/41097"]
 
@@ -1254,6 +1526,7 @@ texture = ExtResource("74_ah62k")
 [node name="north_morgan_street_area" type="Area2D" parent="map/41097/north_morgan_street"]
 
 [node name="north_morgan_street_shape" type="CollisionPolygon2D" parent="map/41097/north_morgan_street/north_morgan_street_area"]
+polygon = PackedVector2Array(-331, 513, -302, 522, -293, 520, -241, 477, -226, 478, -218, 479, -144, 476, -132, 484, -128, 480, -143, 470, -221, 473, -241, 470, -250, 473, -299, 516, -328, 507)
 
 [node name="rynex_drive" type="Node2D" parent="map/41097"]
 
@@ -1265,6 +1538,7 @@ texture = ExtResource("75_om3r1")
 [node name="rynex_drive_area" type="Area2D" parent="map/41097/rynex_drive"]
 
 [node name="rynex_drive_shape" type="CollisionPolygon2D" parent="map/41097/rynex_drive/rynex_drive_area"]
+polygon = PackedVector2Array(-372, 517, -375, 511, -365, 504, -351, 464, -351, 459, -336, 441, -327, 424, -284, 385, -278, 368, -272, 370, -279, 388, -322, 428, -330, 445, -344, 460, -359, 508)
 
 [node name="shackleford_terrace" type="Node2D" parent="map/41097"]
 
@@ -1276,6 +1550,7 @@ texture = ExtResource("76_ihpt2")
 [node name="shackleford_terrace_area" type="Area2D" parent="map/41097/shackleford_terrace"]
 
 [node name="shackleford_terrace_shape" type="CollisionPolygon2D" parent="map/41097/shackleford_terrace/shackleford_terrace_area"]
+polygon = PackedVector2Array(-381, 643, -380, 636, -405, 634, -403, 620, -384, 624, -380, 622, -380, 617, -390, 617, -407, 614, -410, 639)
 
 [node name="station" type="Sprite2D" parent="map"]
 position = Vector2(-290, -129)
@@ -1313,110 +1588,110 @@ libraries = {
 [connection signal="pressed" from="CanvasLayer/exit" to="." method="_on_exit_pressed"]
 [connection signal="mouse_entered" from="map/41000/carey_park_lane/carey_park_lane_area" to="." method="_on_carey_park_lane_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/carey_park_lane/carey_park_lane_area" to="." method="_on_carey_park_lane_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/madison_watch_way/madison_watch_way_area" to="." method="_on_mww_area_mouse_entered"]
 [connection signal="mouse_entered" from="map/41000/madison_watch_way/madison_watch_way_area" to="." method="_on_madison_watch_way_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/madison_watch_way/madison_watch_way_area" to="." method="_on_mww_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/madison_watch_way/madison_watch_way_area" to="." method="_on_mww_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/madison_watch_way/madison_watch_way_area" to="." method="_on_madison_watch_way_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/signal_knob_court/signal_knob_court_area" to="." method="_on_skc_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/madison_watch_way/madison_watch_way_area" to="." method="_on_mww_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/signal_knob_court/signal_knob_court_area" to="." method="_on_signal_knob_court_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/signal_knob_court/signal_knob_court_area" to="." method="_on_skc_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/signal_knob_court/signal_knob_court_area" to="." method="_on_skc_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/signal_knob_court/signal_knob_court_area" to="." method="_on_signal_knob_court_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/powell_lane/powell_lane_area" to="." method="_on_pl_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/signal_knob_court/signal_knob_court_area" to="." method="_on_skc_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/powell_lane/powell_lane_area" to="." method="_on_powell_lane_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/powell_lane/powell_lane_area" to="." method="_on_pl_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/powell_lane/powell_lane_area" to="." method="_on_pl_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/powell_lane/powell_lane_area" to="." method="_on_powell_lane_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/pinetree_terrace/pinetree_terrace_area" to="." method="_on_pt_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/powell_lane/powell_lane_area" to="." method="_on_pl_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/pinetree_terrace/pinetree_terrace_area" to="." method="_on_pinetree_terrace_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/pinetree_terrace/pinetree_terrace_area" to="." method="_on_pt_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/pinetree_terrace/pinetree_terrace_area" to="." method="_on_pt_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/pinetree_terrace/pinetree_terrace_area" to="." method="_on_pinetree_terrace_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/madison_view_lane/madison_view_lane_area" to="." method="_on_mvl_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/pinetree_terrace/pinetree_terrace_area" to="." method="_on_pt_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/madison_view_lane/madison_view_lane_area" to="." method="_on_madison_view_lane_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/madison_view_lane/madison_view_lane_area" to="." method="_on_mvl_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/madison_view_lane/madison_view_lane_area" to="." method="_on_mvl_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/madison_view_lane/madison_view_lane_area" to="." method="_on_madison_view_lane_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/nevius_street/nevius_street_area" to="." method="_on_ns_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/madison_view_lane/madison_view_lane_area" to="." method="_on_mvl_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/nevius_street/nevius_street_area" to="." method="_on_nevius_street_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/nevius_street/nevius_street_area" to="." method="_on_ns_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/nevius_street/nevius_street_area" to="." method="_on_ns_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/nevius_street/nevius_street_area" to="." method="_on_nevius_street_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/marshall_drive/marshall_drive_area" to="." method="_on_md_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/nevius_street/nevius_street_area" to="." method="_on_ns_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/marshall_drive/marshall_drive_area" to="." method="_on_marshall_drive_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/marshall_drive/marshall_drive_area" to="." method="_on_md_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/marshall_drive/marshall_drive_area" to="." method="_on_md_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/marshall_drive/marshall_drive_area" to="." method="_on_marshall_drive_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/steppes_court/steppes_court_area" to="." method="_on_sc_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/marshall_drive/marshall_drive_area" to="." method="_on_md_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/steppes_court/steppes_court_area" to="." method="_on_steppes_court_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/steppes_court/steppes_court_area" to="." method="_on_sc_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/steppes_court/steppes_court_area" to="." method="_on_sc_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/steppes_court/steppes_court_area" to="." method="_on_steppes_court_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/madison_point_court/madison_point_court_area" to="." method="_on_mpc_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/steppes_court/steppes_court_area" to="." method="_on_sc_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/madison_point_court/madison_point_court_area" to="." method="_on_madison_point_court_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/madison_point_court/madison_point_court_area" to="." method="_on_mpc_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/madison_point_court/madison_point_court_area" to="." method="_on_mpc_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/madison_point_court/madison_point_court_area" to="." method="_on_madison_point_court_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/madison_park_drive/madison_park_drive_area" to="." method="_on_mpd_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/madison_point_court/madison_point_court_area" to="." method="_on_mpc_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/madison_park_drive/madison_park_drive_area" to="." method="_on_madison_park_drive_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/madison_park_drive/madison_park_drive_area" to="." method="_on_mpd_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/madison_park_drive/madison_park_drive_area" to="." method="_on_mpd_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/madison_park_drive/madison_park_drive_area" to="." method="_on_madison_park_drive_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/madison_overlook_court/madison_overlook_court_area" to="." method="_on_moc_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/madison_park_drive/madison_park_drive_area" to="." method="_on_mpd_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/madison_overlook_court/madison_overlook_court_area" to="." method="_on_madison_overlook_court_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/madison_overlook_court/madison_overlook_court_area" to="." method="_on_moc_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/madison_overlook_court/madison_overlook_court_area" to="." method="_on_moc_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/madison_overlook_court/madison_overlook_court_area" to="." method="_on_madison_overlook_court_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/madison_lane/madison_lane_area" to="." method="_on_ml_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/madison_overlook_court/madison_overlook_court_area" to="." method="_on_moc_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/madison_lane/madison_lane_area" to="." method="_on_madison_lane_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/madison_lane/madison_lane_area" to="." method="_on_ml_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/madison_lane/madison_lane_area" to="." method="_on_ml_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/madison_lane/madison_lane_area" to="." method="_on_madison_lane_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/madison_crest_court/madison_crest_court_area" to="." method="_on_mcc_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/madison_lane/madison_lane_area" to="." method="_on_ml_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/madison_crest_court/madison_crest_court_area" to="." method="_on_madison_crest_court_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/madison_crest_court/madison_crest_court_area" to="." method="_on_mcc_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/madison_crest_court/madison_crest_court_area" to="." method="_on_mcc_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/madison_crest_court/madison_crest_court_area" to="." method="_on_madison_crest_court_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/jefferson_hill_court/jefferson_hill_court_area" to="." method="_on_jhc_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/madison_crest_court/madison_crest_court_area" to="." method="_on_mcc_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/jefferson_hill_court/jefferson_hill_court_area" to="." method="_on_jefferson_hill_court_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/jefferson_hill_court/jefferson_hill_court_area" to="." method="_on_jhc_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/jefferson_hill_court/jefferson_hill_court_area" to="." method="_on_jhc_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/jefferson_hill_court/jefferson_hill_court_area" to="." method="_on_jefferson_hill_court_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/ambrose_hills_road/ambrose_hills_road_area" to="." method="_on_ahr_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/jefferson_hill_court/jefferson_hill_court_area" to="." method="_on_jhc_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/ambrose_hills_road/ambrose_hills_road_area" to="." method="_on_ambrose_hills_road_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/ambrose_hills_road/ambrose_hills_road_area" to="." method="_on_ahr_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/ambrose_hills_road/ambrose_hills_road_area" to="." method="_on_ahr_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/ambrose_hills_road/ambrose_hills_road_area" to="." method="_on_ambrose_hills_road_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/beachway_drive/beachway_drive_area" to="." method="_on_bd_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/ambrose_hills_road/ambrose_hills_road_area" to="." method="_on_ahr_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/beachway_drive/beachway_drive_area" to="." method="_on_beachway_drive_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/beachway_drive/beachway_drive_area" to="." method="_on_bd_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/beachway_drive/beachway_drive_area" to="." method="_on_bd_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/beachway_drive/beachway_drive_area" to="." method="_on_beachway_drive_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/blair_road/blair_road_area" to="." method="_on_br_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/beachway_drive/beachway_drive_area" to="." method="_on_bd_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/blair_road/blair_road_area" to="." method="_on_blair_road_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/blair_road/blair_road_area" to="." method="_on_br_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/blair_road/blair_road_area" to="." method="_on_br_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/blair_road/blair_road_area" to="." method="_on_blair_road_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/boat_dock_drive/boat_dock_drive_area" to="." method="_on_bdd_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/blair_road/blair_road_area" to="." method="_on_br_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/boat_dock_drive/boat_dock_drive_area" to="." method="_on_boat_dock_drive_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/boat_dock_drive/boat_dock_drive_area" to="." method="_on_bdd_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/boat_dock_drive/boat_dock_drive_area" to="." method="_on_bdd_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/boat_dock_drive/boat_dock_drive_area" to="." method="_on_boat_dock_drive_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/duff_drive/duff_drive_area" to="." method="_on_dd_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/boat_dock_drive/boat_dock_drive_area" to="." method="_on_bdd_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/duff_drive/duff_drive_area" to="." method="_on_duff_drive_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/duff_drive/duff_drive_area" to="." method="_on_dd_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/duff_drive/duff_drive_area" to="." method="_on_dd_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/duff_drive/duff_drive_area" to="." method="_on_duff_drive_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/edgewater_drive/edgewater_drive_area" to="." method="_on_ed_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/duff_drive/duff_drive_area" to="." method="_on_dd_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/edgewater_drive/edgewater_drive_area" to="." method="_on_edgewater_drive_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/edgewater_drive/edgewater_drive_area" to="." method="_on_ed_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/edgewater_drive/edgewater_drive_area" to="." method="_on_ed_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/edgewater_drive/edgewater_drive_area" to="." method="_on_edgewater_drive_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/glen_carlyn_drive/glen_carlyn_drive_area" to="." method="_on_gcd_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/edgewater_drive/edgewater_drive_area" to="." method="_on_ed_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/glen_carlyn_drive/glen_carlyn_drive_area" to="." method="_on_glen_carlyn_drive_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/glen_carlyn_drive/glen_carlyn_drive_area" to="." method="_on_gcd_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/glen_carlyn_drive/glen_carlyn_drive_area" to="." method="_on_gcd_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/glen_carlyn_drive/glen_carlyn_drive_area" to="." method="_on_glen_carlyn_drive_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/gordon_street/gordon_street_area" to="." method="_on_gs_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/glen_carlyn_drive/glen_carlyn_drive_area" to="." method="_on_gcd_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/gordon_street/gordon_street_area" to="." method="_on_gordon_street_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/gordon_street/gordon_street_area" to="." method="_on_gs_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/gordon_street/gordon_street_area" to="." method="_on_gs_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/gordon_street/gordon_street_area" to="." method="_on_gordon_street_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/greentree_drive/greentree_drive_area" to="." method="_on_gd_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/gordon_street/gordon_street_area" to="." method="_on_gs_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/greentree_drive/greentree_drive_area" to="." method="_on_greentree_drive_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/greentree_drive/greentree_drive_area" to="." method="_on_gd_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/greentree_drive/greentree_drive_area" to="." method="_on_gd_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/greentree_drive/greentree_drive_area" to="." method="_on_greentree_drive_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/lake_street/lake_street_area" to="." method="_on_ls_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/greentree_drive/greentree_drive_area" to="." method="_on_gd_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/lake_street/lake_street_area" to="." method="_on_lake_street_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/lake_street/lake_street_area" to="." method="_on_ls_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/lake_street/lake_street_area" to="." method="_on_ls_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/lake_street/lake_street_area" to="." method="_on_lake_street_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/malibu_circle/malibu_circle_area" to="." method="_on_mc_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/lake_street/lake_street_area" to="." method="_on_ls_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/malibu_circle/malibu_circle_area" to="." method="_on_malibu_circle_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/malibu_circle/malibu_circle_area" to="." method="_on_mc_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/malibu_circle/malibu_circle_area" to="." method="_on_mc_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/malibu_circle/malibu_circle_area" to="." method="_on_malibu_circle_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/mansfield_road/mansfield_road_area" to="." method="_on_mr_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/malibu_circle/malibu_circle_area" to="." method="_on_mc_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/mansfield_road/mansfield_road_area" to="." method="_on_mansfield_road_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/mansfield_road/mansfield_road_area" to="." method="_on_mr_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/mansfield_road/mansfield_road_area" to="." method="_on_mr_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/mansfield_road/mansfield_road_area" to="." method="_on_mansfield_road_area_mouse_exited"]
+[connection signal="mouse_exited" from="map/41000/mansfield_road/mansfield_road_area" to="." method="_on_mr_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41008/argyle_drive/argyle_drive_area" to="." method="_on_argyle_drive_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41008/argyle_drive/argyle_drive_area" to="." method="_on_argyle_drive_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41008/aura_court/aura_court_area" to="." method="_on_aura_court_area_mouse_entered"]
@@ -1483,22 +1758,28 @@ libraries = {
 [connection signal="mouse_exited" from="map/41008/wilkins_drive/wilkins_drive_area" to="." method="_on_wilkins_drive_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41008/tyler_street/tyler_street_area" to="." method="_on_tyler_street_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41008/tyler_street/tyler_street_area" to="." method="_on_tyler_street_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41008/glen_carlyn_drive/glen_carlyn_drive_area" to="." method="_on_gcd_area_mouse_entered"]
 [connection signal="mouse_entered" from="map/41008/glen_carlyn_drive/glen_carlyn_drive_area" to="." method="_on_glen_carlyn_drive_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41008/glen_carlyn_drive/glen_carlyn_drive_area" to="." method="_on_gcd_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41008/glen_carlyn_drive/glen_carlyn_drive_area" to="." method="_on_gcd_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41008/glen_carlyn_drive/glen_carlyn_drive_area" to="." method="_on_glen_carlyn_drive_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41008/nevius_street/nevius_street_area" to="." method="_on_ns_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41008/glen_carlyn_drive/glen_carlyn_drive_area" to="." method="_on_gcd_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41008/nevius_street/nevius_street_area" to="." method="_on_nevius_street_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41008/nevius_street/nevius_street_area" to="." method="_on_ns_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41008/nevius_street/nevius_street_area" to="." method="_on_ns_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41008/nevius_street/nevius_street_area" to="." method="_on_nevius_street_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41008/mansfield_road/mansfield_road_area" to="." method="_on_mr_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41008/nevius_street/nevius_street_area" to="." method="_on_ns_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41008/mansfield_road/mansfield_road_area" to="." method="_on_mansfield_road_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41008/mansfield_road/mansfield_road_area" to="." method="_on_mr_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41008/mansfield_road/mansfield_road_area" to="." method="_on_mr_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41008/mansfield_road/mansfield_road_area" to="." method="_on_mansfield_road_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41008/lake_street/lake_street_area" to="." method="_on_ls_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41008/mansfield_road/mansfield_road_area" to="." method="_on_mr_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41008/lake_street/lake_street_area" to="." method="_on_lake_street_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41008/lake_street/lake_street_area" to="." method="_on_ls_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41008/lake_street/lake_street_area" to="." method="_on_ls_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41008/lake_street/lake_street_area" to="." method="_on_lake_street_area_mouse_exited"]
+[connection signal="mouse_exited" from="map/41008/lake_street/lake_street_area" to="." method="_on_ls_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41012/arcadia_road/arcadia_road_area" to="." method="_on_arcadia_road_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41012/arcadia_road/arcadia_road_area" to="." method="_on_arcadia_road_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41012/ashwood_place/ashwood_place_area" to="." method="_on_ashwood_place_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41012/ashwood_place/ashwood_place_area" to="." method="_on_ashwood_place_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41012/barcroft_mews_drive/barcroft_mews_drive_area" to="." method="_on_barcroft_mews_drive_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41012/barcroft_mews_drive/barcroft_mews_drive_area" to="." method="_on_barcroft_mews_drive_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41097/barnum_lane/barnum_lane_area" to="." method="_on_barnum_lane_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41097/barnum_lane/barnum_lane_area" to="." method="_on_barnum_lane_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41097/deming_avenue/deming_avenue_area" to="." method="_on_deming_avenue_area_mouse_entered"]

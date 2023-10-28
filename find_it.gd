@@ -106,6 +106,7 @@ func check_answer(street):
 	selected_street = ''
 		
 func highlight_street(street_name,box,vis):
+	print(street_name,box,vis)
 	if vis == true:
 		highlighted_street += street_name
 	else: 
@@ -514,14 +515,14 @@ func _on_north_beauregard_street_area_mouse_exited():
 	highlight_street('north_beauregard_street','41097',false)
 
 func _on_north_chambliss_street_area_mouse_entered():
-	highlight_street('north_chambliss','41097',true)
+	highlight_street('north_chambliss_street','41097',true)
 func _on_north_chambliss_street_area_mouse_exited():
-	highlight_street('north_chambliss','41097',false)
+	highlight_street('north_chambliss_street','41097',false)
 
 func _on_north_morgan_street_area_mouse_entered():
-	highlight_street('north_morgan','41097',true)
+	highlight_street('north_morgan_street','41097',true)
 func _on_north_morgan_street_area_mouse_exited():
-	highlight_street('north_morgan','41097',false)
+	highlight_street('north_morgan_street','41097',false)
 
 func _on_rynex_drive_area_mouse_entered():
 	highlight_street('rynex_drive','41097',true)
@@ -532,3 +533,23 @@ func _on_shackleford_terrace_area_mouse_entered():
 	highlight_street('shackleford_terrace','41097',true)
 func _on_shackleford_terrace_area_mouse_exited():
 	highlight_street('shackleford_terrace','41097',false)
+
+#############################################################
+#############################################################
+#############################################################
+
+#41012#
+func _on_arcadia_road_area_mouse_entered():
+	highlight_street('arcadia_road','41012',true)
+func _on_arcadia_road_area_mouse_exited():
+	highlight_street('arcadia_road','41012',false)
+
+func _on_ashwood_place_area_mouse_entered():
+	highlight_street('ashwood_place','41012',true)
+func _on_ashwood_place_area_mouse_exited():
+	highlight_street('ashwood_place','41012',false)
+	
+func _on_barcroft_mews_drive_area_mouse_entered():
+	highlight_street('barcroft_mews_drive','41012',true)
+func _on_barcroft_mews_drive_area_mouse_exited():
+	highlight_street('barcroft_mews_drive','41012',false)
