@@ -118,6 +118,12 @@ func highlight_street(street_name,box,vis):
 					
 func _on_timer_timeout():
 	pass
+
+
+
+
+func _on_exit_pressed():
+	get_tree().change_scene_to_file("res://menu.tscn")
 	
 
 	
@@ -460,7 +466,69 @@ func _on_wilkins_drive_area_mouse_entered():
 	highlight_street('wilkins_drive','41008',true)
 func _on_wilkins_drive_area_mouse_exited():
 	highlight_street('wilkins_drive','41008',false)
+	
+#############################################################
+#############################################################
+#############################################################
 
+#41097#
 
-func _on_exit_pressed():
-	get_tree().change_scene_to_file("res://menu.tscn")
+func _on_barnum_lane_area_mouse_entered():
+	highlight_street('barnum_lane','41097',true)
+func _on_barnum_lane_area_mouse_exited():
+	highlight_street('barnum_lane','41097',false)
+	
+func _on_deming_avenue_area_mouse_entered():
+	highlight_street('deming_avenue','41097',true)
+func _on_deming_avenue_area_mouse_exited():
+	highlight_street('deming_avenue','41097',false)
+	
+func _on_gloucester_road_area_mouse_entered():
+	highlight_street('gloucester_road','41097',true)
+func _on_gloucester_road_area_mouse_exited():
+	highlight_street('gloucester_road','41097',false)
+
+func _on_joanne_drive_area_mouse_entered():
+	highlight_street('joanne_drive','41097',true)
+func _on_joanne_drive_area_mouse_exited():
+	highlight_street('joanne_drive','41097',false)
+
+func _on_kling_drive_area_mouse_entered():
+	highlight_street('kling_drive','41097',true)
+func _on_kling_drive_area_mouse_exited():
+	highlight_street('kling_drive','41097',false)
+	
+func _on_lincolnia_road_area_mouse_entered():
+	highlight_street('lincolnia_road','41097',true)
+func _on_lincolnia_road_area_mouse_exited():
+	highlight_street('lincolnia_road','41097',false)
+
+func _on_meeting_house_way_area_mouse_entered():
+	highlight_street('meeting_house_way','41097',true)
+func _on_meeting_house_way_area_mouse_exited():
+	highlight_street('meeting_house_way','41097',false)
+
+func _on_north_beauregard_street_area_mouse_entered():
+	highlight_street('north_beauregard_street','41097',true)
+func _on_north_beauregard_street_area_mouse_exited():
+	highlight_street('north_beauregard_street','41097',false)
+
+func _on_north_chambliss_street_area_mouse_entered():
+	highlight_street('north_chambliss','41097',true)
+func _on_north_chambliss_street_area_mouse_exited():
+	highlight_street('north_chambliss','41097',false)
+
+func _on_north_morgan_street_area_mouse_entered():
+	highlight_street('north_morgan','41097',true)
+func _on_north_morgan_street_area_mouse_exited():
+	highlight_street('north_morgan','41097',false)
+
+func _on_rynex_drive_area_mouse_entered():
+	highlight_street('rynex_drive','41097',true)
+func _on_rynex_drive_area_mouse_exited():
+	highlight_street('rynex_drive','41097',false)
+
+func _on_shackleford_terrace_area_mouse_entered():
+	highlight_street('shackleford_terrace','41097',true)
+func _on_shackleford_terrace_area_mouse_exited():
+	highlight_street('shackleford_terrace','41097',false)

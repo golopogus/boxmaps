@@ -1,4 +1,4 @@
-[gd_scene load_steps=75 format=3 uid="uid://d14qctc77xo60"]
+[gd_scene load_steps=87 format=3 uid="uid://d14qctc77xo60"]
 
 [ext_resource type="Script" path="res://find_it.gd" id="1_p23o3"]
 [ext_resource type="Texture2D" uid="uid://ch7hqba3bm6gh" path="res://black.png" id="2_5tsnp"]
@@ -65,6 +65,18 @@
 [ext_resource type="Texture2D" uid="uid://bghvn5qs7w0iu" path="res://streets/41008/vista_drive.png" id="62_byv1r"]
 [ext_resource type="Texture2D" uid="uid://dw8gae8sxkuxy" path="res://streets/41008/washington_drive.png" id="63_pdfi5"]
 [ext_resource type="Texture2D" uid="uid://dda7jovyrsy47" path="res://streets/41008/wilkins_drive.png" id="64_nskvg"]
+[ext_resource type="Texture2D" uid="uid://yslnieyhaksa" path="res://streets/41097/barnum_lane.png" id="65_wfwgp"]
+[ext_resource type="Texture2D" uid="uid://b5xxlbvlbu2re" path="res://streets/41097/deming_avenue.png" id="66_chv7p"]
+[ext_resource type="Texture2D" uid="uid://cyklcroyghby1" path="res://streets/41097/gloucester_road.png" id="67_susig"]
+[ext_resource type="Texture2D" uid="uid://t6ibl3unevjv" path="res://streets/41097/joanne_drive.png" id="68_pgcps"]
+[ext_resource type="Texture2D" uid="uid://bjvjf5bqccik3" path="res://streets/41097/kling_drive.png" id="69_tsotc"]
+[ext_resource type="Texture2D" uid="uid://bjgs8ncn1p3v5" path="res://streets/41097/lincolnia_road.png" id="70_n507e"]
+[ext_resource type="Texture2D" uid="uid://idhfi0u814ub" path="res://streets/41097/meeting_house_way.png" id="71_oqty4"]
+[ext_resource type="Texture2D" uid="uid://d1igw8gparbjh" path="res://streets/41097/north_beauregard_street.png" id="72_58wlg"]
+[ext_resource type="Texture2D" uid="uid://bcs1ounfsv44e" path="res://streets/41097/north_chambliss_street.png" id="73_uchf8"]
+[ext_resource type="Texture2D" uid="uid://6fr2up0it2lj" path="res://streets/41097/north_morgan_street.png" id="74_ah62k"]
+[ext_resource type="Texture2D" uid="uid://b7p41kfcnllxm" path="res://streets/41097/rynex_drive.png" id="75_om3r1"]
+[ext_resource type="Texture2D" uid="uid://mtece3h3u52a" path="res://streets/41097/shackleford_terrace.png" id="76_ihpt2"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_usb5i"]
 bg_color = Color(1, 1, 0.227451, 1)
@@ -1127,6 +1139,144 @@ position = Vector2(-224, -247)
 scale = Vector2(0.36, 0.36)
 texture = ExtResource("29_g4wsb")
 
+[node name="41097" type="Node2D" parent="map"]
+
+[node name="barnum_lane" type="Node2D" parent="map/41097"]
+
+[node name="barnum_lane_sprite" type="Sprite2D" parent="map/41097/barnum_lane"]
+position = Vector2(-293, 582)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("65_wfwgp")
+
+[node name="barnum_lane_area" type="Area2D" parent="map/41097/barnum_lane"]
+
+[node name="barnum_lane_shape" type="CollisionPolygon2D" parent="map/41097/barnum_lane/barnum_lane_area"]
+
+[node name="deming_avenue" type="Node2D" parent="map/41097"]
+
+[node name="deming_avenue_sprite" type="Sprite2D" parent="map/41097/deming_avenue"]
+position = Vector2(-312, 565)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("66_chv7p")
+
+[node name="deming_avenue_area" type="Area2D" parent="map/41097/deming_avenue"]
+
+[node name="deming_avenue_shape" type="CollisionPolygon2D" parent="map/41097/deming_avenue/deming_avenue_area"]
+polygon = PackedVector2Array(-335, 600, -329, 585, -282, 533, -287, 530, -337, 582, -341, 596, -336, 600)
+
+[node name="gloucester_road" type="Node2D" parent="map/41097"]
+
+[node name="gloucester_road_sprite" type="Sprite2D" parent="map/41097/gloucester_road"]
+position = Vector2(-274, 605)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("67_susig")
+
+[node name="gloucester_road_area" type="Area2D" parent="map/41097/gloucester_road"]
+
+[node name="gloucester_road_shape" type="CollisionPolygon2D" parent="map/41097/gloucester_road/gloucester_road_area"]
+polygon = PackedVector2Array(-291, 632, -289, 623, -249, 582, -256, 578, -296, 621, -298, 631, -292, 632)
+
+[node name="joanne_drive" type="Node2D" parent="map/41097"]
+
+[node name="joanne_drive_sprite" type="Sprite2D" parent="map/41097/joanne_drive"]
+position = Vector2(-370, 540)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("68_pgcps")
+
+[node name="joanne_drive_area" type="Area2D" parent="map/41097/joanne_drive"]
+
+[node name="joanne_drive_shape" type="CollisionPolygon2D" parent="map/41097/joanne_drive/joanne_drive_area"]
+polygon = PackedVector2Array(-377, 544, -373, 548, -362, 536, -367, 533)
+
+[node name="kling_drive" type="Node2D" parent="map/41097"]
+
+[node name="kling_drive_sprtie" type="Sprite2D" parent="map/41097/kling_drive"]
+position = Vector2(-352, 460)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("69_tsotc")
+
+[node name="kling_drive_area" type="Area2D" parent="map/41097/kling_drive"]
+
+[node name="kling_drive_shape" type="CollisionPolygon2D" parent="map/41097/kling_drive/kling_drive_area"]
+polygon = PackedVector2Array(-371, 375, -369, 370, -346, 386, -340, 402, -348, 423, -368, 469, -374, 483, -375, 506, -375, 517, -369, 520, -359, 531, -345, 537, -344, 539, -338, 539, -322, 544, -323, 549, -342, 545, -343, 542, -348, 542, -358, 540, -361, 537, -362, 533, -368, 532, -378, 519, -382, 506, -384, 481, -378, 468, -371, 456, -367, 455, -368, 451, -350, 408, -348, 395, -353, 387)
+
+[node name="lincolnia_road" type="Node2D" parent="map/41097"]
+
+[node name="lincolnia_road_sprite" type="Sprite2D" parent="map/41097/lincolnia_road"]
+position = Vector2(-451, 427)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("70_n507e")
+
+[node name="lincolnia_road_area" type="Area2D" parent="map/41097/lincolnia_road"]
+
+[node name="lincolnia_road_shape" type="CollisionPolygon2D" parent="map/41097/lincolnia_road/lincolnia_road_area"]
+
+[node name="meeting_house_way" type="Node2D" parent="map/41097"]
+
+[node name="meeting_house_way_sprite" type="Sprite2D" parent="map/41097/meeting_house_way"]
+position = Vector2(-397, 570)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("71_oqty4")
+
+[node name="meeting_house_way_area" type="Area2D" parent="map/41097/meeting_house_way"]
+
+[node name="meeting_house_way_shape" type="CollisionPolygon2D" parent="map/41097/meeting_house_way/meeting_house_way_area"]
+
+[node name="north_beauregard_street" type="Node2D" parent="map/41097"]
+
+[node name="north_beauregard_street_sprite" type="Sprite2D" parent="map/41097/north_beauregard_street"]
+position = Vector2(40, 312)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("72_58wlg")
+
+[node name="north_beauregard_street_area" type="Area2D" parent="map/41097/north_beauregard_street"]
+
+[node name="north_beauregard_street_shape" type="CollisionPolygon2D" parent="map/41097/north_beauregard_street/north_beauregard_street_area"]
+
+[node name="north_chambliss_street" type="Node2D" parent="map/41097"]
+
+[node name="north_chambliss_street_sprite" type="Sprite2D" parent="map/41097/north_chambliss_street"]
+position = Vector2(-293, 501)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("73_uchf8")
+
+[node name="north_chambliss_street_area" type="Area2D" parent="map/41097/north_chambliss_street"]
+
+[node name="north_chambliss_street_shape" type="CollisionPolygon2D" parent="map/41097/north_chambliss_street/north_chambliss_street_area"]
+
+[node name="north_morgan_street" type="Node2D" parent="map/41097"]
+
+[node name="north_morgan_street_sprite" type="Sprite2D" parent="map/41097/north_morgan_street"]
+position = Vector2(-230, 496)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("74_ah62k")
+
+[node name="north_morgan_street_area" type="Area2D" parent="map/41097/north_morgan_street"]
+
+[node name="north_morgan_street_shape" type="CollisionPolygon2D" parent="map/41097/north_morgan_street/north_morgan_street_area"]
+
+[node name="rynex_drive" type="Node2D" parent="map/41097"]
+
+[node name="rynex_drive_sprite" type="Sprite2D" parent="map/41097/rynex_drive"]
+position = Vector2(-324, 443)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("75_om3r1")
+
+[node name="rynex_drive_area" type="Area2D" parent="map/41097/rynex_drive"]
+
+[node name="rynex_drive_shape" type="CollisionPolygon2D" parent="map/41097/rynex_drive/rynex_drive_area"]
+
+[node name="shackleford_terrace" type="Node2D" parent="map/41097"]
+
+[node name="shackleford_terrace_sprite" type="Sprite2D" parent="map/41097/shackleford_terrace"]
+position = Vector2(-395, 628)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("76_ihpt2")
+
+[node name="shackleford_terrace_area" type="Area2D" parent="map/41097/shackleford_terrace"]
+
+[node name="shackleford_terrace_shape" type="CollisionPolygon2D" parent="map/41097/shackleford_terrace/shackleford_terrace_area"]
+
 [node name="station" type="Sprite2D" parent="map"]
 position = Vector2(-290, -129)
 scale = Vector2(0.1, 0.1)
@@ -1163,110 +1313,110 @@ libraries = {
 [connection signal="pressed" from="CanvasLayer/exit" to="." method="_on_exit_pressed"]
 [connection signal="mouse_entered" from="map/41000/carey_park_lane/carey_park_lane_area" to="." method="_on_carey_park_lane_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/carey_park_lane/carey_park_lane_area" to="." method="_on_carey_park_lane_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/madison_watch_way/madison_watch_way_area" to="." method="_on_madison_watch_way_area_mouse_entered"]
 [connection signal="mouse_entered" from="map/41000/madison_watch_way/madison_watch_way_area" to="." method="_on_mww_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/madison_watch_way/madison_watch_way_area" to="." method="_on_madison_watch_way_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/madison_watch_way/madison_watch_way_area" to="." method="_on_madison_watch_way_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/madison_watch_way/madison_watch_way_area" to="." method="_on_mww_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/signal_knob_court/signal_knob_court_area" to="." method="_on_signal_knob_court_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/madison_watch_way/madison_watch_way_area" to="." method="_on_madison_watch_way_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/signal_knob_court/signal_knob_court_area" to="." method="_on_skc_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/signal_knob_court/signal_knob_court_area" to="." method="_on_signal_knob_court_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/signal_knob_court/signal_knob_court_area" to="." method="_on_signal_knob_court_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/signal_knob_court/signal_knob_court_area" to="." method="_on_skc_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/powell_lane/powell_lane_area" to="." method="_on_powell_lane_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/signal_knob_court/signal_knob_court_area" to="." method="_on_signal_knob_court_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/powell_lane/powell_lane_area" to="." method="_on_pl_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/powell_lane/powell_lane_area" to="." method="_on_powell_lane_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/powell_lane/powell_lane_area" to="." method="_on_powell_lane_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/powell_lane/powell_lane_area" to="." method="_on_pl_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/pinetree_terrace/pinetree_terrace_area" to="." method="_on_pinetree_terrace_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/powell_lane/powell_lane_area" to="." method="_on_powell_lane_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/pinetree_terrace/pinetree_terrace_area" to="." method="_on_pt_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/pinetree_terrace/pinetree_terrace_area" to="." method="_on_pinetree_terrace_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/pinetree_terrace/pinetree_terrace_area" to="." method="_on_pinetree_terrace_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/pinetree_terrace/pinetree_terrace_area" to="." method="_on_pt_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/madison_view_lane/madison_view_lane_area" to="." method="_on_madison_view_lane_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/pinetree_terrace/pinetree_terrace_area" to="." method="_on_pinetree_terrace_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/madison_view_lane/madison_view_lane_area" to="." method="_on_mvl_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/madison_view_lane/madison_view_lane_area" to="." method="_on_madison_view_lane_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/madison_view_lane/madison_view_lane_area" to="." method="_on_madison_view_lane_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/madison_view_lane/madison_view_lane_area" to="." method="_on_mvl_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/nevius_street/nevius_street_area" to="." method="_on_nevius_street_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/madison_view_lane/madison_view_lane_area" to="." method="_on_madison_view_lane_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/nevius_street/nevius_street_area" to="." method="_on_ns_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/nevius_street/nevius_street_area" to="." method="_on_nevius_street_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/nevius_street/nevius_street_area" to="." method="_on_nevius_street_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/nevius_street/nevius_street_area" to="." method="_on_ns_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/marshall_drive/marshall_drive_area" to="." method="_on_marshall_drive_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/nevius_street/nevius_street_area" to="." method="_on_nevius_street_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/marshall_drive/marshall_drive_area" to="." method="_on_md_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/marshall_drive/marshall_drive_area" to="." method="_on_marshall_drive_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/marshall_drive/marshall_drive_area" to="." method="_on_marshall_drive_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/marshall_drive/marshall_drive_area" to="." method="_on_md_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/steppes_court/steppes_court_area" to="." method="_on_steppes_court_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/marshall_drive/marshall_drive_area" to="." method="_on_marshall_drive_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/steppes_court/steppes_court_area" to="." method="_on_sc_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/steppes_court/steppes_court_area" to="." method="_on_steppes_court_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/steppes_court/steppes_court_area" to="." method="_on_steppes_court_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/steppes_court/steppes_court_area" to="." method="_on_sc_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/madison_point_court/madison_point_court_area" to="." method="_on_madison_point_court_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/steppes_court/steppes_court_area" to="." method="_on_steppes_court_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/madison_point_court/madison_point_court_area" to="." method="_on_mpc_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/madison_point_court/madison_point_court_area" to="." method="_on_madison_point_court_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/madison_point_court/madison_point_court_area" to="." method="_on_madison_point_court_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/madison_point_court/madison_point_court_area" to="." method="_on_mpc_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/madison_park_drive/madison_park_drive_area" to="." method="_on_madison_park_drive_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/madison_point_court/madison_point_court_area" to="." method="_on_madison_point_court_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/madison_park_drive/madison_park_drive_area" to="." method="_on_mpd_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/madison_park_drive/madison_park_drive_area" to="." method="_on_madison_park_drive_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/madison_park_drive/madison_park_drive_area" to="." method="_on_madison_park_drive_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/madison_park_drive/madison_park_drive_area" to="." method="_on_mpd_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/madison_overlook_court/madison_overlook_court_area" to="." method="_on_madison_overlook_court_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/madison_park_drive/madison_park_drive_area" to="." method="_on_madison_park_drive_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/madison_overlook_court/madison_overlook_court_area" to="." method="_on_moc_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/madison_overlook_court/madison_overlook_court_area" to="." method="_on_madison_overlook_court_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/madison_overlook_court/madison_overlook_court_area" to="." method="_on_madison_overlook_court_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/madison_overlook_court/madison_overlook_court_area" to="." method="_on_moc_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/madison_lane/madison_lane_area" to="." method="_on_madison_lane_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/madison_overlook_court/madison_overlook_court_area" to="." method="_on_madison_overlook_court_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/madison_lane/madison_lane_area" to="." method="_on_ml_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/madison_lane/madison_lane_area" to="." method="_on_madison_lane_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/madison_lane/madison_lane_area" to="." method="_on_madison_lane_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/madison_lane/madison_lane_area" to="." method="_on_ml_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/madison_crest_court/madison_crest_court_area" to="." method="_on_madison_crest_court_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/madison_lane/madison_lane_area" to="." method="_on_madison_lane_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/madison_crest_court/madison_crest_court_area" to="." method="_on_mcc_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/madison_crest_court/madison_crest_court_area" to="." method="_on_madison_crest_court_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/madison_crest_court/madison_crest_court_area" to="." method="_on_madison_crest_court_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/madison_crest_court/madison_crest_court_area" to="." method="_on_mcc_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/jefferson_hill_court/jefferson_hill_court_area" to="." method="_on_jefferson_hill_court_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/madison_crest_court/madison_crest_court_area" to="." method="_on_madison_crest_court_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/jefferson_hill_court/jefferson_hill_court_area" to="." method="_on_jhc_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/jefferson_hill_court/jefferson_hill_court_area" to="." method="_on_jefferson_hill_court_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/jefferson_hill_court/jefferson_hill_court_area" to="." method="_on_jefferson_hill_court_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/jefferson_hill_court/jefferson_hill_court_area" to="." method="_on_jhc_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/ambrose_hills_road/ambrose_hills_road_area" to="." method="_on_ambrose_hills_road_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/jefferson_hill_court/jefferson_hill_court_area" to="." method="_on_jefferson_hill_court_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/ambrose_hills_road/ambrose_hills_road_area" to="." method="_on_ahr_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/ambrose_hills_road/ambrose_hills_road_area" to="." method="_on_ambrose_hills_road_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/ambrose_hills_road/ambrose_hills_road_area" to="." method="_on_ambrose_hills_road_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/ambrose_hills_road/ambrose_hills_road_area" to="." method="_on_ahr_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/beachway_drive/beachway_drive_area" to="." method="_on_beachway_drive_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/ambrose_hills_road/ambrose_hills_road_area" to="." method="_on_ambrose_hills_road_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/beachway_drive/beachway_drive_area" to="." method="_on_bd_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/beachway_drive/beachway_drive_area" to="." method="_on_beachway_drive_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/beachway_drive/beachway_drive_area" to="." method="_on_beachway_drive_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/beachway_drive/beachway_drive_area" to="." method="_on_bd_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/blair_road/blair_road_area" to="." method="_on_blair_road_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/beachway_drive/beachway_drive_area" to="." method="_on_beachway_drive_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/blair_road/blair_road_area" to="." method="_on_br_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/blair_road/blair_road_area" to="." method="_on_blair_road_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/blair_road/blair_road_area" to="." method="_on_blair_road_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/blair_road/blair_road_area" to="." method="_on_br_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/boat_dock_drive/boat_dock_drive_area" to="." method="_on_boat_dock_drive_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/blair_road/blair_road_area" to="." method="_on_blair_road_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/boat_dock_drive/boat_dock_drive_area" to="." method="_on_bdd_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/boat_dock_drive/boat_dock_drive_area" to="." method="_on_boat_dock_drive_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/boat_dock_drive/boat_dock_drive_area" to="." method="_on_boat_dock_drive_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/boat_dock_drive/boat_dock_drive_area" to="." method="_on_bdd_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/duff_drive/duff_drive_area" to="." method="_on_duff_drive_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/boat_dock_drive/boat_dock_drive_area" to="." method="_on_boat_dock_drive_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/duff_drive/duff_drive_area" to="." method="_on_dd_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/duff_drive/duff_drive_area" to="." method="_on_duff_drive_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/duff_drive/duff_drive_area" to="." method="_on_duff_drive_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/duff_drive/duff_drive_area" to="." method="_on_dd_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/edgewater_drive/edgewater_drive_area" to="." method="_on_edgewater_drive_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/duff_drive/duff_drive_area" to="." method="_on_duff_drive_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/edgewater_drive/edgewater_drive_area" to="." method="_on_ed_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/edgewater_drive/edgewater_drive_area" to="." method="_on_edgewater_drive_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/edgewater_drive/edgewater_drive_area" to="." method="_on_edgewater_drive_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/edgewater_drive/edgewater_drive_area" to="." method="_on_ed_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/glen_carlyn_drive/glen_carlyn_drive_area" to="." method="_on_glen_carlyn_drive_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/edgewater_drive/edgewater_drive_area" to="." method="_on_edgewater_drive_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/glen_carlyn_drive/glen_carlyn_drive_area" to="." method="_on_gcd_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/glen_carlyn_drive/glen_carlyn_drive_area" to="." method="_on_glen_carlyn_drive_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/glen_carlyn_drive/glen_carlyn_drive_area" to="." method="_on_glen_carlyn_drive_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/glen_carlyn_drive/glen_carlyn_drive_area" to="." method="_on_gcd_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/gordon_street/gordon_street_area" to="." method="_on_gordon_street_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/glen_carlyn_drive/glen_carlyn_drive_area" to="." method="_on_glen_carlyn_drive_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/gordon_street/gordon_street_area" to="." method="_on_gs_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/gordon_street/gordon_street_area" to="." method="_on_gordon_street_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/gordon_street/gordon_street_area" to="." method="_on_gordon_street_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/gordon_street/gordon_street_area" to="." method="_on_gs_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/greentree_drive/greentree_drive_area" to="." method="_on_greentree_drive_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/gordon_street/gordon_street_area" to="." method="_on_gordon_street_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/greentree_drive/greentree_drive_area" to="." method="_on_gd_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/greentree_drive/greentree_drive_area" to="." method="_on_greentree_drive_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/greentree_drive/greentree_drive_area" to="." method="_on_greentree_drive_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/greentree_drive/greentree_drive_area" to="." method="_on_gd_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/lake_street/lake_street_area" to="." method="_on_lake_street_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/greentree_drive/greentree_drive_area" to="." method="_on_greentree_drive_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/lake_street/lake_street_area" to="." method="_on_ls_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/lake_street/lake_street_area" to="." method="_on_lake_street_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/lake_street/lake_street_area" to="." method="_on_lake_street_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/lake_street/lake_street_area" to="." method="_on_ls_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/malibu_circle/malibu_circle_area" to="." method="_on_malibu_circle_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/lake_street/lake_street_area" to="." method="_on_lake_street_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/malibu_circle/malibu_circle_area" to="." method="_on_mc_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/malibu_circle/malibu_circle_area" to="." method="_on_malibu_circle_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/malibu_circle/malibu_circle_area" to="." method="_on_malibu_circle_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/malibu_circle/malibu_circle_area" to="." method="_on_mc_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41000/mansfield_road/mansfield_road_area" to="." method="_on_mansfield_road_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41000/malibu_circle/malibu_circle_area" to="." method="_on_malibu_circle_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41000/mansfield_road/mansfield_road_area" to="." method="_on_mr_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41000/mansfield_road/mansfield_road_area" to="." method="_on_mansfield_road_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41000/mansfield_road/mansfield_road_area" to="." method="_on_mansfield_road_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41000/mansfield_road/mansfield_road_area" to="." method="_on_mr_area_mouse_exited"]
+[connection signal="mouse_exited" from="map/41000/mansfield_road/mansfield_road_area" to="." method="_on_mansfield_road_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41008/argyle_drive/argyle_drive_area" to="." method="_on_argyle_drive_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41008/argyle_drive/argyle_drive_area" to="." method="_on_argyle_drive_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41008/aura_court/aura_court_area" to="." method="_on_aura_court_area_mouse_entered"]
@@ -1333,20 +1483,44 @@ libraries = {
 [connection signal="mouse_exited" from="map/41008/wilkins_drive/wilkins_drive_area" to="." method="_on_wilkins_drive_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41008/tyler_street/tyler_street_area" to="." method="_on_tyler_street_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41008/tyler_street/tyler_street_area" to="." method="_on_tyler_street_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41008/glen_carlyn_drive/glen_carlyn_drive_area" to="." method="_on_glen_carlyn_drive_area_mouse_entered"]
 [connection signal="mouse_entered" from="map/41008/glen_carlyn_drive/glen_carlyn_drive_area" to="." method="_on_gcd_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41008/glen_carlyn_drive/glen_carlyn_drive_area" to="." method="_on_glen_carlyn_drive_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41008/glen_carlyn_drive/glen_carlyn_drive_area" to="." method="_on_glen_carlyn_drive_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41008/glen_carlyn_drive/glen_carlyn_drive_area" to="." method="_on_gcd_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41008/nevius_street/nevius_street_area" to="." method="_on_nevius_street_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41008/glen_carlyn_drive/glen_carlyn_drive_area" to="." method="_on_glen_carlyn_drive_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41008/nevius_street/nevius_street_area" to="." method="_on_ns_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41008/nevius_street/nevius_street_area" to="." method="_on_nevius_street_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41008/nevius_street/nevius_street_area" to="." method="_on_nevius_street_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41008/nevius_street/nevius_street_area" to="." method="_on_ns_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41008/mansfield_road/mansfield_road_area" to="." method="_on_mansfield_road_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41008/nevius_street/nevius_street_area" to="." method="_on_nevius_street_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41008/mansfield_road/mansfield_road_area" to="." method="_on_mr_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41008/mansfield_road/mansfield_road_area" to="." method="_on_mansfield_road_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41008/mansfield_road/mansfield_road_area" to="." method="_on_mansfield_road_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41008/mansfield_road/mansfield_road_area" to="." method="_on_mr_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41008/lake_street/lake_street_area" to="." method="_on_lake_street_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41008/mansfield_road/mansfield_road_area" to="." method="_on_mansfield_road_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41008/lake_street/lake_street_area" to="." method="_on_ls_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41008/lake_street/lake_street_area" to="." method="_on_lake_street_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41008/lake_street/lake_street_area" to="." method="_on_lake_street_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41008/lake_street/lake_street_area" to="." method="_on_ls_area_mouse_exited"]
+[connection signal="mouse_exited" from="map/41008/lake_street/lake_street_area" to="." method="_on_lake_street_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41097/barnum_lane/barnum_lane_area" to="." method="_on_barnum_lane_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41097/barnum_lane/barnum_lane_area" to="." method="_on_barnum_lane_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41097/deming_avenue/deming_avenue_area" to="." method="_on_deming_avenue_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41097/deming_avenue/deming_avenue_area" to="." method="_on_deming_avenue_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41097/gloucester_road/gloucester_road_area" to="." method="_on_gloucester_road_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41097/gloucester_road/gloucester_road_area" to="." method="_on_gloucester_road_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41097/joanne_drive/joanne_drive_area" to="." method="_on_joanne_drive_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41097/joanne_drive/joanne_drive_area" to="." method="_on_joanne_drive_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41097/kling_drive/kling_drive_area" to="." method="_on_kling_drive_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41097/kling_drive/kling_drive_area" to="." method="_on_kling_drive_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41097/lincolnia_road/lincolnia_road_area" to="." method="_on_lincolnia_road_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41097/lincolnia_road/lincolnia_road_area" to="." method="_on_lincolnia_road_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41097/meeting_house_way/meeting_house_way_area" to="." method="_on_meeting_house_way_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41097/meeting_house_way/meeting_house_way_area" to="." method="_on_meeting_house_way_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41097/north_beauregard_street/north_beauregard_street_area" to="." method="_on_north_beauregard_street_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41097/north_beauregard_street/north_beauregard_street_area" to="." method="_on_north_beauregard_street_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41097/north_chambliss_street/north_chambliss_street_area" to="." method="_on_north_chambliss_street_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41097/north_chambliss_street/north_chambliss_street_area" to="." method="_on_north_chambliss_street_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41097/north_morgan_street/north_morgan_street_area" to="." method="_on_north_morgan_street_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41097/north_morgan_street/north_morgan_street_area" to="." method="_on_north_morgan_street_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41097/rynex_drive/rynex_drive_area" to="." method="_on_rynex_drive_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41097/rynex_drive/rynex_drive_area" to="." method="_on_rynex_drive_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41097/shackleford_terrace/shackleford_terrace_area" to="." method="_on_shackleford_terrace_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41097/shackleford_terrace/shackleford_terrace_area" to="." method="_on_shackleford_terrace_area_mouse_exited"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
