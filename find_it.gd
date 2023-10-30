@@ -553,3 +553,249 @@ func _on_barcroft_mews_drive_area_mouse_entered():
 	highlight_street('barcroft_mews_drive','41012',true)
 func _on_barcroft_mews_drive_area_mouse_exited():
 	highlight_street('barcroft_mews_drive','41012',false)
+
+func _on_birchwood_road_area_mouse_entered():
+	highlight_street('birchwood_road','41012',true)
+func _on_birchwood_road_area_mouse_exited():
+	highlight_street('birchwood_road','41012',false)
+
+func _on_braddock_road_area_mouse_entered():
+	highlight_street('braddock_road','41012',true)
+func _on_braddock_road_area_mouse_exited():
+	highlight_street('braddock_road','41012',false)
+
+func _on_bryce_road_area_mouse_entered():
+	highlight_street('bryce_road','41012',true)
+func _on_bryce_road_area_mouse_exited():
+	highlight_street('bryce_road','41012',false)
+
+func _on_burnt_pine_court_area_mouse_entered():
+	highlight_street('burnt_pine_court','41012',true)
+func _on_burnt_pine_court_area_mouse_exited():
+	highlight_street('burnt_pine_court','41012',false)
+
+func _on_century_court_area_mouse_entered():
+	highlight_street('century_court','41012',true)
+func _on_century_court_area_mouse_exited():
+	highlight_street('century_court','41012',false)
+
+func _on_chaco_road_area_mouse_entered():
+	highlight_street('chaco_road','41012',true)
+func _on_chaco_road_area_mouse_exited():
+	highlight_street('chaco_road','41012',false)
+
+func _on_conrad_road_area_mouse_entered():
+	highlight_street('conrad_road','41012',true)
+func _on_conrad_road_area_mouse_exited():
+	highlight_street('conrad_road','41012',false)
+
+func _on_crestwood_drive_area_mouse_entered():
+	highlight_street('crestwood_drive','41012',true)
+func _on_crestwood_drive_area_mouse_exited():
+	highlight_street('crestwood_drive','41012',false)
+
+func _on_dakota_court_area_mouse_entered():
+	highlight_street('dakota_court','41012',true)
+func _on_dakota_court_area_mouse_exited():
+	highlight_street('dakota_court','41012',false)
+
+func _on_dogwood_place_area_mouse_entered():
+	highlight_street('dogwood_place','41012',true)
+func _on_dogwood_place_area_mouse_exited():
+	highlight_street('dogwood_place','41012',false)
+
+
+func _on_everglades_drive_area_mouse_entered():
+	highlight_street('everglades_drive','41012',true)
+
+
+func _on_everglades_drive_area_mouse_exited():
+	highlight_street('everglades_drive','41012',false)
+	
+
+
+
+func _on_fairway_downs_court_area_mouse_entered():
+	highlight_street('fairway_downs_court','41012',true)
+
+
+func _on_fairway_downs_court_area_mouse_exited():
+	highlight_street('fairway_downs_court','41012',false)
+
+
+func _on_ginger_drive_area_mouse_entered():
+	highlight_street('ginger_drive','41012',true)
+
+
+func _on_ginger_drive_area_mouse_exited():
+	highlight_street('ginger_drive','41012',false)
+
+
+func _on_guest_lane_area_mouse_entered():
+	highlight_street('guest_lane','41012',true)
+
+
+func _on_guest_lane_area_mouse_exited():
+	highlight_street('guest_lane','41012',false)
+	
+
+
+
+func _on_hawaii_court_area_mouse_entered():
+	highlight_street('hawaii_court','41012',true)
+
+
+func _on_hawaii_court_area_mouse_exited():
+	highlight_street('hawaii_court','41012',false)
+
+
+func _on_hillcrest_place_area_mouse_entered():
+	highlight_street('hillcrest_place','41012',true)
+
+
+func _on_hillcrest_place_area_mouse_exited():
+	highlight_street('hillcrest_place','41012',false)
+
+
+func _on_jewel_street_area_mouse_entered():
+	highlight_street('jewel_street','41012',true)
+
+
+func _on_jewel_street_area_mouse_exited():
+	highlight_street('jewel_street','41012',false)
+
+
+func _on_lakewood_drive_area_mouse_entered():
+	highlight_street('lakewood_drive','41012',true)
+
+
+func _on_lakewood_drive_area_mouse_exited():
+	highlight_street('lakewood_drive','41012',false)
+
+
+func _on_landess_street_area_mouse_entered():
+	highlight_street('landess_street','41012',true)
+
+
+func _on_landess_street_area_mouse_exited():
+	highlight_street('landess_street','41012',false)
+
+
+func _on_lassen_court_area_mouse_entered():
+	highlight_street('lassen_court','41012',true)
+
+
+func _on_lassen_court_area_mouse_exited():
+	highlight_street('lassen_court','41012',false)
+
+
+func _on_maplewood_drive_area_mouse_entered():
+	highlight_street('maplewood_drive','41012',true)
+
+
+func _on_maplewood_drive_area_mouse_exited():
+	highlight_street('maplewood_drive','41012',false)
+
+
+func _on_mesa_way_area_mouse_entered():
+	highlight_street('mesa_way','41012',true)
+
+
+func _on_mesa_way_area_mouse_exited():
+	highlight_street('mesa_way','41012',false)
+
+
+func _on_morgan_street_area_mouse_entered():
+	highlight_street('morgan_street','41012',true)
+
+
+func _on_morgan_street_area_mouse_exited():
+	highlight_street('morgan_street','41012',false)
+
+
+func _on_morin_street_area_mouse_entered():
+	highlight_street('morin_street','41012',true)
+
+
+func _on_morin_street_area_mouse_exited():
+	highlight_street('morin_street','41012',false)
+
+
+func _on_muir_place_area_mouse_entered():
+	highlight_street('muir_place','41012',true)
+
+
+func _on_muir_place_area_mouse_exited():
+	highlight_street('muir_place','41012',false)
+
+
+func _on_oakridge_drive_area_mouse_entered():
+	highlight_street('oakridge_drive','41012',true)
+
+
+func _on_oakridge_drive_area_mouse_exited():
+	highlight_street('oakridge_drive','41012',false)
+
+
+func _on_oakwood_drive_area_mouse_entered():
+	highlight_street('oakwood_drive','41012',true)
+
+
+func _on_oakwood_drive_area_mouse_exited():
+	highlight_street('oakwood_drive','41012',false)
+
+
+func _on_olympic_way_area_mouse_entered():
+	highlight_street('olympic_way','41012',true)
+
+
+func _on_olympic_way_area_mouse_exited():
+	highlight_street('olympic_way','41012',false)
+
+
+func _on_paramore_drive_area_mouse_entered():
+	highlight_street('paramore_drive','41012',true)
+
+
+func _on_paramore_drive_area_mouse_exited():
+	highlight_street('paramore_drive','41012',false)
+
+
+func _on_pinewood_terrace_area_mouse_entered():
+	highlight_street('pinewood_terrac','41012',true)
+
+
+func _on_pinewood_terrace_area_mouse_exited():
+	highlight_street('pinewood_terrac','41012',false)
+
+
+func _on_pine_lane_area_mouse_entered():
+	highlight_street('pine_lane','41012',true)
+
+
+func _on_pine_lane_area_mouse_exited():
+	highlight_street('pine_lane','41012',true)
+
+
+func _on_river_downs_road_area_mouse_entered():
+	highlight_street('river_downs_road','41012',true)
+
+
+func _on_river_downs_road_area_mouse_exited():
+	highlight_street('river_downs_road','41012',false)
+
+
+func _on_sequoia_court_area_mouse_entered():
+	highlight_street('sequoia_court','41012',true)
+
+
+func _on_sequoia_court_area_mouse_exited():
+	highlight_street('sequoia_court','41012',false)
+
+
+func _on_summit_place_area_mouse_entered():
+	highlight_street('summit_place','41012',true)
+
+
+func _on_summit_place_area_mouse_exited():
+	highlight_street('summit_place','41012',false)
