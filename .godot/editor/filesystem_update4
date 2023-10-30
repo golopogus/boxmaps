@@ -1,4 +1,4 @@
-res://default_env.tres
-res://menu.tscn
-res://find_it.tscn
 res://find_it.gd
+res://default_env.tres
+res://find_it.tscn
+res://menu.tscn
