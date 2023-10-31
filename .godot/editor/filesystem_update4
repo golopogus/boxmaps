@@ -1,5 +1,7 @@
-res://find_it.gd
 res://default_env.tres
 res://find_it.tscn
 res://menu.tscn
-res://map_camera.gd
+res://find_it.gd
+res://end_screen.gd
+res://Globals.gd
+res://end_screen.tscn

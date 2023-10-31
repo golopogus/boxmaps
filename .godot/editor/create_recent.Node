@@ -1,3 +1,6 @@
+Button
+Label
+ColorRect
 Timer
 Sprite2D
 CollisionPolygon2D
@@ -5,6 +8,4 @@ Area2D
 Node2D
 Node
 CheckButton
-Button
-Label
 TextureRect

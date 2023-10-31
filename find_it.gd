@@ -40,13 +40,17 @@ func _ready():
 			
 		
 func randomize_street():
-	rand_num = randi() % len(list_of_streets)-1
-	current_street = list_of_streets[rand_num]
-	adjust_text(current_street)
+	if len(list_of_streets) - 1 >= 0:
+		rand_num = randi() % len(list_of_streets)-1
+		current_street = list_of_streets[rand_num]
+		adjust_text(current_street)
+	else:
+		Globals.finish_round($CanvasLayer/score_label.text)
+		get_tree().change_scene_to_file("res://end_screen.tscn")
 	
 func adjust_text(street):
 	street = street.replace('_',' ')
-	$CanvasLayer/Label.text = street
+	$CanvasLayer/street_label.text = street
 	$Timer.start()
 	#dd_score = 1000
 	
@@ -62,19 +66,19 @@ func _unhandled_input(event):
 	if move == true:
 		###ZOOM###
 		##Trackpad##
-		#if event is InputEventMagnifyGesture:
-			#$map_camera.zoom = $map_camera.zoom * event.factor
+		if event is InputEventMagnifyGesture:
+			$map_camera.zoom = $map_camera.zoom * event.factor
 			
 		##Mouse##
-		var zoom_max = 3.5
-		var zoom_min = .8
-		if Input.is_action_just_pressed("scroll_u"):
-			if $map_camera.zoom.x < 3.5:
-				$map_camera.zoom *= 1.05
-			
-		if Input.is_action_just_pressed("scroll_d"):
-			if $map_camera.zoom.x > .8:
-				$map_camera.zoom *= .95
+#		var zoom_max = 3.5
+#		var zoom_min = .8
+#		if Input.is_action_just_pressed("scroll_u"):
+#			if $map_camera.zoom.x < 3.5:
+#				$map_camera.zoom *= 1.05
+#
+#		if Input.is_action_just_pressed("scroll_d"):
+#			if $map_camera.zoom.x > .8:
+#				$map_camera.zoom *= .95
 		
 		
 		###PAN###
@@ -86,7 +90,6 @@ func _unhandled_input(event):
 			mouse_check = $map_camera.position
 			
 		if Input.is_action_pressed("mouse_click"):
-			print(highlighted_street)
 			
 			camera_move = true
 		else:
@@ -114,8 +117,8 @@ func check_answer(street):
 		add_score = 1000*($Timer.time_left/$Timer.wait_time)
 		if add_score < 100:
 			add_score = 100
-		list_of_streets.erase(current_street)
-		randomize_street()
+		#list_of_streets.erase(current_street)
+		#randomize_street()
 	
 	if add_score < 0:
 		add_score = str(int(add_score))
@@ -125,10 +128,12 @@ func check_answer(street):
 	$Sprite2D2.visible = true
 	$Sprite2D2.position = get_global_mouse_position() + Vector2(40,0)
 	$AnimationPlayer.play("score")
-	$CanvasLayer/Label2.text = str(round(float($CanvasLayer/Label2.text) + float(add_score)))
+	$CanvasLayer/score_label.text = str(round(float($CanvasLayer/score_label.text) + float(add_score)))
 	add_score = 0
 	selected_street = ''
-		
+	if street == current_street:
+		list_of_streets.erase(current_street)
+		randomize_street()
 func highlight_street(street_name,box,vis):
 	
 #	for boxes in $map.get_children():
