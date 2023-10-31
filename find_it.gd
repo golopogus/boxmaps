@@ -12,6 +12,7 @@ var rand_num
 var score = 0
 var add_score = 0
 var move = false
+var current_mouse_loc = Vector2()
 
 #func _on_button_pressed():
 	#for streets in get_node("map/41008").get_children():
@@ -59,31 +60,54 @@ func adjust_text(street):
 
 func _unhandled_input(event):
 	if move == true:
-		###PAN###
-		if event is InputEventMagnifyGesture:
-			$map_camera.zoom = $map_camera.zoom * event.factor
-		
 		###ZOOM###
+		##Trackpad##
+		#if event is InputEventMagnifyGesture:
+			#$map_camera.zoom = $map_camera.zoom * event.factor
+			
+		##Mouse##
+		var zoom_max = 3.5
+		var zoom_min = .8
+		if Input.is_action_just_pressed("scroll_u"):
+			if $map_camera.zoom.x < 3.5:
+				$map_camera.zoom *= 1.05
+			
+		if Input.is_action_just_pressed("scroll_d"):
+			if $map_camera.zoom.x > .8:
+				$map_camera.zoom *= .95
+		
+		
+		###PAN###
+		
+		
 		if Input.is_action_just_pressed("mouse_click"):
+			
 			mouse_loc = get_global_mouse_position() - $map.position
-			mouse_check = get_global_mouse_position()
+			mouse_check = $map_camera.position
 			
 		if Input.is_action_pressed("mouse_click"):
+			print(highlighted_street)
+			
 			camera_move = true
 		else:
 			camera_move = false
 			
 		if camera_move == true:
-			$map.position =  get_global_mouse_position() - mouse_loc
+			var new_pos = -get_global_mouse_position() + $map_camera.position + mouse_loc
+			if new_pos.x > -2768/2 + 1024/2 and new_pos.x < 2768/2 - 1024/2: 
+				$map_camera.position.x = new_pos.x
+			if new_pos.y > -1638/2 + 300 and new_pos.y < 1638/2 - 300:
+				$map_camera.position.y = new_pos.y
 		
 		###SELECT STREET###
 		if Input.is_action_just_released("mouse_click"):
-			if mouse_check == get_global_mouse_position() and highlighted_street != '':
+			if mouse_check == $map_camera.position and highlighted_street != '':
 				selected_street += highlighted_street
 				check_answer(selected_street)
 			
 
 func check_answer(street):
+	
 	if street != current_street:
 		add_score = -500
 	if street == current_street:
@@ -106,20 +130,28 @@ func check_answer(street):
 	selected_street = ''
 		
 func highlight_street(street_name,box,vis):
-	print(street_name,box,vis)
+	
+#	for boxes in $map.get_children():
+#		if boxes.name == box:
+#			for streets in get_node("map/" + box).get_children():
+#				if streets.name == street_name:
+#					get_node("map/" + box + "/" + street_name + "/" + street_name + "_sprite").visible = vis
 	if vis == true:
 		highlighted_street += street_name
+		for boxes in $map.get_children():
+			if boxes.name == box:
+				for streets in get_node("map/" + box).get_children():
+					if streets.name == street_name:
+						get_node("map/" + box + "/" + street_name + "/" + street_name + "_sprite").visible = true
+		
 	else: 
 		highlighted_street = ''
-	for boxes in $map.get_children():
-		if boxes.name == box:
-			for streets in get_node("map/" + box).get_children():
-				if streets.name == street_name:
-					get_node("map/" + box + "/" + street_name + "/" + street_name + "_sprite").visible = vis
-					
-func _on_timer_timeout():
-	pass
-
+		for boxes in $map.get_children():
+			if boxes.name == box:
+				for streets in get_node("map/" + box).get_children():
+					if streets.name == street_name:
+						get_node("map/" + box + "/" + street_name + "/" + street_name + "_sprite").visible = false
+		
 
 
 
@@ -316,7 +348,6 @@ func _on_aura_court_area_mouse_entered():
 	highlight_street('aura_court','41008',true)
 func _on_aura_court_area_mouse_exited():
 	highlight_street('aura_court','41008',false)
-
 
 func _on_bellview_drive_area_mouse_entered():
 	highlight_street('bellview_drive','41008',true)
@@ -707,7 +738,7 @@ func _on_pinewood_terrace_area_mouse_exited():
 func _on_pine_lane_area_mouse_entered():
 	highlight_street('pine_lane','41012',true)
 func _on_pine_lane_area_mouse_exited():
-	highlight_street('pine_lane','41012',true)
+	highlight_street('pine_lane','41012',false)
 
 func _on_river_downs_road_area_mouse_entered():
 	highlight_street('river_downs_road','41012',true)

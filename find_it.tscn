@@ -1,4 +1,4 @@
-[gd_scene load_steps=139 format=3 uid="uid://d14qctc77xo60"]
+[gd_scene load_steps=140 format=3 uid="uid://d14qctc77xo60"]
 
 [ext_resource type="Script" path="res://find_it.gd" id="1_p23o3"]
 [ext_resource type="Texture2D" uid="uid://ch7hqba3bm6gh" path="res://black.png" id="2_5tsnp"]
@@ -129,6 +129,7 @@
 [ext_resource type="Texture2D" uid="uid://2xk6f4u7fayp" path="res://streets/41096/park_road.png" id="115_pp30r"]
 [ext_resource type="Texture2D" uid="uid://bsyomrtmcxses" path="res://streets/41096/vale_street.png" id="116_mx6nk"]
 [ext_resource type="Texture2D" uid="uid://c6yf8aiumi28g" path="res://streets/41096/witch_hazel_road.png" id="117_c1a6u"]
+[ext_resource type="Script" path="res://map_camera.gd" id="130_x8gdh"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_usb5i"]
 bg_color = Color(1, 1, 0.227451, 1)
@@ -292,7 +293,6 @@ _data = {
 script = ExtResource("1_p23o3")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
-visible = false
 scale = Vector2(0.3, 0.3)
 transform = Transform2D(0.3, 0, 0, 0.3, 0, 0)
 
@@ -2001,12 +2001,16 @@ position = Vector2(-290, -129)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("30_xkle0")
 
-[node name="map_camera" type="Camera2D" parent="."]
-position = Vector2(-287, -131)
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-520, 69.0001)
+scale = Vector2(4.11538, 4.13235)
+texture = ExtResource("30_xkle0")
 
-[node name="Timer" type="Timer" parent="."]
-wait_time = 10.0
-one_shot = true
+[node name="map_camera" type="Camera2D" parent="."]
+position = Vector2(-289, -130)
+drag_right_margin = 1.0
+script = ExtResource("130_x8gdh")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 position = Vector2(7653.33, 2183.33)
@@ -2027,6 +2031,9 @@ autoplay = "score"
 libraries = {
 "": SubResource("AnimationLibrary_0gdsf")
 }
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 11.0
 
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/exit" to="." method="_on_exit_pressed"]
@@ -2350,4 +2357,3 @@ libraries = {
 [connection signal="mouse_exited" from="map/41097/rynex_drive/rynex_drive_area" to="." method="_on_rynex_drive_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41097/shackleford_terrace/shackleford_terrace_area" to="." method="_on_shackleford_terrace_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41097/shackleford_terrace/shackleford_terrace_area" to="." method="_on_shackleford_terrace_area_mouse_exited"]
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
