@@ -66,19 +66,19 @@ func _unhandled_input(event):
 	if move == true:
 		###ZOOM###
 		##Trackpad##
-		if event is InputEventMagnifyGesture:
-			$map_camera.zoom = $map_camera.zoom * event.factor
+		#if event is InputEventMagnifyGesture:
+		#	$map_camera.zoom = $map_camera.zoom * event.factor
 			
 		##Mouse##
-#		var zoom_max = 3.5
-#		var zoom_min = .8
-#		if Input.is_action_just_pressed("scroll_u"):
-#			if $map_camera.zoom.x < 3.5:
-#				$map_camera.zoom *= 1.05
-#
-#		if Input.is_action_just_pressed("scroll_d"):
-#			if $map_camera.zoom.x > .8:
-#				$map_camera.zoom *= .95
+		var zoom_max = 3.5
+		var zoom_min = .8
+		if Input.is_action_just_pressed("scroll_u"):
+			if $map_camera.zoom.x < 3.5:
+				$map_camera.zoom *= 1.05
+
+		if Input.is_action_just_pressed("scroll_d"):
+			if $map_camera.zoom.x > .8:
+				$map_camera.zoom *= .95
 		
 		
 		###PAN###
@@ -135,7 +135,6 @@ func check_answer(street):
 		list_of_streets.erase(current_street)
 		randomize_street()
 func highlight_street(street_name,box,vis):
-	
 #	for boxes in $map.get_children():
 #		if boxes.name == box:
 #			for streets in get_node("map/" + box).get_children():
@@ -655,6 +654,11 @@ func _on_ginger_drive_area_mouse_entered():
 func _on_ginger_drive_area_mouse_exited():
 	highlight_street('ginger_drive','41012',false)
 	
+func _on_glenview_court_area_mouse_entered():
+	highlight_street('glenview_court','41012',true)
+func _on_glenview_court_area_mouse_exited():
+	highlight_street('glenview_court','41012',false)
+	
 func _on_guest_lane_area_mouse_entered():
 	highlight_street('guest_lane','41012',true)
 func _on_guest_lane_area_mouse_exited():
@@ -736,9 +740,9 @@ func _on_paramore_drive_area_mouse_exited():
 	highlight_street('paramore_drive','41012',false)
 
 func _on_pinewood_terrace_area_mouse_entered():
-	highlight_street('pinewood_terrac','41012',true)
+	highlight_street('pinewood_terrace','41012',true)
 func _on_pinewood_terrace_area_mouse_exited():
-	highlight_street('pinewood_terrac','41012',false)
+	highlight_street('pinewood_terrace','41012',false)
 
 func _on_pine_lane_area_mouse_entered():
 	highlight_street('pine_lane','41012',true)
@@ -841,3 +845,74 @@ func _on_witch_hazel_road_area_mouse_entered():
 	highlight_street('witch_hazel_road','41096',true)
 func _on_witch_hazel_road_area_mouse_exited():
 	highlight_street('witch_hazel_road','41096',false)
+
+#############################################################
+#############################################################
+#############################################################
+
+#41011#
+
+func _on_aqua_terrace_area_mouse_entered():
+	highlight_street('aqua_terrace','41011',true)
+func _on_aqua_terrace_area_mouse_exited():
+	highlight_street('aqua_terrace','41011',false)
+
+func _on_barcroft_lane_area_mouse_entered():
+	highlight_street('barcroft_lane','41011',true)
+func _on_barcroft_lane_area_mouse_exited():
+	highlight_street('barcroft_lane','41011',false)
+
+func _on_burton_circle_area_mouse_entered():
+	highlight_street('burton_circle','41011',true)
+func _on_burton_circle_area_mouse_exited():
+	highlight_street('burton_circle','41011',false)
+
+func _on_dockser_terrace_area_mouse_entered():
+	highlight_street('dockser_terrace','41011',true)
+func _on_dockser_terrace_area_mouse_exited():
+	highlight_street('dockser_terrace','41011',false)
+
+func _on_fairfax_parkway_area_mouse_entered():
+	highlight_street('fairfax_parkway','41011',true)
+func _on_fairfax_parkway_area_mouse_exited():
+	highlight_street('fairfax_parkway','41011',false)
+
+func _on_jay_miller_drive_area_mouse_entered():
+	highlight_street('jay_miller_drive','41011',true)
+func _on_jay_miller_drive_area_mouse_exited():
+	highlight_street('jay_miller_drive','41011',false)
+
+func _on_lakeview_drive_area_mouse_entered():
+	highlight_street('lakeview_drive','41011',true)
+func _on_lakeview_drive_area_mouse_exited():
+	highlight_street('lakeview_drive','41011',false)
+	
+func _on_lakeview_terrace_area_mouse_entered():
+	highlight_street('lakeview_terrace','41011',true)
+func _on_lakeview_terrace_area_mouse_exited():
+	highlight_street('lakeview_terrace','41011',false)
+
+func _on_melvern_place_area_mouse_entered():
+	highlight_street('melvern_place','41011',true)
+func _on_melvern_place_area_mouse_exited():
+	highlight_street('melvern_place','41011',false)
+
+func _on_parkhill_drive_area_mouse_entered():
+	highlight_street('parkhill_drive','41011',true)
+func _on_parkhill_drive_area_mouse_exited():
+	highlight_street('parkhill_drive','41011',false)
+
+func _on_quaint_acre_circle_area_mouse_entered():
+	highlight_street('quaint_acre_circle','41011',true)
+func _on_quaint_acre_circle_area_mouse_exited():
+	highlight_street('quaint_acre_circle','41011',false)
+
+func _on_tallwood_terrace_area_mouse_entered():
+	highlight_street('tallwood_terrace','41011',true)
+func _on_tallwood_terrace_area_mouse_exited():
+	highlight_street('tallwood_terrace','41011',false)
+
+func _on_tollgate_terrace_area_mouse_entered():
+	highlight_street('tollgate_terrace','41011',true)
+func _on_tollgate_terrace_area_mouse_exited():
+	highlight_street('tollgate_terrace','41011',false)
