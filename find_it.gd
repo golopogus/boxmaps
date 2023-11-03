@@ -66,8 +66,8 @@ func _unhandled_input(event):
 	if move == true:
 		###ZOOM###
 		##Trackpad##
-		#if event is InputEventMagnifyGesture:
-		#	$map_camera.zoom = $map_camera.zoom * event.factor
+		if event is InputEventMagnifyGesture:
+			$map_camera.zoom = $map_camera.zoom * event.factor
 			
 		##Mouse##
 		var zoom_max = 3.5
@@ -916,3 +916,107 @@ func _on_tollgate_terrace_area_mouse_entered():
 	highlight_street('tollgate_terrace','41011',true)
 func _on_tollgate_terrace_area_mouse_exited():
 	highlight_street('tollgate_terrace','41011',false)
+
+
+func _on_downing_court_area_mouse_entered():
+	highlight_street('downing_court','41014',true)
+
+
+func _on_downing_court_area_mouse_exited():
+	highlight_street('downing_court','41014',false)
+
+
+func _on_downing_street_area_mouse_entered():
+	highlight_street('downing_street','41014',true)
+
+
+func _on_downing_street_area_mouse_exited():
+	highlight_street('downing_street','41014',false)
+
+
+func _on_elmdale_road_area_mouse_entered():
+	highlight_street('elmdale_road','41014',true)
+
+
+func _on_elmdale_road_area_mouse_exited():
+	highlight_street('elmdale_road','41014',false)
+
+
+func _on_emory_street_area_mouse_entered():
+	highlight_street('emory_street','41014',true)
+
+
+func _on_emory_street_area_mouse_exited():
+	highlight_street('emory_street','41014',false)
+
+
+func _on_gainer_street_area_mouse_entered():
+	highlight_street('gainer_street','41014',true)
+
+
+func _on_gainer_street_area_mouse_exited():
+	highlight_street('gainer_street','41014',false)
+
+
+func _on_holyoke_drive_area_mouse_entered():
+	highlight_street('holyoke_drive','41014',true)
+
+
+func _on_holyoke_drive_area_mouse_exited():
+	highlight_street('holyoke_drive','41014',false)
+
+
+func _on_marionet_street_area_mouse_entered():
+	highlight_street('marionet_street','41014',true)
+
+
+func _on_marionet_street_area_mouse_exited():
+	highlight_street('marionet_street','41014',false)
+
+
+func _on_old_columbia_pike_area_mouse_entered():
+	highlight_street('old_columbia_pike','41014',true)
+
+
+func _on_old_columbia_pike_area_mouse_exited():
+	highlight_street('old_columbia_pike','41014',false)
+
+
+func _on_overlook_drive_area_mouse_entered():
+	highlight_street('overlook_drive','41014',true)
+
+
+func _on_overlook_drive_area_mouse_exited():
+	highlight_street('overlook_drive','41014',false)
+
+
+func _on_oxford_street_area_mouse_entered():
+	highlight_street('oxford_street','41014',true)
+
+
+func _on_oxford_street_area_mouse_exited():
+	highlight_street('oxford_street','41014',false)
+
+
+func _on_pinecrest_court_area_mouse_entered():
+	highlight_street('pinecrest_court','41014',true)
+
+
+func _on_pinecrest_court_area_mouse_exited():
+	highlight_street('pinecrest_court','41014',false)
+
+
+func _on_woodridge_road_area_mouse_entered():
+	highlight_street('woodridge_road','41014',true)
+
+
+func _on_woodridge_road_area_mouse_exited():
+	highlight_street('woodridge_road','41014',true)
+
+
+func _on_woodway_street_area_mouse_entered():
+	highlight_street('woodway_street','41014',true)
+
+
+func _on_woodway_street_area_mouse_exited():
+	highlight_street('woodway_street','41014',false)

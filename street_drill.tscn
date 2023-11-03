@@ -1,4 +1,4 @@
-[gd_scene load_steps=149 format=3 uid="uid://cv6vy5gjujccx"]
+[gd_scene load_steps=149 format=3 uid="uid://ci4lxig60qedf"]
 
 [ext_resource type="Texture2D" uid="uid://ch7hqba3bm6gh" path="res://black.png" id="1_1yga1"]
 [ext_resource type="Script" path="res://street_drill.gd" id="1_xltty"]
@@ -1755,7 +1755,6 @@ texture = ExtResource("107_qwiep")
 polygon = PackedVector2Array(-304, 176, -305, 188, -312, 187, -309, 175)
 
 [node name="lincolnia_road" type="Node2D" parent="map/41012"]
-visible = false
 
 [node name="lincolnia_road_sprite" type="Sprite2D" parent="map/41012/lincolnia_road"]
 position = Vector2(-451, 427)

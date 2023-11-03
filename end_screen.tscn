@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://fiiaunxdn8gp"]
+[gd_scene load_steps=3 format=3 uid="uid://djqvjinb5sjun"]
 
 [ext_resource type="Script" path="res://end_screen.gd" id="1_qbs7y"]
 [ext_resource type="FontFile" uid="uid://tfi382u2oie8" path="res://CherryBombOne-Regular.ttf" id="2_6i6fu"]
