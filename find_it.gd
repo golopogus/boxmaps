@@ -1020,3 +1020,11 @@ func _on_woodway_street_area_mouse_entered():
 
 func _on_woodway_street_area_mouse_exited():
 	highlight_street('woodway_street','41014',false)
+
+
+func _on_jan_mar_drive_area_mouse_entered():
+	pass # Replace with function body.
+
+
+func _on_jan_mar_drive_area_mouse_exited():
+	pass # Replace with function body.

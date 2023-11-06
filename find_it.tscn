@@ -1,4 +1,4 @@
-[gd_scene load_steps=167 format=3 uid="uid://d14qctc77xo60"]
+[gd_scene load_steps=171 format=3 uid="uid://d14qctc77xo60"]
 
 [ext_resource type="Script" path="res://find_it.gd" id="1_p23o3"]
 [ext_resource type="Texture2D" uid="uid://ch7hqba3bm6gh" path="res://black.png" id="2_5tsnp"]
@@ -157,6 +157,10 @@
 [ext_resource type="Texture2D" uid="uid://bpbslti86u4rd" path="res://streets/41014/pinecrest_court.png" id="136_fox5j"]
 [ext_resource type="Texture2D" uid="uid://j7jqvvmtr2le" path="res://streets/41014/woodridge_road.png" id="137_bjct0"]
 [ext_resource type="Texture2D" uid="uid://biuqu4xj6gof8" path="res://streets/41014/woodway_street.png" id="138_2o0j2"]
+[ext_resource type="Texture2D" uid="uid://d7y1p8hm0de6" path="res://streets/41041/fairview_place.png" id="139_1dc0u"]
+[ext_resource type="Texture2D" uid="uid://qmox1mr2vd1a" path="res://streets/41041/glenwood_place.png" id="140_gv17g"]
+[ext_resource type="Texture2D" uid="uid://ixe88jtl6abj" path="res://streets/41041/glen_carlyn_road.png" id="141_00mfv"]
+[ext_resource type="Texture2D" uid="uid://cskevtw2xd11p" path="res://streets/41041/hallran_road.png" id="142_33sot"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_usb5i"]
 bg_color = Color(1, 1, 0.227451, 1)
@@ -2120,6 +2124,264 @@ texture = ExtResource("138_2o0j2")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41014/woodway_street/woodway_street_area"]
 polygon = PackedVector2Array(-704, 337, -696, 340, -699, 347, -700, 355, -700, 367, -700, 379, -701, 384, -704, 389, -710, 396, -715, 391, -711, 387, -708, 381, -707, 372, -708, 356, -707, 348)
+
+[node name="41041" type="Node2D" parent="map"]
+
+[node name="fairview_place" type="Node2D" parent="map/41041"]
+
+[node name="fairview_place_sprite" type="Sprite2D" parent="map/41041/fairview_place"]
+position = Vector2(-312, -497)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("139_1dc0u")
+
+[node name="fairview_place_area" type="Area2D" parent="map/41041/fairview_place"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/fairview_place/fairview_place_area"]
+polygon = PackedVector2Array(-334, -501, -292, -487, -290, -493, -332, -507)
+
+[node name="glenwood_place" type="Node2D" parent="map/41041"]
+
+[node name="glenwood_place_sprite" type="Sprite2D" parent="map/41041/glenwood_place"]
+position = Vector2(-343, -588)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("140_gv17g")
+
+[node name="glenwood_place_area" type="Area2D" parent="map/41041/glenwood_place"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/glenwood_place/glenwood_place_area"]
+polygon = PackedVector2Array(-351, -568, -337, -594, -330, -598, -328, -604, -331, -609, -337, -611, -341, -607, -343, -600, -343, -597, -357, -572)
+
+[node name="glen_carlyn_road" type="Node2D" parent="map/41041"]
+
+[node name="glen_carlyn_road_sprite" type="Sprite2D" parent="map/41041/glen_carlyn_road"]
+position = Vector2(-206, -533)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("141_00mfv")
+
+[node name="glen_carlyn_road_area" type="Area2D" parent="map/41041/glen_carlyn_road"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/glen_carlyn_road/glen_carlyn_road_area"]
+polygon = PackedVector2Array(-303, -452, -292, -486, -291, -487, -289, -493, -289, -494, -285, -506, -280, -522, -269, -553, -263, -567, -252, -590, -242, -603, -239, -605, -234, -608, -227, -611, -206, -612, -170, -614, -122, -616, -110, -616, -110, -610, -155, -608, -193, -607, -217, -605, -226, -604, -232, -602, -238, -597, -249, -579, -259, -561, -261, -561, -262, -558, -261, -556, -267, -542, -268, -541, -269, -538, -269, -536, -274, -520, -280, -503, -286, -485, -298, -449)
+
+[node name="hallran_road" type="Node2D" parent="map/41041"]
+
+[node name="hallran_road_sprite" type="Sprite2D" parent="map/41041/hallran_road"]
+position = Vector2(-295, -569)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("142_33sot")
+
+[node name="hallran_road_area" type="Area2D" parent="map/41041/hallran_road"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/hallran_road/hallran_road_area"]
+polygon = PackedVector2Array(-284, -589, -280, -586, -304, -549, -311, -552, -285, -590)
+
+[node name="hardwick_place" type="Node2D" parent="map/41041"]
+
+[node name="hardwick_place_sprite" type="Sprite2D" parent="map/41041/hardwick_place"]
+
+[node name="hardwick_place_area" type="Area2D" parent="map/41041/hardwick_place"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/hardwick_place/hardwick_place_area"]
+
+[node name="Node2D6" type="Node2D" parent="map/41041"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D6"]
+
+[node name="Area2D" type="Area2D" parent="map/41041/Node2D6"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D6/Area2D"]
+
+[node name="Node2D7" type="Node2D" parent="map/41041"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D7"]
+
+[node name="Area2D" type="Area2D" parent="map/41041/Node2D7"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D7/Area2D"]
+
+[node name="Node2D8" type="Node2D" parent="map/41041"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D8"]
+
+[node name="Area2D" type="Area2D" parent="map/41041/Node2D8"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D8/Area2D"]
+
+[node name="Node2D9" type="Node2D" parent="map/41041"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D9"]
+
+[node name="Area2D" type="Area2D" parent="map/41041/Node2D9"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D9/Area2D"]
+
+[node name="Node2D10" type="Node2D" parent="map/41041"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D10"]
+
+[node name="Area2D" type="Area2D" parent="map/41041/Node2D10"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D10/Area2D"]
+
+[node name="Node2D11" type="Node2D" parent="map/41041"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D11"]
+
+[node name="Area2D" type="Area2D" parent="map/41041/Node2D11"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D11/Area2D"]
+
+[node name="Node2D12" type="Node2D" parent="map/41041"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D12"]
+
+[node name="Area2D" type="Area2D" parent="map/41041/Node2D12"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D12/Area2D"]
+
+[node name="Node2D13" type="Node2D" parent="map/41041"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D13"]
+
+[node name="Area2D" type="Area2D" parent="map/41041/Node2D13"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D13/Area2D"]
+
+[node name="Node2D14" type="Node2D" parent="map/41041"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D14"]
+
+[node name="Area2D" type="Area2D" parent="map/41041/Node2D14"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D14/Area2D"]
+
+[node name="Node2D15" type="Node2D" parent="map/41041"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D15"]
+
+[node name="Area2D" type="Area2D" parent="map/41041/Node2D15"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D15/Area2D"]
+
+[node name="Node2D16" type="Node2D" parent="map/41041"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D16"]
+
+[node name="Area2D" type="Area2D" parent="map/41041/Node2D16"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D16/Area2D"]
+
+[node name="Node2D17" type="Node2D" parent="map/41041"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D17"]
+
+[node name="Area2D" type="Area2D" parent="map/41041/Node2D17"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D17/Area2D"]
+
+[node name="Node2D18" type="Node2D" parent="map/41041"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D18"]
+
+[node name="Area2D" type="Area2D" parent="map/41041/Node2D18"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D18/Area2D"]
+
+[node name="Node2D19" type="Node2D" parent="map/41041"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D19"]
+
+[node name="Area2D" type="Area2D" parent="map/41041/Node2D19"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D19/Area2D"]
+
+[node name="Node2D20" type="Node2D" parent="map/41041"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D20"]
+
+[node name="Area2D" type="Area2D" parent="map/41041/Node2D20"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D20/Area2D"]
+
+[node name="Node2D21" type="Node2D" parent="map/41041"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D21"]
+
+[node name="Area2D" type="Area2D" parent="map/41041/Node2D21"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D21/Area2D"]
+
+[node name="Node2D22" type="Node2D" parent="map/41041"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D22"]
+
+[node name="Area2D" type="Area2D" parent="map/41041/Node2D22"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D22/Area2D"]
+
+[node name="Node2D23" type="Node2D" parent="map/41041"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D23"]
+
+[node name="Area2D" type="Area2D" parent="map/41041/Node2D23"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D23/Area2D"]
+
+[node name="Node2D24" type="Node2D" parent="map/41041"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D24"]
+
+[node name="Area2D" type="Area2D" parent="map/41041/Node2D24"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D24/Area2D"]
+
+[node name="Node2D25" type="Node2D" parent="map/41041"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D25"]
+
+[node name="Area2D" type="Area2D" parent="map/41041/Node2D25"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D25/Area2D"]
+
+[node name="Node2D26" type="Node2D" parent="map/41041"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D26"]
+
+[node name="Area2D" type="Area2D" parent="map/41041/Node2D26"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D26/Area2D"]
+
+[node name="Node2D27" type="Node2D" parent="map/41041"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D27"]
+
+[node name="Area2D" type="Area2D" parent="map/41041/Node2D27"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D27/Area2D"]
+
+[node name="Node2D28" type="Node2D" parent="map/41041"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D28"]
+
+[node name="Area2D" type="Area2D" parent="map/41041/Node2D28"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D28/Area2D"]
+
+[node name="Node2D29" type="Node2D" parent="map/41041"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D29"]
+
+[node name="Area2D" type="Area2D" parent="map/41041/Node2D29"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D29/Area2D"]
+
+[node name="Node2D30" type="Node2D" parent="map/41041"]
+
+[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D30"]
+
+[node name="Area2D" type="Area2D" parent="map/41041/Node2D30"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D30/Area2D"]
 
 [node name="41096" type="Node2D" parent="map"]
 
