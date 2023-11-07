@@ -1,4 +1,4 @@
-[gd_scene load_steps=171 format=3 uid="uid://d14qctc77xo60"]
+[gd_scene load_steps=186 format=3 uid="uid://d14qctc77xo60"]
 
 [ext_resource type="Script" path="res://find_it.gd" id="1_p23o3"]
 [ext_resource type="Texture2D" uid="uid://ch7hqba3bm6gh" path="res://black.png" id="2_5tsnp"]
@@ -161,6 +161,21 @@
 [ext_resource type="Texture2D" uid="uid://qmox1mr2vd1a" path="res://streets/41041/glenwood_place.png" id="140_gv17g"]
 [ext_resource type="Texture2D" uid="uid://ixe88jtl6abj" path="res://streets/41041/glen_carlyn_road.png" id="141_00mfv"]
 [ext_resource type="Texture2D" uid="uid://cskevtw2xd11p" path="res://streets/41041/hallran_road.png" id="142_33sot"]
+[ext_resource type="Texture2D" uid="uid://m5fpwswd2hnk" path="res://streets/41041/hardwick_place.png" id="143_oqulr"]
+[ext_resource type="Texture2D" uid="uid://csuk8v0648h5q" path="res://streets/41041/jan_mar_drive.png" id="144_xd8cy"]
+[ext_resource type="Texture2D" uid="uid://cdls5od83h0kf" path="res://streets/41041/kimble_court.png" id="145_ndhr8"]
+[ext_resource type="Texture2D" uid="uid://db78uiwbxvi03" path="res://streets/41041/lakeside_view_drive.png" id="146_kfv4k"]
+[ext_resource type="Texture2D" uid="uid://cvs38devss7nv" path="res://streets/41041/lebanon_drive.png" id="147_vj1fj"]
+[ext_resource type="Texture2D" uid="uid://bvm83c6ulrfum" path="res://streets/41041/magnolia_avenue.png" id="148_rvmn5"]
+[ext_resource type="Texture2D" uid="uid://bfaex6haws1pj" path="res://streets/41041/maries_drive.png" id="149_do3c5"]
+[ext_resource type="Texture2D" uid="uid://c0uq4ahrq6skp" path="res://streets/41041/merritt_place.png" id="150_h70up"]
+[ext_resource type="Texture2D" uid="uid://10qokgg5g6ek" path="res://streets/41041/munson_court.png" id="151_cpqxb"]
+[ext_resource type="Texture2D" uid="uid://csxmjngatyu5j" path="res://streets/41041/munson_hill_road.png" id="152_a1b0v"]
+[ext_resource type="Texture2D" uid="uid://cr33jbpyehflo" path="res://streets/41041/munson_place.png" id="153_43r85"]
+[ext_resource type="Texture2D" uid="uid://db58vuyg6el5b" path="res://streets/41041/olds_drive.png" id="154_v7el6"]
+[ext_resource type="Texture2D" uid="uid://cgn6x1vhdmjlh" path="res://streets/41041/south_5th_road.png" id="155_i4quh"]
+[ext_resource type="Texture2D" uid="uid://cbj4wfakvv0b4" path="res://streets/41041/south_6th_road.png" id="156_lypbs"]
+[ext_resource type="Texture2D" uid="uid://bp53yi1v7n8pu" path="res://streets/41041/south_6th_street.png" id="157_ngfun"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_usb5i"]
 bg_color = Color(1, 1, 0.227451, 1)
@@ -2178,122 +2193,187 @@ polygon = PackedVector2Array(-284, -589, -280, -586, -304, -549, -311, -552, -28
 [node name="hardwick_place" type="Node2D" parent="map/41041"]
 
 [node name="hardwick_place_sprite" type="Sprite2D" parent="map/41041/hardwick_place"]
+position = Vector2(-253, -547)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("143_oqulr")
 
 [node name="hardwick_place_area" type="Area2D" parent="map/41041/hardwick_place"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/hardwick_place/hardwick_place_area"]
+polygon = PackedVector2Array(-258, -561, -242, -553, -236, -547, -236, -540, -240, -535, -248, -532, -257, -533, -268, -536, -265, -543, -259, -541, -252, -540, -246, -540, -244, -542, -244, -546, -251, -551, -256, -553, -260, -555)
 
-[node name="Node2D6" type="Node2D" parent="map/41041"]
+[node name="jan_mar_drive" type="Node2D" parent="map/41041"]
 
-[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D6"]
+[node name="jan_mar_drive_sprite" type="Sprite2D" parent="map/41041/jan_mar_drive"]
+position = Vector2(-260, -659)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("144_xd8cy")
 
-[node name="Area2D" type="Area2D" parent="map/41041/Node2D6"]
+[node name="jan_mar_drive_area" type="Area2D" parent="map/41041/jan_mar_drive"]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D6/Area2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/jan_mar_drive/jan_mar_drive_area"]
+polygon = PackedVector2Array(-294, -687, -298, -682, -262, -657, -258, -662)
 
-[node name="Node2D7" type="Node2D" parent="map/41041"]
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="map/41041/jan_mar_drive/jan_mar_drive_area"]
+polygon = PackedVector2Array(-257, -653, -253, -658, -222, -636, -224, -631, -227, -632)
 
-[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D7"]
+[node name="kimble_court" type="Node2D" parent="map/41041"]
 
-[node name="Area2D" type="Area2D" parent="map/41041/Node2D7"]
+[node name="kimble_court_sprite" type="Sprite2D" parent="map/41041/kimble_court"]
+position = Vector2(-133, -583)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("145_ndhr8")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D7/Area2D"]
+[node name="kimble_court_area" type="Area2D" parent="map/41041/kimble_court"]
 
-[node name="Node2D8" type="Node2D" parent="map/41041"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/kimble_court/kimble_court_area"]
+polygon = PackedVector2Array(-157, -583, -141, -586, -124, -588, -109, -588, -108, -584, -110, -582, -125, -582, -141, -580, -156, -577, -159, -580)
 
-[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D8"]
+[node name="lakeside_view_drive" type="Node2D" parent="map/41041"]
 
-[node name="Area2D" type="Area2D" parent="map/41041/Node2D8"]
+[node name="lakeside_view_drive_sprite" type="Sprite2D" parent="map/41041/lakeside_view_drive"]
+position = Vector2(-367, -527)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("146_kfv4k")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D8/Area2D"]
+[node name="lakeside_view_drive" type="Area2D" parent="map/41041/lakeside_view_drive"]
 
-[node name="Node2D9" type="Node2D" parent="map/41041"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/lakeside_view_drive/lakeside_view_drive"]
+polygon = PackedVector2Array(-383, -507, -378, -516, -362, -505, -356, -506, -345, -526, -340, -523, -336, -526, -337, -529, -351, -537, -353, -532, -350, -529, -359, -513, -361, -512, -374, -520, -369, -526, -366, -532, -367, -535, -370, -535, -373, -533, -374, -529, -379, -524, -391, -533, -389, -541, -389, -546, -392, -548, -394, -546, -396, -538, -398, -532, -396, -529, -383, -519, -388, -511)
 
-[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D9"]
+[node name="lebanon_drive" type="Node2D" parent="map/41041"]
 
-[node name="Area2D" type="Area2D" parent="map/41041/Node2D9"]
+[node name="lebanon_drive_sprite" type="Sprite2D" parent="map/41041/lebanon_drive"]
+position = Vector2(-287, -635)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("147_vj1fj")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D9/Area2D"]
+[node name="lebanon_drive_area" type="Area2D" parent="map/41041/lebanon_drive"]
 
-[node name="Node2D10" type="Node2D" parent="map/41041"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/lebanon_drive/lebanon_drive_area"]
+polygon = PackedVector2Array(-241, -605, -236, -608, -241, -612, -251, -618, -269, -629, -281, -635, -294, -640, -334, -665, -337, -660, -314, -645, -297, -635, -284, -630, -271, -623)
 
-[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D10"]
+[node name="magnolia_avenue" type="Node2D" parent="map/41041"]
 
-[node name="Area2D" type="Area2D" parent="map/41041/Node2D10"]
+[node name="magnolia_avenue_sprite" type="Sprite2D" parent="map/41041/magnolia_avenue"]
+position = Vector2(-189, -560)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("148_rvmn5")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D10/Area2D"]
+[node name="magnolia_avenue_area" type="Area2D" parent="map/41041/magnolia_avenue"]
 
-[node name="Node2D11" type="Node2D" parent="map/41041"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/magnolia_avenue/magnolia_avenue_area"]
+polygon = PackedVector2Array(-191, -606, -185, -606, -184, -575, -184, -549, -185, -529, -187, -515, -190, -511, -196, -514, -192, -522, -190, -538, -190, -568)
 
-[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D11"]
+[node name="maries_drive" type="Node2D" parent="map/41041"]
 
-[node name="Area2D" type="Area2D" parent="map/41041/Node2D11"]
+[node name="maries_drive_sprite" type="Sprite2D" parent="map/41041/maries_drive"]
+position = Vector2(-259, -648)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("149_do3c5")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D11/Area2D"]
+[node name="maries_drive_area" type="Area2D" parent="map/41041/maries_drive"]
 
-[node name="Node2D12" type="Node2D" parent="map/41041"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/maries_drive/maries_drive_area"]
+polygon = PackedVector2Array(-265, -627, -259, -636, -260, -650, -248, -666, -251, -670, -265, -652, -266, -638, -269, -630)
 
-[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D12"]
+[node name="merritt_place" type="Node2D" parent="map/41041"]
 
-[node name="Area2D" type="Area2D" parent="map/41041/Node2D12"]
+[node name="merritt_place_sprite" type="Sprite2D" parent="map/41041/merritt_place"]
+position = Vector2(-117, -532)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("150_h70up")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D12/Area2D"]
+[node name="merritt_place_area" type="Area2D" parent="map/41041/merritt_place"]
 
-[node name="Node2D13" type="Node2D" parent="map/41041"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/merritt_place/merritt_place_area"]
+polygon = PackedVector2Array(-101, -548, -93, -549, -92, -518, -99, -513, -142, -512, -141, -519, -105, -519, -100, -522, -101, -547)
 
-[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D13"]
+[node name="munson_court" type="Node2D" parent="map/41041"]
 
-[node name="Area2D" type="Area2D" parent="map/41041/Node2D13"]
+[node name="munson_court_sprite" type="Sprite2D" parent="map/41041/munson_court"]
+position = Vector2(-258, -509)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("151_cpqxb")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D13/Area2D"]
+[node name="munson_court_area" type="Area2D" parent="map/41041/munson_court"]
 
-[node name="Node2D14" type="Node2D" parent="map/41041"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/munson_court/munson_court_area"]
+polygon = PackedVector2Array(-276, -513, -263, -513, -259, -516, -244, -515, -241, -520, -237, -518, -238, -510, -243, -508, -248, -500, -253, -499, -259, -500, -264, -507, -277, -506)
 
-[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D14"]
+[node name="munson_hill_road" type="Node2D" parent="map/41041"]
 
-[node name="Area2D" type="Area2D" parent="map/41041/Node2D14"]
+[node name="munson_hill_road_sprite" type="Sprite2D" parent="map/41041/munson_hill_road"]
+position = Vector2(-331, -561)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("152_a1b0v")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D14/Area2D"]
+[node name="munson_hill_road_area" type="Area2D" parent="map/41041/munson_hill_road"]
 
-[node name="Node2D15" type="Node2D" parent="map/41041"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/munson_hill_road/munson_hill_road_area"]
+polygon = PackedVector2Array(-277, -534, -275, -539, -303, -548, -305, -548, -312, -551, -314, -552, -341, -561, -351, -567, -353, -567, -358, -570, -358, -573, -383, -588, -387, -583, -347, -558, -339, -553)
 
-[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D15"]
+[node name="munson_place" type="Node2D" parent="map/41041"]
 
-[node name="Area2D" type="Area2D" parent="map/41041/Node2D15"]
+[node name="munson_place_sprite" type="Sprite2D" parent="map/41041/munson_place"]
+position = Vector2(-303, -520)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("153_43r85")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D15/Area2D"]
+[node name="munson_place_area" type="Area2D" parent="map/41041/munson_place"]
 
-[node name="Node2D16" type="Node2D" parent="map/41041"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/munson_place/munson_place_area"]
+polygon = PackedVector2Array(-283, -516, -322, -530, -325, -524, -285, -511)
 
-[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D16"]
+[node name="olds_drive" type="Node2D" parent="map/41041"]
 
-[node name="Area2D" type="Area2D" parent="map/41041/Node2D16"]
+[node name="olds_drive_sprtie" type="Sprite2D" parent="map/41041/olds_drive"]
+position = Vector2(-133, -598)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("154_v7el6")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D16/Area2D"]
+[node name="olds_drive_area" type="Area2D" parent="map/41041/olds_drive"]
 
-[node name="Node2D17" type="Node2D" parent="map/41041"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/olds_drive/olds_drive_area"]
+polygon = PackedVector2Array(-137, -608, -130, -608, -129, -588, -136, -587)
 
-[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D17"]
+[node name="south_5th_road" type="Node2D" parent="map/41041"]
 
-[node name="Area2D" type="Area2D" parent="map/41041/Node2D17"]
+[node name="south_5th_road_sprite" type="Sprite2D" parent="map/41041/south_5th_road"]
+position = Vector2(-85, -614)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("155_i4quh")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D17/Area2D"]
+[node name="south_5th_road_area" type="Area2D" parent="map/41041/south_5th_road"]
 
-[node name="Node2D18" type="Node2D" parent="map/41041"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/south_5th_road/south_5th_road_area"]
+polygon = PackedVector2Array(-109, -616, -109, -610, -59, -612, -59, -618)
 
-[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D18"]
+[node name="south_6th_road" type="Node2D" parent="map/41041"]
 
-[node name="Area2D" type="Area2D" parent="map/41041/Node2D18"]
+[node name="south_6th_road_sprite" type="Sprite2D" parent="map/41041/south_6th_road"]
+position = Vector2(-54, -549)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("156_lypbs")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D18/Area2D"]
+[node name="south_6th_road_area" type="Area2D" parent="map/41041/south_6th_road"]
 
-[node name="Node2D19" type="Node2D" parent="map/41041"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/south_6th_road/south_6th_road_area"]
+polygon = PackedVector2Array(-69, -526, -44, -551, -36, -563, -34, -569, -40, -572, -43, -564, -51, -553, -74, -529)
 
-[node name="Sprite2D" type="Sprite2D" parent="map/41041/Node2D19"]
+[node name="south_6th_street" type="Node2D" parent="map/41041"]
 
-[node name="Area2D" type="Area2D" parent="map/41041/Node2D19"]
+[node name="south_6th_street_sprite" type="Sprite2D" parent="map/41041/south_6th_street"]
+position = Vector2(-114, -529)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("157_ngfun")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/Node2D19/Area2D"]
+[node name="south_6th_street_area" type="Area2D" parent="map/41041/south_6th_street"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/south_6th_street/south_6th_street_area"]
+polygon = PackedVector2Array(-183, -548, -82, -557, -71, -553, -62, -542, -66, -538, -75, -547, -82, -551, -91, -550, -113, -548, -183, -541)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="map/41041/south_6th_street/south_6th_street_area"]
 
 [node name="Node2D20" type="Node2D" parent="map/41041"]
 
@@ -2927,6 +3007,8 @@ wait_time = 11.0
 [connection signal="mouse_exited" from="map/41014/woodridge_road/woodridge_road_area" to="." method="_on_woodridge_road_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41014/woodway_street/woodway_street_area" to="." method="_on_woodway_street_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41014/woodway_street/woodway_street_area" to="." method="_on_woodway_street_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41041/jan_mar_drive/jan_mar_drive_area" to="." method="_on_jan_mar_drive_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41041/jan_mar_drive/jan_mar_drive_area" to="." method="_on_jan_mar_drive_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41096/brookside_drive/brookside_drive_area" to="." method="_on_brookside_drive_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41096/brookside_drive/brookside_drive_area" to="." method="_on_brookside_drive_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41096/green_spring_road/green_spring_road_area" to="." method="_on_green_spring_road_area_mouse_entered"]
