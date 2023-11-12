@@ -917,108 +917,198 @@ func _on_tollgate_terrace_area_mouse_entered():
 func _on_tollgate_terrace_area_mouse_exited():
 	highlight_street('tollgate_terrace','41011',false)
 
-
 func _on_downing_court_area_mouse_entered():
 	highlight_street('downing_court','41014',true)
-
-
 func _on_downing_court_area_mouse_exited():
 	highlight_street('downing_court','41014',false)
 
-
 func _on_downing_street_area_mouse_entered():
 	highlight_street('downing_street','41014',true)
-
-
 func _on_downing_street_area_mouse_exited():
 	highlight_street('downing_street','41014',false)
 
-
 func _on_elmdale_road_area_mouse_entered():
 	highlight_street('elmdale_road','41014',true)
-
-
 func _on_elmdale_road_area_mouse_exited():
 	highlight_street('elmdale_road','41014',false)
 
-
 func _on_emory_street_area_mouse_entered():
 	highlight_street('emory_street','41014',true)
-
-
 func _on_emory_street_area_mouse_exited():
 	highlight_street('emory_street','41014',false)
 
-
 func _on_gainer_street_area_mouse_entered():
 	highlight_street('gainer_street','41014',true)
-
-
 func _on_gainer_street_area_mouse_exited():
 	highlight_street('gainer_street','41014',false)
 
-
 func _on_holyoke_drive_area_mouse_entered():
 	highlight_street('holyoke_drive','41014',true)
-
-
 func _on_holyoke_drive_area_mouse_exited():
 	highlight_street('holyoke_drive','41014',false)
 
-
 func _on_marionet_street_area_mouse_entered():
 	highlight_street('marionet_street','41014',true)
-
-
 func _on_marionet_street_area_mouse_exited():
 	highlight_street('marionet_street','41014',false)
 
-
 func _on_old_columbia_pike_area_mouse_entered():
 	highlight_street('old_columbia_pike','41014',true)
-
-
 func _on_old_columbia_pike_area_mouse_exited():
 	highlight_street('old_columbia_pike','41014',false)
 
-
 func _on_overlook_drive_area_mouse_entered():
 	highlight_street('overlook_drive','41014',true)
-
-
 func _on_overlook_drive_area_mouse_exited():
 	highlight_street('overlook_drive','41014',false)
 
-
 func _on_oxford_street_area_mouse_entered():
 	highlight_street('oxford_street','41014',true)
-
-
 func _on_oxford_street_area_mouse_exited():
 	highlight_street('oxford_street','41014',false)
 
-
 func _on_pinecrest_court_area_mouse_entered():
 	highlight_street('pinecrest_court','41014',true)
-
-
 func _on_pinecrest_court_area_mouse_exited():
 	highlight_street('pinecrest_court','41014',false)
 
-
 func _on_woodridge_road_area_mouse_entered():
 	highlight_street('woodridge_road','41014',true)
-
-
 func _on_woodridge_road_area_mouse_exited():
 	highlight_street('woodridge_road','41014',true)
 
-
 func _on_woodway_street_area_mouse_entered():
 	highlight_street('woodway_street','41014',true)
-
-
 func _on_woodway_street_area_mouse_exited():
 	highlight_street('woodway_street','41014',false)
+
+#############################################################
+#############################################################
+#############################################################
+
+#41041#
+
+func _on_fairview_place_area_mouse_entered():
+	highlight_street('fairview_place','41041',true)
+func _on_fairview_place_area_mouse_exited():
+	highlight_street('fairview_place','41041',false)
+
+func _on_glenwood_place_area_mouse_entered():
+	highlight_street('glenwood_place','41041',true)
+func _on_glenwood_place_area_mouse_exited():
+	highlight_street('glenwood_place','41041',false)
+
+func _on_glen_carlyn_road_area_mouse_entered():
+	highlight_street('glen_carlyn_road','41041',true)
+func _on_glen_carlyn_road_area_mouse_exited():
+	highlight_street('glen_carlyn_road','41041',false)
+
+func _on_hallran_road_area_mouse_entered():
+	highlight_street('hallran_road','41041',true)
+func _on_hallran_road_area_mouse_exited():
+	highlight_street('hallran_road','41041',false)
+
+func _on_hardwick_place_area_mouse_entered():
+	highlight_street('hardwick_place','41041',true)
+func _on_hardwick_place_area_mouse_exited():
+	highlight_street('hardwick_place','41041',false)
+
+func _on_jan_mar_drive_area_mouse_entered():
+	highlight_street('jan_mar_drive','41041',true)
+func _on_jan_mar_drive_area_mouse_exited():
+	highlight_street('jan_mar_drive','41041',false)
+
+func _on_kimble_court_area_mouse_entered():
+	highlight_street('kimble_court','41041',true)
+func _on_kimble_court_area_mouse_exited():
+	highlight_street('kimble_court','41041',false)
+
+func _on_lakeside_view_drive_mouse_entered():
+	highlight_street('lakeside_view_drive','41041',true)
+func _on_lakeside_view_drive_mouse_exited():
+	highlight_street('lakeside_view_drive','41041',false)
+
+func _on_lebanon_drive_area_mouse_entered():
+	highlight_street('lebanon_drive','41041',true)
+func _on_lebanon_drive_area_mouse_exited():
+	highlight_street('lebanon_drive','41041',false)
+
+func _on_maries_drive_area_mouse_entered():
+	highlight_street('maries_drive','41041',true)
+func _on_maries_drive_area_mouse_exited():
+	highlight_street('maries_drive','41041',false)
+
+func _on_merritt_place_area_mouse_entered():
+	highlight_street('merritt_place','41041',true)
+func _on_merritt_place_area_mouse_exited():
+	highlight_street('merritt_place','41041',false)
+
+func _on_munson_court_area_mouse_entered():
+	highlight_street('munson_court','41014',true)
+func _on_munson_court_area_mouse_exited():
+	highlight_street('munson_court','41041',false)
+
+func _on_munson_hill_road_area_mouse_entered():
+	highlight_street('munson_hill','41041',true)
+func _on_munson_hill_road_area_mouse_exited():
+	highlight_street('munson_hill','41041',false)
+
+func _on_munson_place_area_mouse_entered():
+	highlight_street('munson_place','41041',true)
+func _on_munson_place_area_mouse_exited():
+	highlight_street('munson_place','41041',false)
+
+func _on_olds_drive_area_mouse_entered():
+	highlight_street('olds_drive','41041',true)
+func _on_olds_drive_area_mouse_exited():
+	highlight_street('olds_drive','41041',false)
+
+func _on_south_5_th_road_area_mouse_entered():
+	highlight_street('south_5th_road','41041',true)
+func _on_south_5_th_road_area_mouse_exited():
+	highlight_street('south_5th_road','41041',false)
+
+func _on_south_6_th_road_area_mouse_entered():
+	highlight_street('south_6th_road','41041',true)
+func _on_south_6_th_road_area_mouse_exited():
+	highlight_street('south_6th_road','41041',false)
+
+func _on_south_6_th_street_area_mouse_entered():
+	highlight_street('south_6th_street','41041',true)
+func _on_south_6_th_street_area_mouse_exited():
+	highlight_street('south_6th_street','41041',false)
+
+func _on_south_manchester_street_area_mouse_entered():
+	highlight_street('south_manchester_street','41041',true)
+func _on_south_manchester_street_area_mouse_exited():
+	highlight_street('south_manchester_street','41041',false)
+	
+	#############################################################
+#############################################################
+#############################################################
+
+#41091#
+
+func _on_gorham_street_area_mouse_entered():
+	highlight_street('gorham_street','41091',true)
+func _on_gorham_street_area_mouse_exited():
+	highlight_street('gorham_street','41091',false)
+
+func _on_rock_springs_avenue_area_mouse_entered():
+	highlight_street('rock_springs_avenue','41091',true)
+func _on_rock_springs_avenue_area_mouse_exited():
+	highlight_street('rock_springs_avenue','41091',false)
+
+func _on_south_carlin_springs_road_area_mouse_entered():
+	highlight_street('south_carlin_springs_road','41091',true)
+func _on_south_carlin_springs_road_area_mouse_exited():
+	highlight_street('south_carlin_springs_road','41091',false)
+
+	
+	#############################################################
+#############################################################
+#############################################################
+
+#41092#
 
 
