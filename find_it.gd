@@ -1112,3 +1112,67 @@ func _on_south_carlin_springs_road_area_mouse_exited():
 #41092#
 
 
+func _on_forest_drive_area_mouse_entered():
+	highlight_street('forest_drive','41092',true)
+func _on_forest_drive_area_mouse_exited():
+	highlight_street('forest_drive','41092',false)
+
+func _on_leesburg_court_area_mouse_entered():
+	highlight_street('leesburg_court','41092',true)
+func _on_leesburg_court_area_mouse_exited():
+	highlight_street('leesburg_court','41092',false)
+
+func _on_lee_court_area_mouse_entered():
+	highlight_street('lee_court','41092',true)
+func _on_lee_court_area_mouse_exited():
+	highlight_street('lee_court','41092',false)
+
+func _on_seminary_road_area_mouse_entered():
+	highlight_street('seminary_road','41092',true)
+func _on_seminary_road_area_mouse_exited():
+	highlight_street('seminary_road','41092',false)
+
+func _on_skyline_village_court_area_mouse_entered():
+	highlight_street('skyline_village_court','41092',true)
+func _on_skyline_village_court_area_mouse_exited():
+	highlight_street('skyline_village_court','41092',false)
+
+func _on_south_12_th_street_area_mouse_entered():
+	highlight_street('south_12th_street','41092',true)
+func _on_south_12_th_street_area_mouse_exited():
+	highlight_street('south_12th_street','41092',false)
+
+func _on_south_14_th_street_area_mouse_entered():
+	highlight_street('south_14th_street','41092',true)
+func _on_south_14_th_street_area_mouse_exited():
+	highlight_street('south_14th_street','41092',false)
+
+func _on_south_george_mason_drive_area_mouse_entered():
+	highlight_street('south_george_mason_drive','41092',true)
+func _on_south_george_mason_drive_area_mouse_exited():
+	highlight_street('south_george_mason_drive','41092',false)
+
+func _on_south_greenbrier_street_are_mouse_entered():
+	highlight_street('south_greenbrier_street','41092',true)
+func _on_south_greenbrier_street_are_mouse_exited():
+	highlight_street('south_greenbrier_street','41092',false)
+
+func _on_south_hamilton_drive_area_mouse_entered():
+	highlight_street('south_hamilton_drive','41092',true)
+func _on_south_hamilton_drive_area_mouse_exited():
+	highlight_street('south_hamilton_drive','41092',false)
+
+func _on_south_harrison_street_area_mouse_entered():
+	highlight_street('south_harrison_street','41092',true)
+func _on_south_harrison_street_area_mouse_exited():
+	highlight_street('south_harrison_street','41092',false)
+
+func _on_south_jefferson_street_area_mouse_entered():
+	highlight_street('south_jefferson_street','41092',true)
+func _on_south_jefferson_street_area_mouse_exited():
+	highlight_street('south_jefferson_street','41092',false)
+
+func _on_washington_court_area_mouse_entered():
+	highlight_street('washington_court','41092',true)
+func _on_washington_court_area_mouse_exited():
+	highlight_street('washington_court','41092',false)
