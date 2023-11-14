@@ -1,3 +1,7 @@
 res://default_env.tres
+res://menu.tscn
+res://menu.gd
 res://find_it.tscn
+res://end_screen.tscn
+res://street_drill.tscn
 res://find_it.gd

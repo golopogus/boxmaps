@@ -1044,14 +1044,14 @@ func _on_merritt_place_area_mouse_exited():
 	highlight_street('merritt_place','41041',false)
 
 func _on_munson_court_area_mouse_entered():
-	highlight_street('munson_court','41014',true)
+	highlight_street('munson_court','41041',true)
 func _on_munson_court_area_mouse_exited():
 	highlight_street('munson_court','41041',false)
 
 func _on_munson_hill_road_area_mouse_entered():
-	highlight_street('munson_hill','41041',true)
+	highlight_street('munson_hill_road','41041',true)
 func _on_munson_hill_road_area_mouse_exited():
-	highlight_street('munson_hill','41041',false)
+	highlight_street('munson_hill_road','41041',false)
 
 func _on_munson_place_area_mouse_entered():
 	highlight_street('munson_place','41041',true)
@@ -1176,3 +1176,59 @@ func _on_washington_court_area_mouse_entered():
 	highlight_street('washington_court','41092',true)
 func _on_washington_court_area_mouse_exited():
 	highlight_street('washington_court','41092',false)
+
+	#############################################################
+#############################################################
+#############################################################
+
+#41093#
+
+func _on_bouffant_boulevard_area_mouse_entered():
+	highlight_street('bouffant_boulevard','41093',true)
+func _on_bouffant_boulevard_area_mouse_exited():
+	highlight_street('bouffant_boulevard','41093',false)
+
+func _on_center_lane_area_mouse_entered():
+	highlight_street('center_lane','41093',true)
+func _on_center_lane_area_mouse_exited():
+	highlight_street('center_lane','41093',false)
+
+func _on_dannys_lane_area_mouse_entered():
+	highlight_street('dannys_lane','41093',true)
+func _on_dannys_lane_area_mouse_exited():
+	highlight_street('dannys_lane','41093',false)
+
+func _on_dannys_place_area_mouse_entered():
+	highlight_street('dannys_place','41093',true)
+func _on_dannys_place_area_mouse_exited():
+	highlight_street('dannys_place','41093',false)
+
+func _on_magnolia_lane_area_mouse_entered():
+	highlight_street('magnolia_lane','41093',true)
+func _on_magnolia_lane_area_mouse_exited():
+	highlight_street('magnolia_lane','41093',false)
+
+func _on_maryalice_place_area_mouse_entered():
+	highlight_street('maryalice_place','41093',true)
+func _on_maryalice_place_area_mouse_exited():
+	highlight_street('maryalice_place','41093',false)
+
+func _on_north_rosser_street_area_mouse_entered():
+	highlight_street('north_rosser_street','41093',true)
+func _on_north_rosser_street_area_mouse_exited():
+	highlight_street('north_rosser_street','41093',false)
+
+func _on_paul_street_area_mouse_entered():
+	highlight_street('paul_street','41093',true)
+func _on_paul_street_area_mouse_exited():
+	highlight_street('paul_street','41093',false)
+
+func _on_scoville_street_area_mouse_entered():
+	highlight_street('scoville_street','41093',true)
+func _on_scoville_street_area_mouse_exited():
+	highlight_street('scoville_street','41093',false)
+
+func _on_williams_lane_area_mouse_entered():
+	highlight_street('williams_lane','41093',true)
+func _on_williams_lane_area_mouse_exited():
+	highlight_street('williams_lane','41093',false)
