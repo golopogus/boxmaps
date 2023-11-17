@@ -1232,3 +1232,100 @@ func _on_williams_lane_area_mouse_entered():
 	highlight_street('williams_lane','41093',true)
 func _on_williams_lane_area_mouse_exited():
 	highlight_street('williams_lane','41093',false)
+
+	#############################################################
+#############################################################
+#############################################################
+
+#41094#
+func _on_arnet_street_area_mouse_entered():
+	highlight_street('arnet_street','41094',true)
+func _on_arnet_street_area_mouse_exited():
+	highlight_street('arnet_street','41094',false)
+
+func _on_barcroft_view_terrace_area_mouse_entered():
+	highlight_street('barcroft_view_terrace','41094',true)
+func _on_barcroft_view_terrace_area_mouse_exited():
+	highlight_street('barcroft_view_terrace','41094',false)
+
+func _on_bell_manor_court_area_mouse_entered():
+	highlight_street('bell_manor_court','41094',true)
+func _on_bell_manor_court_area_mouse_exited():
+	highlight_street('bell_manor_court','41094',false)
+
+func _on_carver_place_area_mouse_entered():
+	highlight_street('carver_place','41094',true)
+func _on_carver_place_area_mouse_exited():
+	highlight_street('carver_place','41094',false)
+
+func _on_dewey_jones_road_area_mouse_entered():
+	highlight_street('dewey_jones_road','41094',true)
+func _on_dewey_jones_road_area_mouse_exited():
+	highlight_street('dewey_jones_road','41094',false)
+
+func _on_ellery_circle_area_mouse_entered():
+	highlight_street('ellery_circle','41094',true)
+func _on_ellery_circle_area_mouse_exited():
+	highlight_street('ellery_circle','41094',false)
+
+func _on_falls_gate_court_area_mouse_entered():
+	highlight_street('falls_gate_court','41094',true)
+func _on_falls_gate_court_area_mouse_exited():
+	highlight_street('falls_gate_court','41094',false)
+
+func _on_hoffmans_lane_area_mouse_entered():
+	highlight_street('hoffmans_lane','41094',true)
+func _on_hoffmans_lane_area_mouse_exited():
+	highlight_street('hoffmans_lane','41094',false)
+
+func _on_lacy_boulevard_area_mouse_entered():
+	highlight_street('lacy_boulevard','41094',true)
+func _on_lacy_boulevard_area_mouse_exited():
+	highlight_street('lacy_boulevard','41094',false)
+
+func _on_lewis_lane_area_mouse_entered():
+	highlight_street('lewis_lane','41094',true)
+func _on_lewis_lane_area_mouse_exited():
+	highlight_street('lewis_lane','41094',false)
+
+func _on_moncure_avenue_area_mouse_entered():
+	highlight_street('moncure_avenue','41094',true)
+func _on_moncure_avenue_area_mouse_exited():
+	highlight_street('moncure_avenue','41094',false)
+
+func _on_munson_road_area_mouse_entered():
+	highlight_street('munson_road','41094',true)
+func _on_munson_road_area_mouse_exited():
+	highlight_street('munson_road','41094',false)
+
+func _on_oakview_gardens_drive_area_mouse_entered():
+	highlight_street('oakview_gardens_drive','41094',true)
+func _on_oakview_gardens_drive_area_mouse_exited():
+	highlight_street('oakview_gardens_drive','41094',false)
+
+func _on_pinkett_court_area_mouse_entered():
+	highlight_street('pinkett_court','41094',true)
+func _on_pinkett_court_area_mouse_exited():
+	highlight_street('pinkett_court','41094',false)
+
+func _on_poplar_lane_area_mouse_entered():
+	highlight_street('poplar_lane','41094',true)
+func _on_poplar_lane_area_mouse_exited():
+	highlight_street('poplar_lane','41094',false)
+
+func _on_sheppards_court_area_mouse_entered():
+	highlight_street('sheppards_court','41094',true)
+func _on_sheppards_court_area_mouse_exited():
+	highlight_street('sheppards_court','41094',false)
+
+func _on_summers_lane_area_mouse_entered():
+	highlight_street('summers_lane','41094',true)
+func _on_summers_lane_area_mouse_exited():
+	highlight_street('summers_lane','41094',false)
+	
+
+	#############################################################
+#############################################################
+#############################################################
+
+#41095#

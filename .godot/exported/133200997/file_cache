@@ -1,6 +1,6 @@
-res://default_env.tres::1d4f99027ab31d138efed653f18953bc::1699323487::res://.godot/exported/133200997/export-7cf3fd67ad9f55210191d77b582b8209-default_env.res
-res://find_it.tscn::a0accd0f3b061fe238b941990f1ecd16::1699323487::res://.godot/exported/133200997/export-1311f942c86029a47988f71346344e10-find_it.scn
-res://menu.tscn::aac2a47588e93b873fccf3e3fcd81d48::1698795775::res://.godot/exported/133200997/export-a4951207776b25ee5c8b2b05c1463587-menu.scn
-res://end_screen.tscn::0aab59a649aae5e62bd65a78b2447075::1699322122::res://.godot/exported/133200997/export-1cf26ef696ecefdd6fd9892dc8672a36-end_screen.scn
+res://default_env.tres::1d4f99027ab31d138efed653f18953bc::1699929544::res://.godot/exported/133200997/export-7cf3fd67ad9f55210191d77b582b8209-default_env.res
+res://find_it.tscn::d34be7e9aa57a7adf3702399a473a241::1699929544::res://.godot/exported/133200997/export-1311f942c86029a47988f71346344e10-find_it.scn
+res://menu.tscn::36458681c93d10f8138ca90ab7eb4b89::1699929432::res://.godot/exported/133200997/export-a4951207776b25ee5c8b2b05c1463587-menu.scn
+res://end_screen.tscn::c4fc551f691cccf6151a689e752ce490::1699929432::res://.godot/exported/133200997/export-1cf26ef696ecefdd6fd9892dc8672a36-end_screen.scn
 res://map.tscn::0c1a23d36b2c1e0a7fd70869fcda1610::1698767310::res://.godot/exported/133200997/export-e6d97c4feb736ad10c0d43b3f8310ea4-map.scn
-res://street_drill.tscn::fd65c9edb94366cca6f79a43777f703e::1699322122::res://.godot/exported/133200997/export-db4cfbf0863934c3c7968c92e71ccc1e-street_drill.scn
+res://street_drill.tscn::fe9effbe3bc23f77dafc1e575070aa56::1699929432::res://.godot/exported/133200997/export-db4cfbf0863934c3c7968c92e71ccc1e-street_drill.scn
