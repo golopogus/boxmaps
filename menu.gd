@@ -57,6 +57,18 @@ func _on_button_41093_pressed():
 		boxes.erase(41093)
 	else:
 		boxes.append(41093)
+
+func _on_button_41094_pressed():
+	if 41094 in boxes:
+		boxes.erase(41094)
+	else:
+		boxes.append(41094)
+
+func _on_button_41095_pressed():
+	if 41095 in boxes:
+		boxes.erase(41095)
+	else:
+		boxes.append(41095)
 		
 func _on_button_41096_pressed():
 	if 41097 in boxes:
@@ -70,6 +82,18 @@ func _on_button_41097_pressed():
 	else:
 		boxes.append(41097)
 
+func _on_button_41098_pressed():
+	if 41098 in boxes:
+		boxes.erase(41098)
+	else:
+		boxes.append(41098)
+
+func _on_button_41099_pressed():
+	if 41099 in boxes:
+		boxes.erase(41099)
+	else:
+		boxes.append(41099)
+
 
 func _on_button_pressed():
 	Globals.handle_start(boxes)
@@ -79,6 +103,12 @@ func _on_button_pressed():
 func _on_button_2_pressed():
 	Globals.handle_start(boxes)
 	get_tree().change_scene_to_file("res://street_drill.tscn")
+
+
+
+
+
+
 
 
 

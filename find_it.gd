@@ -975,7 +975,7 @@ func _on_pinecrest_court_area_mouse_exited():
 func _on_woodridge_road_area_mouse_entered():
 	highlight_street('woodridge_road','41014',true)
 func _on_woodridge_road_area_mouse_exited():
-	highlight_street('woodridge_road','41014',true)
+	highlight_street('woodridge_road','41014',false)
 
 func _on_woodway_street_area_mouse_entered():
 	highlight_street('woodway_street','41014',true)
@@ -1329,3 +1329,210 @@ func _on_summers_lane_area_mouse_exited():
 #############################################################
 
 #41095#
+
+func _on_bradley_boulevard_area_mouse_entered():
+	highlight_street('bradley_boulevard','41095',true)
+func _on_bradley_boulevard_area_mouse_exited():
+	highlight_street('bradley_boulevard','41095',false)
+
+func _on_chestnut_place_area_mouse_entered():
+	highlight_street('chestnut_place','41095',true)
+func _on_chestnut_place_area_mouse_exited():
+	highlight_street('chestnut_place','41095',false)
+
+func _on_christine_place_area_mouse_entered():
+	highlight_street('christine_place','41095',true)
+func _on_christine_place_area_mouse_exited():
+	highlight_street('christine_place','41095',false)
+
+func _on_colfax_avenue_area_mouse_entered():
+	highlight_street('colfax_avenue','41095',true)
+func _on_colfax_avenue_area_mouse_exited():
+	highlight_street('colfax_avenue','41095',false)
+
+func _on_cook_street_area_mouse_entered():
+	highlight_street('cook_street','41095',true)
+func _on_cook_street_area_mouse_exited():
+	highlight_street('cook_street','41095',false)
+
+func _on_david_lane_area_mouse_entered():
+	highlight_street('david_lane','41095',true)
+func _on_david_lane_area_mouse_exited():
+	highlight_street('david_lane','41095',false)
+
+func _on_dawes_avenue_area_mouse_entered():
+	highlight_street('dawes_avenue','41095',true)
+func _on_dawes_avenue_area_mouse_exited():
+	highlight_street('dawes_avenue','41095',false)
+
+func _on_doris_place_area_mouse_entered():
+	highlight_street('doris_place','41095',true)
+func _on_doris_place_area_mouse_exited():
+	highlight_street('doris_place','41095',false)
+
+func _on_faith_court_area_mouse_entered():
+	highlight_street('faith_court','41095',true)
+func _on_faith_court_area_mouse_exited():
+	highlight_street('faith_court','41095',false)
+
+func _on_hatton_court_area_mouse_entered():
+	highlight_street('hatton_court','41095',true)
+func _on_hatton_court_area_mouse_exited():
+	highlight_street('hatton_court','41095',false)
+	
+func _on_hawthorne_avenue_area_mouse_entered():
+	highlight_street('hawthorne_avenue','41095',true)
+func _on_hawthorne_avenue_area_mouse_exited():
+	highlight_street('hawthorne_avenue','41095',false)
+
+func _on_holmes_run_parkway_area_mouse_entered():
+	highlight_street('holmes_run_parkway','41095',true)
+func _on_holmes_run_parkway_area_mouse_exited():
+	highlight_street('holmes_run_parkway','41095',false)
+
+func _on_lester_court_area_mouse_entered():
+	highlight_street('lester_court','41095',true)
+func _on_lester_court_area_mouse_exited():
+	highlight_street('lester_court','41095',false)
+
+func _on_north_stevens_street_area_mouse_entered():
+	highlight_street('north_stevens_street','41095',true)
+func _on_north_stevens_street_area_mouse_exited():
+	highlight_street('north_stevens_street','41095',false)
+
+func _on_resevoir_heights_avenue_area_mouse_entered():
+	highlight_street('resevoir_heights_avenue','41095',true)
+func _on_resevoir_heights_avenue_area_mouse_exited():
+	highlight_street('resevoir_heights_avenue','41095',false)
+
+func _on_skyline_heights_court_area_mouse_entered():
+	highlight_street('skyline_heights_court','41095',true)
+func _on_skyline_heights_court_area_mouse_exited():
+	highlight_street('skyline_heights_court','41095',false)
+
+func _on_terrett_court_area_mouse_entered():
+	highlight_street('terrett_court','41095',true)
+func _on_terrett_court_area_mouse_exited():
+	highlight_street('terrett_court','41095',false)
+
+func _on_wheat_court_area_mouse_entered():
+	highlight_street('wheat_court','41095',true)
+func _on_wheat_court_area_mouse_exited():
+	highlight_street('wheat_court','41095',false)
+	
+
+#############################################################
+#############################################################
+#############################################################
+
+#41098#
+
+
+func _on_albro_lane_area_mouse_entered():
+	highlight_street('albro_lane','41098',true)
+func _on_albro_lane_area_mouse_exited():
+	highlight_street('albro_lane','41098',false)
+	
+func _on_applegath_court_area_mouse_entered():
+	highlight_street('applegath_court','41098',true)
+func _on_applegath_court_area_mouse_exited():
+	highlight_street('applegath_court','41098',false)
+
+func _on_berlee_drive_area_mouse_entered():
+	highlight_street('berlee_drive','41098',true)
+func _on_berlee_drive_area_mouse_exited():
+	highlight_street('berlee_drive','41098',false)
+
+func _on_bushie_court_area_mouse_entered():
+	highlight_street('bushie_court','41098',true)
+func _on_bushie_court_area_mouse_exited():
+	highlight_street('bushie_court','41098',false)
+
+func _on_dahill_place_area_mouse_entered():
+	highlight_street('dahill_place','41098',true)
+func _on_dahill_place_area_mouse_exited():
+	highlight_street('dahill_place','41098',false)
+
+func _on_deane_court_area_mouse_entered():
+	highlight_street('deane_court','41098',true)
+func _on_deane_court_area_mouse_exited():
+	highlight_street('deane_court','41098',false)
+
+func _on_edgemoor_lane_area_mouse_entered():
+	highlight_street('edgemoor_lane','41098',true)
+func _on_edgemoor_lane_area_mouse_exited():
+	highlight_street('edgemoor_lane','41098',false)
+
+func _on_larstan_drive_area_mouse_entered():
+	highlight_street('larstan_drive','41098',true)
+func _on_larstan_drive_area_mouse_exited():
+	highlight_street('larstan_drive','41098',false)
+
+func _on_linmar_court_area_mouse_entered():
+	highlight_street('linmar_court','41098',true)
+func _on_linmar_court_area_mouse_exited():
+	highlight_street('linmar_court','41098',false)
+
+func _on_mayapple_place_area_mouse_entered():
+	highlight_street('mayapple_place','41098',true)
+func _on_mayapple_place_area_mouse_exited():
+	highlight_street('mayapple_place','41098',false)
+
+func _on_sano_street_area_mouse_entered():
+	highlight_street('sano_street','41098',true)
+func _on_sano_street_area_mouse_exited():
+	highlight_street('sano_street','41098',false)
+
+func _on_stanby_court_area_mouse_entered():
+	highlight_street('stanby_court','41098',true)
+func _on_stanby_court_area_mouse_exited():
+	highlight_street('stanby_court','41098',false)
+
+func _on_vengo_court_area_mouse_entered():
+	highlight_street('vengo_court','41098',true)
+func _on_vengo_court_area_mouse_exited():
+	highlight_street('vengo_court','41098',false)
+
+func _on_vicki_court_area_mouse_entered():
+	highlight_street('vicki_court','41098',true)
+func _on_vicki_court_area_mouse_exited():
+	highlight_street('vicki_court','41098',false)
+	
+#############################################################
+#############################################################
+#############################################################
+
+#41099#
+
+
+func _on_carlyn_hill_drive_area_mouse_entered():
+	highlight_street('carlyn_hill_drive','41099',true)
+func _on_carlyn_hill_drive_area_mouse_exited():
+	highlight_street('carlyn_hill_drive','41099',false)
+
+func _on_crossroads_center_way_area_mouse_entered():
+	highlight_street('crossroads_center_way','41099',true)
+func _on_crossroads_center_way_area_mouse_exited():
+	highlight_street('crossroads_center_way','41099',false)
+
+func _on_diehl_court_area_mouse_entered():
+	highlight_street('diehl_court','41099',true)
+func _on_diehl_court_area_mouse_exited():
+	highlight_street('diehl_court','41099',false)
+
+func _on_moray_lane_area_mouse_entered():
+	highlight_street('moray_lane','41099',true)
+func _on_moray_lane_area_mouse_exited():
+	highlight_street('moray_lane','41099',false)
+
+func _on_robinwood_lane_area_mouse_entered():
+	highlight_street('robinwood_lane','41099',true)
+func _on_robinwood_lane_area_mouse_exited():
+	highlight_street('robinwood_lane','41099',false)
+
+func _on_spring_lane_area_mouse_entered():
+	highlight_street('spring_lane','41099',true)
+func _on_spring_lane_area_mouse_exited():
+	highlight_street('spring_lane','41099',false)
+
+
