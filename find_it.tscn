@@ -1,8 +1,8 @@
-[gd_scene load_steps=270 format=3 uid="uid://d14qctc77xo60"]
+[gd_scene load_steps=269 format=3 uid="uid://d14qctc77xo60"]
 
 [ext_resource type="Script" path="res://find_it.gd" id="1_p23o3"]
 [ext_resource type="Texture2D" uid="uid://ch7hqba3bm6gh" path="res://black.png" id="2_5tsnp"]
-[ext_resource type="Texture2D" uid="uid://cwn8fswjl2do2" path="res://banner.png" id="3_1rt0f"]
+[ext_resource type="FontFile" uid="uid://b578gypxkk5b5" path="res://Instruction.otf" id="3_6d1b7"]
 [ext_resource type="Texture2D" uid="uid://cgi4yjepe5kms" path="res://streets/41000/carey_park_lane.png" id="5_iqssc"]
 [ext_resource type="Texture2D" uid="uid://20uvh48honwk" path="res://streets/41000/madison_watch_way.png" id="6_bt3lw"]
 [ext_resource type="Texture2D" uid="uid://dretynns2iurv" path="res://streets/41000/signal_knob_court.png" id="7_f1lg6"]
@@ -31,7 +31,6 @@
 [ext_resource type="Texture2D" uid="uid://uq0pe8oggsra" path="res://streets/41000/malibu_circle.png" id="30_p5xci"]
 [ext_resource type="Texture2D" uid="uid://csw116birwhga" path="res://star.png" id="30_xkle0"]
 [ext_resource type="Texture2D" uid="uid://cjqvx864uwdf4" path="res://streets/41000/mansfield_road.png" id="31_8288l"]
-[ext_resource type="FontFile" uid="uid://tfi382u2oie8" path="res://CherryBombOne-Regular.ttf" id="31_t3a8f"]
 [ext_resource type="Texture2D" uid="uid://c41qky8oqtdmo" path="res://streets/41008/argyle_drive.png" id="32_chwv6"]
 [ext_resource type="Texture2D" uid="uid://ldcoq8q4886j" path="res://streets/41008/tyler_street.png" id="32_hh2a8"]
 [ext_resource type="Texture2D" uid="uid://bqyw7ru4c3jam" path="res://streets/41008/aura_court.png" id="33_iuoix"]
@@ -426,32 +425,28 @@ script = ExtResource("1_p23o3")
 scale = Vector2(0.3, 0.3)
 transform = Transform2D(0.3, 0, 0, 0.3, 0, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
-position = Vector2(1711.88, 460)
-scale = Vector2(2.97128, 1.53292)
-texture = ExtResource("3_1rt0f")
-
 [node name="street_label" type="Label" parent="CanvasLayer"]
-modulate = Color(0.898039, 1, 0, 1)
-offset_left = 1186.67
-offset_top = -3.33333
-offset_right = 3232.67
-offset_bottom = 289.667
+offset_left = 290.0
+offset_right = 5863.0
+offset_bottom = 306.0
 scale = Vector2(0.5, 0.5)
-theme_override_fonts/font = ExtResource("31_t3a8f")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 150
+theme_override_fonts/font = ExtResource("3_6d1b7")
 theme_override_font_sizes/font_size = 200
 horizontal_alignment = 1
 vertical_alignment = 3
 autowrap_mode = 3
 
 [node name="score_label" type="Label" parent="CanvasLayer"]
-modulate = Color(0.898039, 1, 0, 1)
-offset_left = 1700.0
-offset_top = 10.0
-offset_right = 5033.0
-offset_bottom = 400.0
+offset_left = 1706.67
+offset_top = -3.33333
+offset_right = 5039.67
+offset_bottom = 386.667
 scale = Vector2(0.5, 0.5)
-theme_override_fonts/font = ExtResource("31_t3a8f")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 150
+theme_override_fonts/font = ExtResource("3_6d1b7")
 theme_override_font_sizes/font_size = 200
 text = "0"
 horizontal_alignment = 2
@@ -464,24 +459,26 @@ offset_top = 923.333
 offset_right = 2029.67
 offset_bottom = 1213.33
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("31_t3a8f")
+theme_override_fonts/font = ExtResource("3_6d1b7")
 theme_override_font_sizes/font_size = 200
 theme_override_styles/normal = SubResource("StyleBoxFlat_usb5i")
 text = "Start"
 
 [node name="exit" type="Button" parent="CanvasLayer"]
-offset_left = 60.0
-offset_top = 1663.33
-offset_right = 418.0
-offset_bottom = 1953.33
+offset_left = 30.0
+offset_top = 1713.33
+offset_right = 388.0
+offset_bottom = 2003.33
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_normal_color = Color(0, 0, 0, 0)
 theme_override_colors/icon_pressed_color = Color(0, 0, 0, 0)
 theme_override_colors/icon_hover_color = Color(0, 0, 0, 0)
 theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 0)
 theme_override_colors/icon_focus_color = Color(0, 0, 0, 0)
 theme_override_colors/icon_disabled_color = Color(0, 0, 0, 0)
-theme_override_fonts/font = ExtResource("31_t3a8f")
-theme_override_font_sizes/font_size = 200
+theme_override_constants/outline_size = 75
+theme_override_fonts/font = ExtResource("3_6d1b7")
+theme_override_font_sizes/font_size = 100
 theme_override_styles/normal = SubResource("StyleBoxEmpty_byhm1")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_qd6ix")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_4bgyu")
@@ -3791,7 +3788,7 @@ offset_left = -583.333
 offset_top = -320.0
 offset_right = 560.667
 offset_bottom = 343.0
-theme_override_fonts/font = ExtResource("31_t3a8f")
+theme_override_fonts/font = ExtResource("3_6d1b7")
 theme_override_font_sizes/font_size = 400
 text = "50"
 

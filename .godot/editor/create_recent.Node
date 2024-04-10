@@ -1,3 +1,5 @@
+CheckButton
+ColorRect
 CollisionPolygon2D
 Area2D
 Sprite2D
@@ -6,7 +8,5 @@ Camera2D
 Node
 Button
 Label
-ColorRect
 Timer
-CheckButton
 TextureRect

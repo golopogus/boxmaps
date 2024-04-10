@@ -1,7 +1,7 @@
 extends Node2D
 
 var boxes = []
-
+var pressed = false
 
 func _on_button_41000_pressed():
 	if 41000 in boxes:
@@ -95,6 +95,26 @@ func _on_button_41099_pressed():
 		boxes.append(41099)
 
 
+func _on_button_all_pressed():
+	var all_boxes = [41000,41008,41011,41012,41014,41041,41091,41092,41093,41094,41095,41096,41097,41098,41099]
+	if pressed == false:
+		pressed = true
+		for button in $TextureRect.get_children():
+			if 'button' in button.name:
+				get_node('TextureRect/' + button.name).button_pressed = true
+		boxes.clear()
+		for box in all_boxes:
+			boxes.append(box)
+	else:
+		pressed = false
+		for button in $TextureRect.get_children():
+			if 'button' in button.name:
+				get_node('TextureRect/' + button.name).button_pressed = false
+		boxes.clear()
+		
+		
+
+
 func _on_button_pressed():
 	Globals.handle_start(boxes)
 	get_tree().change_scene_to_file("res://find_it.tscn")
@@ -103,6 +123,12 @@ func _on_button_pressed():
 func _on_button_2_pressed():
 	Globals.handle_start(boxes)
 	get_tree().change_scene_to_file("res://street_drill.tscn")
+
+
+
+
+
+
 
 
 
