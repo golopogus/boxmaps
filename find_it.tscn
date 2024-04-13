@@ -1133,15 +1133,22 @@ polygon = PackedVector2Array(-520, -379, -518, -383, -510, -378, -507, -368, -50
 
 [node name="magnolia_avenue" type="Node2D" parent="map/41008"]
 
-[node name="magnolia_avenue_sprite" type="Sprite2D" parent="map/41008/magnolia_avenue"]
-position = Vector2(-236, -447)
-scale = Vector2(0.36, 0.36)
-texture = ExtResource("55_kewtm")
-
 [node name="magnolia_avenue_area" type="Area2D" parent="map/41008/magnolia_avenue"]
 
 [node name="magnolia_avenue_shape" type="CollisionPolygon2D" parent="map/41008/magnolia_avenue/magnolia_avenue_area"]
 polygon = PackedVector2Array(-251, -418, -255, -416, -257, -419, -218, -479, -214, -477, -215, -471)
+
+[node name="magnolia_avenue_sprite" type="Node2D" parent="map/41008/magnolia_avenue"]
+
+[node name="magnolia_avenue_sprite2" type="Sprite2D" parent="map/41008/magnolia_avenue/magnolia_avenue_sprite"]
+position = Vector2(-189, -560)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("148_rvmn5")
+
+[node name="magnolia_avenue_sprite" type="Sprite2D" parent="map/41008/magnolia_avenue/magnolia_avenue_sprite"]
+position = Vector2(-236, -447)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("55_kewtm")
 
 [node name="maple_court" type="Node2D" parent="map/41008"]
 
@@ -1255,69 +1262,16 @@ texture = ExtResource("32_hh2a8")
 polygon = PackedVector2Array(-292, -235, -284, -239, -267, -211, -265, -202, -259, -198, -248, -176, -256, -171)
 
 [node name="glen_carlyn_drive" type="Node2D" parent="map/41008"]
-visible = false
-position = Vector2(20, 43)
-
-[node name="glen_carlyn_drive_area" type="Area2D" parent="map/41008/glen_carlyn_drive"]
-
-[node name="gcd_shape_1" type="CollisionPolygon2D" parent="map/41008/glen_carlyn_drive/glen_carlyn_drive_area"]
-polygon = PackedVector2Array(-314, -247, -308, -244, -260, -322, -230, -371, -231, -376, -227, -376, -217, -394, -224, -397, -234, -381, -233, -378, -238, -376, -294, -281, -308, -257)
-
-[node name="gcd_shape_2" type="CollisionPolygon2D" parent="map/41008/glen_carlyn_drive/glen_carlyn_drive_area"]
-polygon = PackedVector2Array(-229, -442, -224, -439, -233, -424, -235, -414, -242, -418, -239, -428)
-
-[node name="gcd_shape_3" type="CollisionPolygon2D" parent="map/41008/glen_carlyn_drive/glen_carlyn_drive_area"]
-polygon = PackedVector2Array(-180, -408, -174, -404, -181, -392, -190, -385, -196, -389, -188, -395)
-
-[node name="glen_carlyn_drive_sprite" type="Sprite2D" parent="map/41008/glen_carlyn_drive"]
-position = Vector2(-245, -342)
-scale = Vector2(0.36, 0.36)
-texture = ExtResource("26_ds2rx")
+position = Vector2(-80, -1)
 
 [node name="nevius_street" type="Node2D" parent="map/41008"]
-visible = false
-position = Vector2(20, 43)
-
-[node name="nevius_street_sprite" type="Sprite2D" parent="map/41008/nevius_street"]
-position = Vector2(-357, -410)
-scale = Vector2(0.36, 0.36)
-texture = ExtResource("11_248fd")
-
-[node name="nevius_street_area" type="Area2D" parent="map/41008/nevius_street"]
-
-[node name="ns_shape" type="CollisionPolygon2D" parent="map/41008/nevius_street/nevius_street_area"]
-polygon = PackedVector2Array(-404, -330, -398, -325, -373, -362, -367, -364, -348, -395, -349, -400, -347, -404, -340, -408, -337, -436, -339, -441, -337, -445, -321, -473, -310, -493, -314, -495, -343, -452, -342, -445, -342, -437, -343, -430, -349, -406, -352, -402, -357, -399, -374, -370, -374, -364, -388, -350)
+position = Vector2(-80, -1)
 
 [node name="mansfield_road" type="Node2D" parent="map/41008"]
-visible = false
-position = Vector2(20, 43)
-
-[node name="mansfield_road_area" type="Area2D" parent="map/41008/mansfield_road"]
-
-[node name="mr_shape1" type="CollisionPolygon2D" parent="map/41008/mansfield_road/mansfield_road_area"]
-polygon = PackedVector2Array(-462, -346, -467, -335, -464, -318, -466, -301, -473, -276, -478, -266, -484, -264, -480, -251, -483, -245, -488, -236, -500, -235, -506, -238, -510, -246, -509, -254, -504, -260, -492, -269, -484, -272, -474, -294, -469, -322, -472, -336, -469, -346, -466, -348)
-
-[node name="mr_shape2" type="CollisionPolygon2D" parent="map/41008/mansfield_road/mansfield_road_area"]
-polygon = PackedVector2Array(-453, -352, -452, -349, -447, -349, -443, -361, -441, -372, -441, -379, -436, -382, -416, -407, -400, -421, -397, -430, -401, -433, -414, -421, -419, -415, -419, -411, -426, -406, -440, -390, -446, -380, -449, -369, -453, -353)
-
-[node name="mansfield_road_sprite" type="Sprite2D" parent="map/41008/mansfield_road"]
-position = Vector2(-452, -334)
-scale = Vector2(0.36, 0.36)
-texture = ExtResource("31_8288l")
+position = Vector2(-80, -1)
 
 [node name="lake_street" type="Node2D" parent="map/41008"]
-visible = false
-position = Vector2(20, 43)
-
-[node name="lake_street_area" type="Area2D" parent="map/41008/lake_street"]
-
-[node name="ls_shape" type="CollisionPolygon2D" parent="map/41008/lake_street/lake_street_area"]
-polygon = PackedVector2Array(-267, -203, -212, -235, -207, -239, -175, -290, -181, -292, -200, -261, -200, -256, -203, -254, -212, -239, -240, -225, -243, -220, -249, -220, -269, -207)
-
-[node name="lake_street_sprite" type="Sprite2D" parent="map/41008/lake_street"]
-position = Vector2(-224, -247)
-scale = Vector2(0.36, 0.36)
-texture = ExtResource("29_g4wsb")
+position = Vector2(-80, -1)
 
 [node name="41011" type="Node2D" parent="map"]
 
@@ -2336,15 +2290,22 @@ polygon = PackedVector2Array(-241, -605, -236, -608, -241, -612, -251, -618, -26
 
 [node name="magnolia_avenue" type="Node2D" parent="map/41041"]
 
-[node name="magnolia_avenue_sprite" type="Sprite2D" parent="map/41041/magnolia_avenue"]
-position = Vector2(-189, -560)
-scale = Vector2(0.36, 0.36)
-texture = ExtResource("148_rvmn5")
-
 [node name="magnolia_avenue_area" type="Area2D" parent="map/41041/magnolia_avenue"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41041/magnolia_avenue/magnolia_avenue_area"]
 polygon = PackedVector2Array(-191, -606, -185, -606, -184, -575, -184, -549, -185, -529, -187, -515, -190, -511, -196, -514, -192, -522, -190, -538, -190, -568)
+
+[node name="magnolia_avenue_sprite" type="Node2D" parent="map/41041/magnolia_avenue"]
+
+[node name="magnolia_avenue_sprite" type="Sprite2D" parent="map/41041/magnolia_avenue/magnolia_avenue_sprite"]
+position = Vector2(-189, -560)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("148_rvmn5")
+
+[node name="magnolia_avenue_sprite2" type="Sprite2D" parent="map/41041/magnolia_avenue/magnolia_avenue_sprite"]
+position = Vector2(-236, -447)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("55_kewtm")
 
 [node name="maries_drive" type="Node2D" parent="map/41041"]
 
@@ -3203,11 +3164,6 @@ polygon = PackedVector2Array(-96, 183, -91, 181, -87, 190, -93, 192)
 
 [node name="north_chambliss_street" type="Node2D" parent="map/41095"]
 
-[node name="north_chambliss_street_sprite" type="Sprite2D" parent="map/41095/north_chambliss_street"]
-position = Vector2(-96, 198)
-scale = Vector2(0.36, 0.36)
-texture = ExtResource("215_m0jwn")
-
 [node name="north_chambliss_street_area" type="Area2D" parent="map/41095/north_chambliss_street"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41095/north_chambliss_street/north_chambliss_street_area"]
@@ -3218,6 +3174,18 @@ polygon = PackedVector2Array(-35, 93, -29, 91, -24, 110, -30, 111)
 
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="map/41095/north_chambliss_street/north_chambliss_street_area"]
 polygon = PackedVector2Array(-28, 119, -22, 118, -15, 150, -19, 155, -26, 180, -29, 191, -35, 203, -45, 217, -50, 214, -36, 191, -33, 183, -27, 157, -22, 148)
+
+[node name="north_chambliss_street_sprite" type="Node2D" parent="map/41095/north_chambliss_street"]
+
+[node name="north_chambliss_street_sprite2" type="Sprite2D" parent="map/41095/north_chambliss_street/north_chambliss_street_sprite"]
+position = Vector2(-293, 501)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("73_uchf8")
+
+[node name="north_chambliss_street_sprite" type="Sprite2D" parent="map/41095/north_chambliss_street/north_chambliss_street_sprite"]
+position = Vector2(-96, 198)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("215_m0jwn")
 
 [node name="north_stevens_street" type="Node2D" parent="map/41095"]
 
@@ -3475,15 +3443,22 @@ polygon = PackedVector2Array(-368, 630, -357, 625, -344, 622, -330, 627, -319, 6
 
 [node name="north_chambliss_street" type="Node2D" parent="map/41097"]
 
-[node name="north_chambliss_street_sprite" type="Sprite2D" parent="map/41097/north_chambliss_street"]
-position = Vector2(-293, 501)
-scale = Vector2(0.36, 0.36)
-texture = ExtResource("73_uchf8")
-
 [node name="north_chambliss_street_area" type="Area2D" parent="map/41097/north_chambliss_street"]
 
 [node name="north_chambliss_street_shape" type="CollisionPolygon2D" parent="map/41097/north_chambliss_street/north_chambliss_street_area"]
 polygon = PackedVector2Array(-385, 676, -376, 680, -369, 611, -367, 593, -366, 580, -363, 570, -357, 563, -347, 550, -342, 543, -336, 531, -330, 509, -323, 493, -317, 480, -306, 474, -293, 472, -282, 469, -269, 460, -251, 448, -244, 440, -209, 357, -202, 324, -208, 323, -211, 333, -214, 353, -251, 439, -260, 447, -269, 452, -279, 460, -290, 465, -302, 468, -311, 470, -319, 475, -326, 482, -331, 492, -346, 541, -369, 567, -371, 575, -375, 595)
+
+[node name="north_chambliss_street_sprite" type="Node2D" parent="map/41097/north_chambliss_street"]
+
+[node name="north_chambliss_street_sprite2" type="Sprite2D" parent="map/41097/north_chambliss_street/north_chambliss_street_sprite"]
+position = Vector2(-293, 501)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("73_uchf8")
+
+[node name="north_chambliss_street_sprite" type="Sprite2D" parent="map/41097/north_chambliss_street/north_chambliss_street_sprite"]
+position = Vector2(-96, 198)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("215_m0jwn")
 
 [node name="north_morgan_street" type="Node2D" parent="map/41097"]
 
@@ -3535,16 +3510,16 @@ texture = ExtResource("238_i07kc")
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41098/albro_lane/albro_lane_area"]
 polygon = PackedVector2Array(-420, 433, -418, 427, -391, 437, -384, 444, -370, 450, -374, 456, -385, 452, -390, 447, -394, 443)
 
-[node name="applegath_court" type="Node2D" parent="map/41098"]
+[node name="applegarth_court" type="Node2D" parent="map/41098"]
 
-[node name="applegath_court_sprite" type="Sprite2D" parent="map/41098/applegath_court"]
+[node name="applegarth_court_sprite" type="Sprite2D" parent="map/41098/applegarth_court"]
 position = Vector2(-395, 411)
 scale = Vector2(0.36, 0.36)
 texture = ExtResource("239_e2h4d")
 
-[node name="applegath_court_area" type="Area2D" parent="map/41098/applegath_court"]
+[node name="applegarth_court_area" type="Area2D" parent="map/41098/applegarth_court"]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41098/applegath_court/applegath_court_area"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41098/applegarth_court/applegarth_court_area"]
 polygon = PackedVector2Array(-411, 408, -409, 402, -378, 413, -380, 420)
 
 [node name="berlee_drive" type="Node2D" parent="map/41098"]
@@ -3801,6 +3776,7 @@ libraries = {
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 11.0
+one_shot = true
 
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/exit" to="." method="_on_exit_pressed"]
@@ -3924,14 +3900,6 @@ wait_time = 11.0
 [connection signal="mouse_exited" from="map/41008/wilkins_drive/wilkins_drive_area" to="." method="_on_wilkins_drive_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41008/tyler_street/tyler_street_area" to="." method="_on_tyler_street_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41008/tyler_street/tyler_street_area" to="." method="_on_tyler_street_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41008/glen_carlyn_drive/glen_carlyn_drive_area" to="." method="_on_glen_carlyn_drive_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41008/glen_carlyn_drive/glen_carlyn_drive_area" to="." method="_on_glen_carlyn_drive_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41008/nevius_street/nevius_street_area" to="." method="_on_nevius_street_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41008/nevius_street/nevius_street_area" to="." method="_on_nevius_street_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41008/mansfield_road/mansfield_road_area" to="." method="_on_mansfield_road_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41008/mansfield_road/mansfield_road_area" to="." method="_on_mansfield_road_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41008/lake_street/lake_street_area" to="." method="_on_lake_street_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41008/lake_street/lake_street_area" to="." method="_on_lake_street_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41011/aqua_terrace/aqua_terrace_area" to="." method="_on_aqua_terrace_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41011/aqua_terrace/aqua_terrace_area" to="." method="_on_aqua_terrace_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41011/barcroft_lane/barcroft_lane_area" to="." method="_on_barcroft_lane_area_mouse_entered"]
@@ -4286,8 +4254,8 @@ wait_time = 11.0
 [connection signal="mouse_exited" from="map/41097/shackleford_terrace/shackleford_terrace_area" to="." method="_on_shackleford_terrace_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41098/albro_lane/albro_lane_area" to="." method="_on_albro_lane_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41098/albro_lane/albro_lane_area" to="." method="_on_albro_lane_area_mouse_exited"]
-[connection signal="mouse_entered" from="map/41098/applegath_court/applegath_court_area" to="." method="_on_applegath_court_area_mouse_entered"]
-[connection signal="mouse_exited" from="map/41098/applegath_court/applegath_court_area" to="." method="_on_applegath_court_area_mouse_exited"]
+[connection signal="mouse_entered" from="map/41098/applegarth_court/applegarth_court_area" to="." method="_on_applegarth_court_area_mouse_entered"]
+[connection signal="mouse_exited" from="map/41098/applegarth_court/applegarth_court_area" to="." method="_on_applegarth_court_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41098/berlee_drive/berlee_drive_area" to="." method="_on_berlee_drive_area_mouse_entered"]
 [connection signal="mouse_exited" from="map/41098/berlee_drive/berlee_drive_area" to="." method="_on_berlee_drive_area_mouse_exited"]
 [connection signal="mouse_entered" from="map/41098/bushie_court/bushie_court_area" to="." method="_on_bushie_court_area_mouse_entered"]

@@ -4,3 +4,10 @@ res://menu.tscn
 res://end_screen.tscn
 res://street_drill.tscn
 res://menu.gd
+res://find_it.gd
+res://end_screen.gd
+res://leaderboard.gd
+res://leaderboard.tscn
+res://box_select.tscn
+res://Globals.gd
+res://box_select.gd

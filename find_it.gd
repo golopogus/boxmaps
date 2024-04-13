@@ -20,7 +20,6 @@ var current_mouse_loc = Vector2()
 	#randomize_street()
 	#move = true
 	#$CanvasLayer/Button.queue_free()
-	
 func _ready():
 	for box in $map.get_children():
 		for street in box.get_children():
@@ -71,14 +70,17 @@ func _unhandled_input(event):
 			
 		##Mouse##
 		var zoom_max = 3.5
-		var zoom_min = .8
+		var zoom_min = 1
 		if Input.is_action_just_pressed("scroll_u"):
 			if $map_camera.zoom.x < 3.5:
 				$map_camera.zoom *= 1.05
 
 		if Input.is_action_just_pressed("scroll_d"):
-			if $map_camera.zoom.x > .8:
-				$map_camera.zoom *= .95
+			if $map_camera.zoom.x > 1:
+				if $map_camera.zoom.x * .95 < 1:
+					$map_camera.zoom = Vector2(1,1)
+				else:
+					$map_camera.zoom *= .95
 		
 		
 		###PAN###
@@ -107,6 +109,7 @@ func _unhandled_input(event):
 			if mouse_check == $map_camera.position and highlighted_street != '':
 				selected_street += highlighted_street
 				check_answer(selected_street)
+				
 			
 
 func check_answer(street):
@@ -141,6 +144,7 @@ func highlight_street(street_name,box,vis):
 #				if streets.name == street_name:
 #					get_node("map/" + box + "/" + street_name + "/" + street_name + "_sprite").visible = vis
 	if vis == true:
+		highlighted_street = ''
 		highlighted_street += street_name
 		for boxes in $map.get_children():
 			if boxes.name == box:
@@ -156,7 +160,7 @@ func highlight_street(street_name,box,vis):
 					if streets.name == street_name:
 						get_node("map/" + box + "/" + street_name + "/" + street_name + "_sprite").visible = false
 		
-
+	
 
 
 func _on_exit_pressed():
@@ -1433,10 +1437,10 @@ func _on_albro_lane_area_mouse_entered():
 func _on_albro_lane_area_mouse_exited():
 	highlight_street('albro_lane','41098',false)
 	
-func _on_applegath_court_area_mouse_entered():
-	highlight_street('applegath_court','41098',true)
-func _on_applegath_court_area_mouse_exited():
-	highlight_street('applegath_court','41098',false)
+func _on_applegarth_court_area_mouse_entered():
+	highlight_street('applegarth_court','41098',true)
+func _on_applegarth_court_area_mouse_exited():
+	highlight_street('applegarth_court','41098',false)
 
 func _on_berlee_drive_area_mouse_entered():
 	highlight_street('berlee_drive','41098',true)

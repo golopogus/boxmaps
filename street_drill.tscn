@@ -1876,7 +1876,6 @@ texture = ExtResource("107_qwiep")
 polygon = PackedVector2Array(-304, 176, -305, 188, -312, 187, -309, 175)
 
 [node name="lincolnia_road" type="Node2D" parent="map/41012"]
-visible = false
 
 [node name="lincolnia_road_sprite" type="Sprite2D" parent="map/41012/lincolnia_road"]
 position = Vector2(-451, 427)
@@ -2048,6 +2047,18 @@ texture = ExtResource("138_38y00")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41014/woodway_street/woodway_street_area"]
 polygon = PackedVector2Array(-704, 337, -696, 340, -699, 347, -700, 355, -700, 367, -700, 379, -701, 384, -704, 389, -710, 396, -715, 391, -711, 387, -708, 381, -707, 372, -708, 356, -707, 348)
+
+[node name="vale_street" type="Node2D" parent="map/41014"]
+
+[node name="vale_street_sprite" type="Sprite2D" parent="map/41014/vale_street"]
+position = Vector2(-650, 403)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("113_qaetd")
+
+[node name="vale_street_area" type="Area2D" parent="map/41014/vale_street"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41014/vale_street/vale_street_area"]
+polygon = PackedVector2Array(-534, 455, -534, 450, -564, 450, -570, 446, -610, 442, -614, 444, -617, 441, -643, 436, -659, 432, -673, 427, -683, 421, -685, 420, -712, 396, -721, 386, -762, 350, -764, 356, -739, 378, -723, 392, -711, 405, -700, 416, -687, 425, -678, 432, -655, 439, -639, 444, -617, 447, -592, 451, -570, 451, -563, 455)
 
 [node name="41041" type="Node2D" parent="map"]
 
@@ -3191,7 +3202,6 @@ texture = ExtResource("114_raxdc")
 polygon = PackedVector2Array(-771, 489, -763, 496, -755, 499, -748, 501, -742, 503, -734, 504, -731, 505, -727, 509, -730, 510, -738, 510, -746, 508, -756, 505, -764, 503, -775, 494)
 
 [node name="braddock_road" type="Node2D" parent="map/41096"]
-visible = false
 
 [node name="braddock_road_sprite" type="Sprite2D" parent="map/41096/braddock_road"]
 position = Vector2(-706, 300)
@@ -3363,16 +3373,16 @@ texture = ExtResource("239_sg4id")
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41098/albro_lane/albro_lane_area"]
 polygon = PackedVector2Array(-420, 433, -418, 427, -391, 437, -384, 444, -370, 450, -374, 456, -385, 452, -390, 447, -394, 443)
 
-[node name="applegath_court" type="Node2D" parent="map/41098"]
+[node name="applegarth_court" type="Node2D" parent="map/41098"]
 
-[node name="applegath_court_sprite" type="Sprite2D" parent="map/41098/applegath_court"]
+[node name="applegarth_court_sprite" type="Sprite2D" parent="map/41098/applegarth_court"]
 position = Vector2(-395, 411)
 scale = Vector2(0.36, 0.36)
 texture = ExtResource("240_gxuto")
 
-[node name="applegath_court_area" type="Area2D" parent="map/41098/applegath_court"]
+[node name="applegarth_court_area" type="Area2D" parent="map/41098/applegarth_court"]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41098/applegath_court/applegath_court_area"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="map/41098/applegarth_court/applegarth_court_area"]
 polygon = PackedVector2Array(-411, 408, -409, 402, -378, 413, -380, 420)
 
 [node name="berlee_drive" type="Node2D" parent="map/41098"]

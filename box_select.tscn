@@ -1,0 +1,885 @@
+[gd_scene load_steps=28 format=3 uid="uid://bt4f0vartiav6"]
+
+[ext_resource type="Script" path="res://box_select.gd" id="1_s6ohu"]
+[ext_resource type="FontFile" uid="uid://b578gypxkk5b5" path="res://Instruction.otf" id="2_iky8t"]
+[ext_resource type="FontFile" uid="uid://lhv5mtg22827" path="res://Deep Shadow Under.ttf" id="3_ian0b"]
+[ext_resource type="FontFile" uid="uid://ch1ma0a5aif2v" path="res://Deep Shadow Over.ttf" id="4_ues5m"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nmdo6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2bc40"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v2mib"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_au4yy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_oatv1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_otqhx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cdirl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v7vw3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_740vx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o3dn4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ckap7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_65c84"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qcaly"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mtw4u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fv00p"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bt6hi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_myy8c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_45s3q"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sojjh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_32bg3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7ofsx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6ixph"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rrsmy"]
+
+[node name="box_select" type="Node2D"]
+script = ExtResource("1_s6ohu")
+
+[node name="TextureRect" type="ColorRect" parent="."]
+offset_right = 1044.0
+offset_bottom = 620.0
+color = Color(0.231373, 0.231373, 0.231373, 1)
+
+[node name="Control" type="Control" parent="TextureRect"]
+anchors_preset = 0
+offset_left = 137.0
+offset_top = 21.0
+offset_right = 177.0
+offset_bottom = 61.0
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="TextureRect/Control"]
+layout_mode = 0
+offset_right = 939.0
+offset_bottom = 112.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ian0b")
+theme_override_font_sizes/font_size = 60
+text = "CHOOSE WHICH BOX"
+
+[node name="Label2" type="Label" parent="TextureRect/Control"]
+layout_mode = 0
+offset_right = 939.0
+offset_bottom = 112.0
+theme_override_fonts/font = ExtResource("4_ues5m")
+theme_override_font_sizes/font_size = 60
+text = "CHOOSE WHICH BOX"
+
+[node name="41001" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 82.0
+offset_top = 167.0
+offset_right = 165.0
+offset_bottom = 200.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ian0b")
+text = "41000"
+
+[node name="41002" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 82.0
+offset_top = 167.0
+offset_right = 165.0
+offset_bottom = 200.0
+theme_override_fonts/font = ExtResource("4_ues5m")
+text = "41000"
+
+[node name="button_41000" type="CheckButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 149.0
+offset_right = 234.0
+offset_bottom = 230.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("2_iky8t")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nmdo6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_2bc40")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_v2mib")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_au4yy")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_oatv1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_otqhx")
+alignment = 2
+expand_icon = true
+
+[node name="41000" type="Control" parent="TextureRect"]
+anchors_preset = 0
+offset_left = 83.0
+offset_top = 31.0
+offset_right = 123.0
+offset_bottom = 71.0
+metadata/_edit_group_ = true
+
+[node name="41015" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 281.0
+offset_top = 166.0
+offset_right = 364.0
+offset_bottom = 199.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ian0b")
+text = "41008"
+
+[node name="41029" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 281.0
+offset_top = 166.0
+offset_right = 364.0
+offset_bottom = 199.0
+theme_override_fonts/font = ExtResource("4_ues5m")
+text = "41008"
+
+[node name="button_41008" type="CheckButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 231.0
+offset_top = 150.0
+offset_right = 434.0
+offset_bottom = 231.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("2_iky8t")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_cdirl")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_v7vw3")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_740vx")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_o3dn4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_ckap7")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_65c84")
+alignment = 2
+expand_icon = true
+
+[node name="41008" type="Control" parent="TextureRect"]
+anchors_preset = 0
+offset_left = 83.0
+offset_top = 34.0
+offset_right = 123.0
+offset_bottom = 74.0
+metadata/_edit_group_ = true
+
+[node name="41016" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 473.0
+offset_top = 168.0
+offset_right = 556.0
+offset_bottom = 201.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ian0b")
+text = "41011"
+
+[node name="41028" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 473.0
+offset_top = 168.0
+offset_right = 556.0
+offset_bottom = 201.0
+theme_override_fonts/font = ExtResource("4_ues5m")
+text = "41011"
+
+[node name="button_41011" type="CheckButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 419.0
+offset_top = 150.0
+offset_right = 622.0
+offset_bottom = 231.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("2_iky8t")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_cdirl")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_v7vw3")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_740vx")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_o3dn4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_ckap7")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_65c84")
+alignment = 2
+expand_icon = true
+
+[node name="41011" type="Control" parent="TextureRect"]
+anchors_preset = 0
+offset_left = 74.0
+offset_top = 36.0
+offset_right = 114.0
+offset_bottom = 76.0
+metadata/_edit_group_ = true
+
+[node name="button_41012" type="CheckButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 618.0
+offset_top = 149.0
+offset_right = 821.0
+offset_bottom = 230.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("2_iky8t")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nmdo6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_2bc40")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_v2mib")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_au4yy")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_oatv1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_otqhx")
+alignment = 2
+expand_icon = true
+
+[node name="41013" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 673.0
+offset_top = 166.0
+offset_right = 756.0
+offset_bottom = 199.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ian0b")
+text = "41012"
+
+[node name="41027" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 673.0
+offset_top = 166.0
+offset_right = 756.0
+offset_bottom = 199.0
+theme_override_fonts/font = ExtResource("4_ues5m")
+text = "41012"
+
+[node name="41012" type="Control" parent="TextureRect"]
+anchors_preset = 0
+offset_left = 73.0
+offset_top = 33.0
+offset_right = 113.0
+offset_bottom = 73.0
+metadata/_edit_group_ = true
+
+[node name="button_41014" type="CheckButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 826.0
+offset_top = 149.0
+offset_right = 1029.0
+offset_bottom = 230.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("2_iky8t")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nmdo6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_2bc40")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_v2mib")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_au4yy")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_oatv1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_otqhx")
+alignment = 2
+expand_icon = true
+
+[node name="41007" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 883.0
+offset_top = 167.0
+offset_right = 966.0
+offset_bottom = 200.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ian0b")
+text = "41014"
+
+[node name="41021" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 883.0
+offset_top = 167.0
+offset_right = 966.0
+offset_bottom = 200.0
+theme_override_fonts/font = ExtResource("4_ues5m")
+text = "41014"
+
+[node name="41014" type="Control" parent="TextureRect"]
+anchors_preset = 0
+offset_left = 93.0
+offset_top = 37.0
+offset_right = 133.0
+offset_bottom = 77.0
+metadata/_edit_group_ = true
+
+[node name="button_41041" type="CheckButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 202.0
+offset_right = 226.0
+offset_bottom = 283.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("2_iky8t")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nmdo6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_2bc40")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_v2mib")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_au4yy")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_oatv1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_otqhx")
+alignment = 2
+expand_icon = true
+
+[node name="41017" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 75.0
+offset_top = 219.0
+offset_right = 158.0
+offset_bottom = 252.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ian0b")
+text = "41041"
+
+[node name="41026" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 75.0
+offset_top = 219.0
+offset_right = 158.0
+offset_bottom = 252.0
+theme_override_fonts/font = ExtResource("4_ues5m")
+text = "41041"
+
+[node name="41041" type="Control" parent="TextureRect"]
+anchors_preset = 0
+offset_left = 65.0
+offset_top = -33.0
+offset_right = 105.0
+offset_bottom = 7.0
+metadata/_edit_group_ = true
+
+[node name="button_41091" type="CheckButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 232.0
+offset_top = 199.0
+offset_right = 435.0
+offset_bottom = 280.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("2_iky8t")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nmdo6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_2bc40")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_v2mib")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_au4yy")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_oatv1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_otqhx")
+alignment = 2
+expand_icon = true
+
+[node name="41018" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 283.0
+offset_top = 216.0
+offset_right = 366.0
+offset_bottom = 249.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ian0b")
+text = "41091
+"
+
+[node name="41025" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 283.0
+offset_top = 216.0
+offset_right = 366.0
+offset_bottom = 249.0
+theme_override_fonts/font = ExtResource("4_ues5m")
+text = "41091
+"
+
+[node name="41091" type="Control" parent="TextureRect"]
+anchors_preset = 0
+offset_left = 90.0
+offset_top = -38.0
+offset_right = 130.0
+offset_bottom = 2.0
+metadata/_edit_group_ = true
+
+[node name="button_41092" type="CheckButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 417.0
+offset_top = 192.0
+offset_right = 620.0
+offset_bottom = 273.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("2_iky8t")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_nmdo6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_2bc40")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_v2mib")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_au4yy")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_oatv1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_otqhx")
+alignment = 2
+expand_icon = true
+
+[node name="41005" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 470.0
+offset_top = 210.0
+offset_right = 553.0
+offset_bottom = 243.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ian0b")
+text = "41092"
+
+[node name="41019" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 470.0
+offset_top = 210.0
+offset_right = 553.0
+offset_bottom = 243.0
+theme_override_fonts/font = ExtResource("4_ues5m")
+text = "41092"
+
+[node name="41092" type="Control" parent="TextureRect"]
+anchors_preset = 0
+offset_left = 65.0
+offset_top = -41.0
+offset_right = 105.0
+offset_bottom = -1.0
+metadata/_edit_group_ = true
+
+[node name="button_41093" type="CheckButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 620.0
+offset_top = 194.0
+offset_right = 823.0
+offset_bottom = 275.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("2_iky8t")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_cdirl")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_v7vw3")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_740vx")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_o3dn4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_ckap7")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_65c84")
+alignment = 2
+expand_icon = true
+
+[node name="41006" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 674.0
+offset_top = 211.0
+offset_right = 757.0
+offset_bottom = 244.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ian0b")
+text = "41093"
+
+[node name="41020" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 674.0
+offset_top = 211.0
+offset_right = 757.0
+offset_bottom = 244.0
+theme_override_fonts/font = ExtResource("4_ues5m")
+text = "41093"
+
+[node name="41093" type="Control" parent="TextureRect"]
+anchors_preset = 0
+offset_left = 72.0
+offset_top = -36.0
+offset_right = 112.0
+offset_bottom = 4.0
+metadata/_edit_group_ = true
+
+[node name="button_41094" type="CheckButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 825.0
+offset_top = 198.0
+offset_right = 1028.0
+offset_bottom = 279.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("2_iky8t")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_cdirl")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_v7vw3")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_740vx")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_o3dn4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_ckap7")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_65c84")
+alignment = 2
+expand_icon = true
+
+[node name="41003" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 881.0
+offset_top = 214.0
+offset_right = 964.0
+offset_bottom = 247.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ian0b")
+text = "41094"
+
+[node name="41022" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 881.0
+offset_top = 214.0
+offset_right = 964.0
+offset_bottom = 247.0
+theme_override_fonts/font = ExtResource("4_ues5m")
+text = "41094"
+
+[node name="41094" type="Control" parent="TextureRect"]
+anchors_preset = 0
+offset_left = 92.0
+offset_top = -28.0
+offset_right = 132.0
+offset_bottom = 12.0
+metadata/_edit_group_ = true
+
+[node name="button_41095" type="CheckButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 253.0
+offset_right = 229.0
+offset_bottom = 334.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("2_iky8t")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_cdirl")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_v7vw3")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_740vx")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_o3dn4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_ckap7")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_65c84")
+alignment = 2
+expand_icon = true
+
+[node name="41010" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 270.0
+offset_right = 161.0
+offset_bottom = 303.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ian0b")
+text = "41095"
+
+[node name="41024" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 270.0
+offset_right = 161.0
+offset_bottom = 303.0
+theme_override_fonts/font = ExtResource("4_ues5m")
+text = "41095"
+
+[node name="41095" type="Control" parent="TextureRect"]
+anchors_preset = 0
+offset_left = 74.0
+offset_top = -121.0
+offset_right = 114.0
+offset_bottom = -81.0
+metadata/_edit_group_ = true
+
+[node name="button_41096" type="CheckButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 232.0
+offset_top = 249.0
+offset_right = 435.0
+offset_bottom = 330.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("2_iky8t")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_cdirl")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_v7vw3")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_740vx")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_o3dn4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_ckap7")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_65c84")
+alignment = 2
+expand_icon = true
+
+[node name="41009" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 283.0
+offset_top = 266.0
+offset_right = 366.0
+offset_bottom = 299.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ian0b")
+text = "41096"
+
+[node name="41023" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 283.0
+offset_top = 266.0
+offset_right = 366.0
+offset_bottom = 299.0
+theme_override_fonts/font = ExtResource("4_ues5m")
+text = "41096"
+
+[node name="41096" type="Control" parent="TextureRect"]
+anchors_preset = 0
+offset_left = 82.0
+offset_top = -120.0
+offset_right = 122.0
+offset_bottom = -80.0
+metadata/_edit_group_ = true
+
+[node name="button_41097" type="CheckButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 419.0
+offset_top = 241.0
+offset_right = 622.0
+offset_bottom = 322.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("2_iky8t")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_cdirl")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_v7vw3")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_740vx")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_o3dn4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_ckap7")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_65c84")
+alignment = 2
+expand_icon = true
+
+[node name="41030" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 473.0
+offset_top = 258.0
+offset_right = 556.0
+offset_bottom = 291.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ian0b")
+text = "41097"
+
+[node name="41031" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 473.0
+offset_top = 258.0
+offset_right = 556.0
+offset_bottom = 291.0
+theme_override_fonts/font = ExtResource("4_ues5m")
+text = "41097"
+
+[node name="41097" type="Control" parent="TextureRect"]
+anchors_preset = 0
+offset_left = 68.0
+offset_top = -121.0
+offset_right = 108.0
+offset_bottom = -81.0
+metadata/_edit_group_ = true
+
+[node name="button_41098" type="CheckButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 621.0
+offset_top = 237.0
+offset_right = 824.0
+offset_bottom = 318.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("2_iky8t")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_cdirl")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_v7vw3")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_740vx")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_o3dn4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_ckap7")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_65c84")
+alignment = 2
+expand_icon = true
+
+[node name="41004" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 675.0
+offset_top = 255.0
+offset_right = 758.0
+offset_bottom = 288.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ian0b")
+text = "41098"
+
+[node name="41032" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 675.0
+offset_top = 255.0
+offset_right = 758.0
+offset_bottom = 288.0
+theme_override_fonts/font = ExtResource("4_ues5m")
+text = "41098"
+
+[node name="41098" type="Control" parent="TextureRect"]
+anchors_preset = 0
+offset_left = 78.0
+offset_top = -126.0
+offset_right = 118.0
+offset_bottom = -86.0
+metadata/_edit_group_ = true
+
+[node name="button_41099" type="CheckButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 824.0
+offset_top = 239.0
+offset_right = 1027.0
+offset_bottom = 320.0
+scale = Vector2(0.75, 0.75)
+theme_override_fonts/font = ExtResource("2_iky8t")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_cdirl")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_v7vw3")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_740vx")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_o3dn4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_ckap7")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_65c84")
+alignment = 2
+expand_icon = true
+
+[node name="41033" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 880.0
+offset_top = 256.0
+offset_right = 963.0
+offset_bottom = 289.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ian0b")
+text = "41099"
+
+[node name="41034" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 880.0
+offset_top = 256.0
+offset_right = 963.0
+offset_bottom = 289.0
+theme_override_fonts/font = ExtResource("4_ues5m")
+text = "41099"
+
+[node name="41099" type="Control" parent="TextureRect"]
+anchors_preset = 0
+offset_left = 91.0
+offset_top = -123.0
+offset_right = 131.0
+offset_bottom = -83.0
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 330.0
+offset_right = 557.0
+offset_bottom = 363.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ian0b")
+text = "ALL BOXES"
+
+[node name="Label2" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 330.0
+offset_right = 557.0
+offset_bottom = 363.0
+theme_override_fonts/font = ExtResource("4_ues5m")
+text = "ALL BOXES"
+
+[node name="button_all" type="CheckButton" parent="TextureRect"]
+layout_mode = 0
+offset_left = 416.0
+offset_top = 320.0
+offset_right = 596.0
+offset_bottom = 368.0
+theme_override_fonts/font = ExtResource("2_iky8t")
+theme_override_font_sizes/font_size = 27
+theme_override_styles/normal = SubResource("StyleBoxEmpty_qcaly")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_mtw4u")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_fv00p")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_bt6hi")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_myy8c")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_45s3q")
+
+[node name="Control17" type="Control" parent="TextureRect"]
+anchors_preset = 0
+offset_left = 458.0
+offset_top = 335.0
+offset_right = 498.0
+offset_bottom = 375.0
+metadata/_edit_group_ = true
+
+[node name="start" type="Button" parent="."]
+offset_left = 444.0
+offset_top = 451.0
+offset_right = 586.0
+offset_bottom = 504.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_sojjh")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_32bg3")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_7ofsx")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_6ixph")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rrsmy")
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="start"]
+layout_mode = 0
+offset_left = 12.0
+offset_right = 137.0
+offset_bottom = 58.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ian0b")
+theme_override_font_sizes/font_size = 30
+text = "START"
+
+[node name="Label2" type="Label" parent="start"]
+layout_mode = 0
+offset_left = 12.0
+offset_right = 137.0
+offset_bottom = 58.0
+theme_override_fonts/font = ExtResource("4_ues5m")
+theme_override_font_sizes/font_size = 30
+text = "START"
+
+[node name="name" type="Node2D" parent="."]
+visible = false
+position = Vector2(342, 434)
+
+[node name="name" type="LineEdit" parent="name"]
+offset_left = 82.0
+offset_top = -14.0
+offset_right = 296.0
+offset_bottom = 38.0
+theme_override_fonts/font = ExtResource("2_iky8t")
+alignment = 1
+
+[node name="Label" type="Label" parent="name"]
+offset_left = -11.0
+offset_top = -5.0
+offset_right = 62.0
+offset_bottom = 35.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ian0b")
+theme_override_font_sizes/font_size = 20
+text = "NAME"
+
+[node name="Label2" type="Label" parent="name"]
+offset_left = -11.0
+offset_top = -5.0
+offset_right = 62.0
+offset_bottom = 35.0
+theme_override_fonts/font = ExtResource("4_ues5m")
+theme_override_font_sizes/font_size = 20
+text = "NAME"
+
+[connection signal="pressed" from="TextureRect/button_41000" to="." method="_on_button_41000_pressed"]
+[connection signal="pressed" from="TextureRect/button_41008" to="." method="_on_button_41008_pressed"]
+[connection signal="pressed" from="TextureRect/button_41011" to="." method="_on_button_41011_pressed"]
+[connection signal="pressed" from="TextureRect/button_41012" to="." method="_on_button_41012_pressed"]
+[connection signal="pressed" from="TextureRect/button_41014" to="." method="_on_button_41014_pressed"]
+[connection signal="pressed" from="TextureRect/button_41041" to="." method="_on_button_41041_pressed"]
+[connection signal="pressed" from="TextureRect/button_41091" to="." method="_on_button_41091_pressed"]
+[connection signal="pressed" from="TextureRect/button_41092" to="." method="_on_button_41092_pressed"]
+[connection signal="pressed" from="TextureRect/button_41093" to="." method="_on_button_41093_pressed"]
+[connection signal="pressed" from="TextureRect/button_41094" to="." method="_on_button_41094_pressed"]
+[connection signal="pressed" from="TextureRect/button_41095" to="." method="_on_button_41095_pressed"]
+[connection signal="pressed" from="TextureRect/button_41096" to="." method="_on_button_41096_pressed"]
+[connection signal="pressed" from="TextureRect/button_41097" to="." method="_on_button_41097_pressed"]
+[connection signal="pressed" from="TextureRect/button_41098" to="." method="_on_button_41098_pressed"]
+[connection signal="pressed" from="TextureRect/button_41099" to="." method="_on_button_41099_pressed"]
+[connection signal="pressed" from="TextureRect/button_all" to="." method="_on_button_all_pressed"]
+[connection signal="toggled" from="TextureRect/button_all" to="." method="_on_button_all_toggled"]
+[connection signal="pressed" from="start" to="." method="_on_start_pressed"]

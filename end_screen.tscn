@@ -42,4 +42,12 @@ theme_override_fonts/font = ExtResource("2_6i6fu")
 theme_override_font_sizes/font_size = 50
 text = "menu"
 
+[node name="submit_button" type="Button" parent="."]
+offset_left = 413.0
+offset_top = 337.0
+offset_right = 591.0
+offset_bottom = 400.0
+text = "submit score"
+
 [connection signal="pressed" from="menu_button" to="." method="_on_menu_button_pressed"]
+[connection signal="pressed" from="submit_button" to="." method="_on_submit_button_pressed"]
